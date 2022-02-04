@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bolg Guide
-subtitle: guide
+subtitle: 博客浏览说明
 author: Leo
 date: 2022-02-5
 categories: blog
