@@ -32,8 +32,8 @@ tags: [radio]
 
 ## 博客首页
 
-![firstPage](pictures/BlogGuide/Picture1.png)
+![firstPage](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture1.png)
 
 ## 查看博文
 
-![docPage](pictures/BlogGuide/Picture2.png)⏩![docPage](pictures/BlogGuide/Picture3.png)
+![docPage](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture2.png)⏩![docPage](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture3.png)
