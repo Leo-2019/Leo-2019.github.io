@@ -1,5 +1,5 @@
-title: 沐雨橙舟の秘密基地
-email: muzhou233@outlook.com
+title: Leo的博客
+email: l.e.o.1994@qq.com
 description: >- # this means to ignore newlines until "baseurl:"
     Write an awesome description for your new site here. You can edit this
     line in _config.yml. It will appear in your document head meta (for
@@ -10,8 +10,8 @@ url: 'https://mosarin.tech' # the base hostname & protocol for your site, e.g. h
 
 # About/contact
 owner:
-    name: '沐雨橙舟'
-    email: 'MuZhou233@outlook.com'
+    name: 'Leo'
+    email: 'l.e.o.1994@qq.com'
     bio: ''
 
 # Data
