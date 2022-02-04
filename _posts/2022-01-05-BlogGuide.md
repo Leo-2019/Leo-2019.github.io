@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Bolg Guide
-subtitle: 程序梳理
+subtitle: guide
 author: Leo
-date: 2020-02-23
+date: 2020-02-5
 categories: blog
-tags: [radio]
+tags: [other]
 ---
 
 <p align="center">
@@ -32,7 +32,7 @@ tags: [radio]
 
 ## 博客首页
 
-![firstPage](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture1.png)
+![firstPage](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture1.png?raw=true)
 
 ## 查看博文
 
