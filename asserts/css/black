@@ -1,0 +1,35 @@
+body.theme-front-black .flex-column.nav-pills:hover .nav-link.active,
+body.theme-front-black a{
+    color: #000000;
+}
+.theme-control div.theme-front-black:before,
+.theme-control div.theme-front-black:after,
+body.theme-front-black .js-toc-move:before,
+body.theme-front-black .page-item.active .page-link,
+body.theme-front-black .nav-pills .nav-link.active,
+body.theme-front-black .nav-pills:hover .nav-link:hover,
+body.theme-front-black .nav-pills:hover .nav-link.active:hover,
+body.theme-front-black .search:after,
+body.theme-front-black .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before,
+body.theme-front-black .custom-checkbox .custom-control-input:disabled:checked::before,
+body.theme-front-black .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before{
+    background-color: #000000;
+}
+body.theme-front-black article h1:before {
+  background-color: rgba(0,0,0);
+}
+body.theme-front-black article h2:before {
+  background-color: rgba(0,0,0,0.8);
+}
+body.theme-front-black article h3:before {
+  background-color: rgba(0,0,0,0.6);
+}
+body.theme-front-black article h4:before {
+  background-color: rgba(0,0,0,0.4);
+}
+body.theme-front-black article h5:before {
+  background-color: rgba(0,0,0,0.2);
+}
+body.theme-front-black .nav-pills:hover .nav-link.active:hover{
+  color: #fff;
+}
