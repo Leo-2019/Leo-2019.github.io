@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello Blog
-subtitle: hello blog
+subtitle: 我的博客
 author: Leo
 date: 2022-02-5
 categories: blog
