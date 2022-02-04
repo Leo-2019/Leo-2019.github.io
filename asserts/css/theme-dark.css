@@ -1,35 +1,35 @@
-body.theme-front-black .flex-column.nav-pills:hover .nav-link.active,
-body.theme-front-black a{
+body.theme-front-dark .flex-column.nav-pills:hover .nav-link.active,
+body.theme-front-dark a{
     color: #212529;
 }
-.theme-control div.theme-front-black:before,
-.theme-control div.theme-front-black:after,
-body.theme-front-black .js-toc-move:before,
-body.theme-front-black .page-item.active .page-link,
-body.theme-front-black .nav-pills .nav-link.active,
-body.theme-front-black .nav-pills:hover .nav-link:hover,
-body.theme-front-black .nav-pills:hover .nav-link.active:hover,
-body.theme-front-black .search:after,
-body.theme-front-black .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before,
-body.theme-front-black .custom-checkbox .custom-control-input:disabled:checked::before,
-body.theme-front-black .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before{
+.theme-control div.theme-front-dark:before,
+.theme-control div.theme-front-dark:after,
+body.theme-front-dark .js-toc-move:before,
+body.theme-front-dark .page-item.active .page-link,
+body.theme-front-dark .nav-pills .nav-link.active,
+body.theme-front-dark .nav-pills:hover .nav-link:hover,
+body.theme-front-dark .nav-pills:hover .nav-link.active:hover,
+body.theme-front-dark .search:after,
+body.theme-front-dark .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before,
+body.theme-front-dark .custom-checkbox .custom-control-input:disabled:checked::before,
+body.theme-front-dark .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before{
     background-color: #212529;
 }
-body.theme-front-black article h1:before {
+body.theme-front-dark article h1:before {
   background-color: rgba(33,37,41);
 }
-body.theme-front-black article h2:before {
+body.theme-front-dark article h2:before {
   background-color: rgba(33,37,41,0.8);
 }
-body.theme-front-black article h3:before {
+body.theme-front-dark article h3:before {
   background-color: rgba(33,37,41,0.6);
 }
-body.theme-front-black article h4:before {
+body.theme-front-dark article h4:before {
   background-color: rgba(33,37,41,0.4);
 }
-body.theme-front-black article h5:before {
+body.theme-front-dark article h5:before {
   background-color: rgba(33,37,41,0.2);
 }
-body.theme-front-black .nav-pills:hover .nav-link.active:hover{
+body.theme-front-dark .nav-pills:hover .nav-link.active:hover{
   color: #fff;
 }
