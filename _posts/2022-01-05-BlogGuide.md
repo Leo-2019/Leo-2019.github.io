@@ -36,4 +36,4 @@ tags: [radio]
 
 ## 查看博文
 
-![docPage](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture2.png)⏩![docPage](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture3.png)
+![docPage1](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture2.png)⏩![docPage2](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture3.png)
