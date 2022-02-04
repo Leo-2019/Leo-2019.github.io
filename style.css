@@ -266,7 +266,7 @@ body {
   height: .25rem;
   left: .25rem;
   top: .5rem;
-  background-color: #212529;
+  background-color: #007bff;
 }
 .theme-control div div:after{
   content: '';
@@ -275,7 +275,7 @@ body {
   height: .20rem;
   left: .25rem;
   top: 1rem;
-  background-color: #212529;
+  background-color: #007bff;
 }
 
 /* musicbox */
