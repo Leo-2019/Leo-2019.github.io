@@ -25,14 +25,5 @@ tags: [computer_set]
 
 👏 好开森，终于有一个自己的博客了！开启并记录自己的职场菜鸟进阶史。
 
-## 背景
-
-* 昵称：路小臻/Leo
-* 毕业学校：[西北工业大学](https://www.nwpu.edu.cn/)
-* 专业：电子与通信
-* 职业：C++软件开发
-* 行业：5G通信、Radio
-* 就职公司：[Ericssion](https://www.ericsson.com/zh-cn/about-us/company-facts/ericsson-worldwide/china)
-* 邮箱：934969879@qq.com
-* github:  [Leo-2019](https://github.com/Leo-2019)
+To be conntinue .......
 
