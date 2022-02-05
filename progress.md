@@ -1,60 +1,33 @@
 ---
 layout: post
-title: "开发进度"
+title: "博主信息"
 ---
 
-Page Plan
+<p align="center">
+<a href="https://github.com/Leo-2019" target="_blank">
+	<img src="https://github.com/Leo-2019/Picture/blob/main/pictures/logo/square_mid.jpg?raw=true" width=""/>
+</a>
+</p>
 
-- [x] index
-- [ ] about
-- [x] archive
-- [x] post
-- [ ] comment board
-- [ ] single page
+<p align="center">
+  <a href="https://github.com/Leo-2019"><img src="https://img.shields.io/badge/Author-Leo-blue.svg"></a>
+  <a href="https://www.ericsson.com"><img src="https://img.shields.io/badge/company-Ericssion-brightgreen.svg"></a>
+  <a href="https://internal.ericsson.com/org/31580708?unit=31580708"><img src="https://img.shields.io/badge/Unit-RPCN_SWD_APP4-red.svg"></a>
+</p>
 
-Feature Plan
+<h3 align="center">Hello Blog</h3>
 
-- [ ] Site Control
-- [x] Fullscreen
-- [x] Article Navigation
-- [x] Site Metadata
-- [ ] Custom Theme
-    - [x] Custom Color
-- [x] Music Player
-    - [ ] Play List
-- [x] Smooth Scroll
-- [ ] Pjax
-- [ ] Search
-- [x] TimeLine
- 
-MarkDown Adaptation Plan  
+---
 
-- [x] Common MarkDown
-- [x] Automatic Link
-- [x] Syntax Hightlighting
-- [x] Inline Code
-    - [ ] One Click Copy
-- [x] Task Lists
-- [x] Hide Text
-- [ ] Picture Viewer
-- [x] Meta Card
+👏 欢迎来到Leo的博客！希望博客里的内容对你产生帮助，若文章出现纰漏，请通过邮箱批评指正。
 
-Device Adaptation Plan  
+## 个人背景
 
-- [x] Latest Version Chrome/Chromium  on Windows  
-- [x] Latest Version Chrome/Chromium  on Android  
-- [x] Latest Version FireFox          on Windows  
-- [x] Latest Version FireFox          on Android  
-- [ ] Latest Version Edge             on Windows  
-- [ ] Latest Version Safari           on MacOS  
-- [x] Latest Version Safari           on IOS IpadOS  
-- [x] Scroll Overflow                 on IOS IpadOS Android  
-- [x] Browser zooming                 between 50% and 300%  
-- [ ] Printing                        try to do  
-
-Won't Adapt  
-
-- [ ] Accessibility
-- [ ] Disable JavaScript              on Any Device
-- [ ] Hover style                     on touch screen device  
-- [ ] Animation Jitter                on IOS IpadOS
+* 昵称：路小臻/Leo
+* 毕业学校：[西北工业大学](https://www.nwpu.edu.cn/)
+* 专业：电子与通信
+* 职业：C++软件开发
+* 行业：5G通信、Radio
+* 就职公司：[Ericssion](https://www.ericsson.com/zh-cn/about-us/company-facts/ericsson-worldwide/china)
+* 邮箱：934969879@qq.com
+* github:  [Leo-2019](https://github.com/Leo-2019)
