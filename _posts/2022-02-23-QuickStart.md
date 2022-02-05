@@ -26,4 +26,4 @@ tags: [computer_set]
 👏 好开森，终于有一个自己的博客了！开启并记录自己的职场菜鸟进阶史。
 
 To be conntinue .......
-
+![@baidu](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/@baidu.gif?raw=true)
