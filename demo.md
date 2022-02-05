@@ -28,7 +28,7 @@ date: 2022-02-05
 
 ## 博客首页
 
-![firstPage](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture1.png?raw=true)
+![firstPage](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture0.png?raw=true)
 
 ### 侧栏部分
 
