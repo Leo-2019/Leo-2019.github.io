@@ -70,10 +70,22 @@ To be conntinue .......
 #### 一、文件、应用程序
 
 1. 在桌面上创建一个文件夹winr；
+
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/1.1.png?raw=true)
+
 2. 将需要快捷打开的文件、文件夹、应用程序创建桌面快捷方式，并移入此文件夹；
+
 3. 更改快捷方式名称，更改后的名字就是后续在win+r命令框中应该输入的命令。
+
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/1.3.png?raw=true)
+
 4. 将文件夹放在某个文件路径下。（路径随意，只要是在本地就行）
+
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/1.4.png?raw=true)
+
 5. 将文件夹路径添加到系统路径中；
+
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/1.5.png?raw=true)
 
 #### 二、文件夹
 
@@ -85,15 +97,27 @@ To be conntinue .......
 
 1. 找到网页的启动程序，创建桌面快捷方式；
 
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/3.1.png?raw=true)
+
 2. 修改快捷方式的配置。
 
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/3.2.png?raw=true)
+
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/3.22.png?raw=true)
+
 3. 重命名快捷方式并放入上文提到的“winr”文件夹中。
+
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/3.3.png?raw=true)
 
 #### 四、系统面板
 
 1. 在网上查找对应系统面板的启动程序的名字和位置。（一般都在C:\Windows\System32路径下）如下图所示：
 
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/4.1.png?raw=true)
+
 2. 找到对应启动程序右击-->send to-->Desktop(create shortcut)创建桌面快捷方式并重命名。
+
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/4.2.png?raw=true)
 
 3. 将此快捷方式移入上文提到的winr文件夹中。
 
@@ -107,17 +131,29 @@ To be conntinue .......
 
 1. 新建一个name.txt文档,放在上述winr文件夹中。
 
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/5.1.png?raw=true)
+
 2. 在文档中添加命令信息。我在文档中说明了如何新加命令，命令的规则，和具体命令的详细信息。
 
-   *需要说明的是自定义的命令要与windows的系统命令不冲突，我采取的方法是不同类型的命令以不同符号开头。*
+   > **需要说明的是自定义的命令要与windows的系统命令不冲突，我采取的方法是不同类型的命令以不同符号开头。**
+
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/5.2.png?raw=true)
 
    我将命令分为四种：文档、文件、app、网页、系统面板 。分别进行记录，其中文件必须注明文件所在的位置，防止后面忘记位置后，只能打开不能进行其他操作的尴尬。以下是我的记录内容，仅供参考。
 
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/5.3.png?raw=true)
+
 3. 为了方便管理和调取name.txt文件进行查询和更新，可以在winr文件夹内创建name.txt的快捷方式，并重命名为name。这样以后就可以直接在win+R中输入name命令进行查询和更新（你就说方便不方便，嘎嘎）。
+
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/5.4.png?raw=true)
 
 4. 另外，上述操作中已经将winr文件夹的路径添加到系统路径中了。以后需要看到底有哪些快捷方式和指令时直接win+R输入winr就能打开。
 
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/5.5.png?raw=true)
+
 5. 为了在电脑中容易辨识出哪些文件夹和文件是可以通过快捷方式启动的，在文件或文件夹的命名时以&或#开头。
+
+   ![picture](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/QuickStart/5.6.png?raw=true)
 
 6. 为了桌面看起来干净也可以在某个地方创建一个名为#Desktop的文件夹，平时的临时文档尽量放在这里面。并将其按上文提到的文件夹设置为快捷命令启动方式进行设置。解放桌面。
 
