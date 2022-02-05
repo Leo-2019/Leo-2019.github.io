@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows快速启动
+title: Windows电脑个人配置
 subtitle: 桌面设置、快速启动
 author: Leo
 date: 2022-02-5
@@ -19,7 +19,7 @@ tags: [computer_set]
   <a href="https://internal.ericsson.com/org/31580708?unit=31580708"><img src="https://img.shields.io/badge/Unit-RPCN_SWD_APP4-red.svg"></a>
 </p>
 
-<h3 align="center">Readme  written format</h3>
+<h3 align="center">Personal Copmuter Setting</h3>
 
 > 1. **介绍**：关于个人电脑配置的分享
 > 2. **联系邮箱** ： leo.c.li@ericsson.com 。
