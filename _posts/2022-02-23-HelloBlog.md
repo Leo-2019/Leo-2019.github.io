@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Hello Blog
-subtitle: 我的博客
+title: Windows快速启动
+subtitle: 我的win10个人设置（桌面设置、快速启动系统及管理）
 author: Leo
 date: 2022-02-5
 categories: blog
-tags: [other]
+tags: [computer_set]
 ---
 <p align="center">
 <a href="https://github.com/Leo-2019" target="_blank">
@@ -19,13 +19,13 @@ tags: [other]
   <a href="https://internal.ericsson.com/org/31580708?unit=31580708"><img src="https://img.shields.io/badge/Unit-RPCN_SWD_APP4-red.svg"></a>
 </p>
 
-<h3 align="center">Hello Blog</h3>
+<h3 align="center">我的个人电脑设置</h3>
 
 ---
 
 👏 好开森，终于有一个自己的博客了！开启并记录自己的职场菜鸟进阶史。
 
-## 个人背景
+## 背景
 
 * 昵称：路小臻/Leo
 * 毕业学校：[西北工业大学](https://www.nwpu.edu.cn/)
