@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows快速启动
-subtitle: 我的win10个人设置（桌面设置、快速启动系统及管理）
+subtitle: 桌面设置、快速启动
 author: Leo
 date: 2022-02-5
 categories: blog
