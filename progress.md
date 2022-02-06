@@ -26,9 +26,9 @@ title: "博主信息"
 * 👤**昵称**：路小臻/Leo
 * 🦞**星座**：巨蟹座
 * 💒**家乡**：陕西-汉中
-* 🎓**毕业学校**：[*西北工业大学*](https://www.nwpu.edu.cn/)
+* 🎓**毕业学校**：[*<u> 西北工业大学 </u>*](https://www.nwpu.edu.cn/)
 * 🤵**职业**：C++软件开发
 * 🗼**行业**：5G通信、Radio
-* 🏰**就职公司**：[*Ericssion*](https://www.ericsson.com/zh-cn/about-us/company-facts/ericsson-worldwide/china)
+* 🏰**就职公司**：[*<u> Ericssion </u>*](https://www.ericsson.com/zh-cn/about-us/company-facts/ericsson-worldwide/china)
 * 📧**邮箱**：934969879@qq.com
-* 🔗**Github**:  [*Leo-2019*](https://github.com/Leo-2019)
+* 🔗**Github**:  [*<u> Leo-2019 </u>*](https://github.com/Leo-2019)
