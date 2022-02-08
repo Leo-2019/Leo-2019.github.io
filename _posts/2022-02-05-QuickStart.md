@@ -9,14 +9,14 @@ tags: [computer_set]
 ---
 <p align="center">
 <a href="https://github.com/Leo-2019" target="_blank">
- <img src="https://github.com/Leo-2019/Picture/blob/main/pictures/logo/square_mid.jpg?raw=true" width=""/>
+ <img src="https://github.com/Leo-2019/Picture/blob/main/pictures/logo/square_mid.jpg?raw=true" alt="db&#x5904;&#x7406;&#x56FE;" width=""/>
 </a>
 </p>
 
 <p align="center">
-  <a href="https://leo-2019.github.io/"><img src="https://img.shields.io/badge/Author-Leo-blue.svg"></a>
-  <a href="https://www.ericsson.com"><img src="https://img.shields.io/badge/company-Ericssion-brightgreen.svg"></a>
-  <a href="https://internal.ericsson.com/org/31580708?unit=31580708"><img src="https://img.shields.io/badge/Unit-RPCN_SWD_APP4-red.svg"></a>
+  <a href="https://leo-2019.github.io/"><img src="https://img.shields.io/badge/Author-Leo-blue.svg" alt="db&#x5904;&#x7406;&#x56FE;"></a>
+  <a href="https://www.ericsson.com"><img src="https://img.shields.io/badge/company-Ericssion-brightgreen.svg" alt="db&#x5904;&#x7406;&#x56FE;"></a>
+  <a href="https://internal.ericsson.com/org/31580708?unit=31580708"><img src="https://img.shields.io/badge/Unit-RPCN_SWD_APP4-red.svg" alt="db&#x5904;&#x7406;&#x56FE;"></a>
 </p>
 
 <h3 align="center">Personal Copmuter Setting</h3>
