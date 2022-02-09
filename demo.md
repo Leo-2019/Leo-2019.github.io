@@ -4,22 +4,6 @@ title: "浏览说明"
 date: 2022-02-05
 ---
 
-<p align="center">
-<a href="https://github.com/Leo-2019" target="_blank">
-	<img src="https://github.com/Leo-2019/Picture/blob/main/pictures/logo/square_mid.jpg?raw=true" width=""/>
-</a>
-</p>
-
-<p align="center">
-  <a href="https://leo-2019.github.io/"><img src="https://img.shields.io/badge/Author-Leo-blue.svg"></a>
-  <a href="https://www.ericsson.com"><img src="https://img.shields.io/badge/company-Ericssion-brightgreen.svg"></a>
-  <a href="https://internal.ericsson.com/org/31580708?unit=31580708"><img src="https://img.shields.io/badge/Unit-RPCN_SWD_APP4-red.svg"></a>
-</p>
-
-<h3 align="center">博客介绍</h3>
-
----
-
 > 1. **介绍**：本文主要给访客提供一个博客网站的简单介绍，方便浏览。
 > 2. **贡献指南** ：在此非常感谢[<u>MuZhou233</u> ](https://github.com/MuZhou233)的开源项目对本人网站搭建的[<u>参考</u>](https://github.com/MuZhou233/Morecho-Jekyll)。👍
 > 3. **联系邮箱** ： leo.c.li@ericsson.com 。
