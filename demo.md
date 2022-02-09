@@ -12,7 +12,7 @@ date: 2022-02-05
 
 ## 博客首页
 
-![firstPage](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture0.png?raw=true)
+![总览](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture0.png?raw=true)
 
 ### 侧栏部分
 
@@ -23,7 +23,8 @@ date: 2022-02-05
 
 ## 查看博文
 
-![docPage1](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture2.png?raw=true)⏩![docPage2](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture3.png?raw=true)
+![1.先点击首页](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture2.png?raw=true)
+![2.在点击归档和文章归档](https://github.com/Leo-2019/Leo-2019.github.io/blob/master/_posts/pictures/BlogGuide/Picture3.png?raw=true)
 
 ## MarkDown 部分
 
