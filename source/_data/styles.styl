@@ -1,0 +1,79 @@
+// V's Joker 主题定制
+:root {
+  --joker-purple: #6f42c1;
+  --joker-green: #28a745;
+  --chaos-dark: #1a1a1a;
+  --smile-yellow: #ffc107;
+  --mask-silver: #c0c0c0;
+}
+
+// 整体背景设置
+body {
+	background:url(/images/background.png);// 设定背景图片,注意修改图片后缀
+	background-repeat: no-repeat;// 设定背景图片非重复填充
+	background-attachment:fixed;// 设置背景图片不随页面滚动
+	background-position:50% 50%;// 设置背景图片位置
+	background-size: cover// 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小
+}
+
+// 设置透明度
+.main-inner{
+	opacity: 0.95;
+}
+.header-inner{
+	opacity: 0.95;
+	z-index: 10;
+}
+
+// 主内容区域
+.main-inner {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+// 文章标题样式
+.post-title {
+  color: var(--chaos-dark);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  
+  &:hover {
+    color: var(--joker-green);
+    transition: color 0.3s ease;
+  }
+}
+
+// 引用块样式
+blockquote {
+  border-left: 4px solid var(--chaos-dark);
+  background: linear-gradient(90deg, rgba(111, 66, 193, 0.1) 0%, transparent 100%);
+  position: relative;
+  padding-left: 30px;
+  
+  &::before {
+    //content: "🎭";
+    //content: "⏩";
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    font-size: 1.2em;
+  }
+}
+
+// 代码块增强
+.highlight {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(111, 66, 193, 0.2);
+}
+
+// 标签样式
+.post-meta .post-tag {
+  background: linear-gradient(45deg, var(--joker-purple), var(--joker-green));
+  color: white;
+  border-radius: 15px;
+  padding: 2px 8px;
+  margin: 0 3px;
+  font-size: 0.8em;
+}
