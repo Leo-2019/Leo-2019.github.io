@@ -1222,7 +1222,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #9cb618;
+    background: #224fff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2769,4 +2769,55 @@ header.header {
   .comments {
     padding: 10px 12px;
   }
+}
+:root {
+  --joker-purple: #6f42c1;
+  --joker-green: #28a745;
+  --chaos-dark: #1a1a1a;
+  --smile-yellow: #ffc107;
+  --mask-silver: #c0c0c0;
+}
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment: fixed;
+}
+.main-inner {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+.post-title {
+  color: var(--joker-purple);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.post-title:hover {
+  color: var(--joker-green);
+  transition: color 0.3s ease;
+}
+blockquote {
+  border-left: 4px solid var(--joker-purple);
+  background: linear-gradient(90deg, rgba(111,66,193,0.1) 0%, transparent 100%);
+  position: relative;
+  padding-left: 30px;
+}
+blockquote::before {
+  content: "🎭";
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  font-size: 1.2em;
+}
+.highlight {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border: 1px solid rgba(111,66,193,0.2);
+}
+.post-meta .post-tag {
+  background: linear-gradient(45deg, var(--joker-purple), var(--joker-green));
+  color: #fff;
+  border-radius: 15px;
+  padding: 2px 8px;
+  margin: 0 3px;
+  font-size: 0.8em;
 }
