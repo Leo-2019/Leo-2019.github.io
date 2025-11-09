@@ -1222,7 +1222,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #fff5ed;
+    background: #ffff4f;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2778,7 +2778,7 @@ header.header {
   --mask-silver: #c0c0c0;
 }
 body {
-  background: linear-gradient(135deg, #1a224b 80%, #3c1d4c 20%);
+  background: linear-gradient(135deg, #141f57 40%, #3c1d4c 20%);
   background-attachment: fixed;
 }
 .main-inner {
