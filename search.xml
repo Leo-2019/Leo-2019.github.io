@@ -26,4 +26,24 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>文章标题</title>
+    <url>/2025/11/10/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="文章标题"><a href="#文章标题" class="headerlink" title="文章标题"></a>文章标题</h1><blockquote>
+<p>“一句富有哲理的小丑名言” - 引言内容</p>
+</blockquote>
+<p>文章开头内容…</p>
+<span id="more"></span>
+
+<h2 id="正文内容"><a href="#正文内容" class="headerlink" title="正文内容"></a>正文内容</h2><p>详细的文章内容…</p>
+]]></content>
+      <categories>
+        <category>混沌理论</category>
+      </categories>
+      <tags>
+        <tag>技术哲学</tag>
+        <tag>编码思考</tag>
+        <tag>V&#39;s Joker</tag>
+      </tags>
+  </entry>
 </search>
