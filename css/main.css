@@ -1222,7 +1222,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #16136e;
+    background: #ffff39;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2778,7 +2778,7 @@ header.header {
   --mask-silver: #c0c0c0;
 }
 body {
-  background: linear-gradient(135deg, #667eea 60%, #764ba2 40%);
+  background: linear-gradient(135deg, #192143 10%, #2e1839 10%);
   background-attachment: fixed;
 }
 .main-inner {
@@ -2788,7 +2788,7 @@ body {
   box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 .post-title {
-  color: var(--joker-purple);
+  color: var(--chaos-dark);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 .post-title:hover {
