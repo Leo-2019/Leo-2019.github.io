@@ -1222,7 +1222,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #fff275;
+    background: #ff08d0;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2778,10 +2778,10 @@ header.header {
   --mask-silver: #c0c0c0;
 }
 body {
-/* 低饱和深靛蓝，兼顾主题质感与阅读舒适度 */
-  background-color: #16264b;
+/* 低饱和蓝紫渐变，7:3比例自然过渡，高透明度保证阅读舒适 */
+  background: linear-gradient(130deg, rgba(22,38,75,0.98) 70%, rgba(45,26,58,0.96) 30%);
   background-attachment: fixed;
-/* 纯单色无渐变/纹理，极致简约，完全聚焦内容 */
+/* 无额外纹理，纯粹干净，避免干扰内容阅读 */
 }
 .main-inner {
   background: rgba(255,255,255,0.95);
