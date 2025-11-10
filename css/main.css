@@ -1222,7 +1222,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #9fffff;
+    background: #a737ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2778,11 +2778,10 @@ header.header {
   --mask-silver: #c0c0c0;
 }
 body {
-/* 深紫→墨绿渐变，贴合小丑复古气质 */
-  background: linear-gradient(145deg, #1a1238 55%, #12291a 45%);
+  background: linear-gradient(120deg, rgba(35,55,110,0.92) 60%, rgba(70,39,90,0.88) 40%);
   background-attachment: fixed;
-/* 细线条纹理，模拟小丑服装纹路 */
-  background-image: linear-gradient(145deg, #1a1238 55%, #12291a 45%), repeating-linear-gradient(45deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 2px, transparent 2px, transparent 10px);
+/* 淡色光斑纹理，增加梦幻感 */
+  background-image: linear-gradient(120deg, rgba(35,55,110,0.92) 60%, rgba(70,39,90,0.88) 40%), radial-gradient(circle at center, rgba(255,255,255,0.03) 0%, transparent 80%);
 }
 /* 渐变流动动画 */
 .main-inner {
