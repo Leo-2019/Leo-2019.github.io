@@ -19,6 +19,19 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.26.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":true,"preload":false,"placeholder":"搜索混沌中的真相..."}}</script><script src="/js/config.js" defer></script>
 
+(function() {
+  // 判断文章是否设置了密码
+  if ('') {
+    // 弹出密码输入框，trim() 去除首尾空格避免输入错误
+    const inputPassword = prompt('请输入文章密码：').trim();
+    // 对比输入的密码与文章设置的密码（注意模板变量的正确使用）
+    if (inputPassword !== '') {
+      alert('密码错误！');
+      // 密码错误时返回上一页
+      history.back();
+    }
+  }
+})();
     <meta name="description" content="文章标题 “一句富有哲理的小丑名言” - 引言内容  文章开头内容…">
 <meta property="og:type" content="article">
 <meta property="og:title" content="文章标题">
@@ -301,9 +314,9 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%8A%80%E6%9C%AF%E5%93%B2%E5%AD%A6/" rel="tag"><i class="fa fa-tag"></i># 技术哲学</a>
-              <a href="/tags/%E7%BC%96%E7%A0%81%E6%80%9D%E8%80%83/" rel="tag"><i class="fa fa-tag"></i># 编码思考</a>
-              <a href="/tags/V-s-Joker/" rel="tag"><i class="fa fa-tag"></i># V's Joker</a>
+              <a href="/tags/%E7%BC%96%E7%A0%81%E6%80%9D%E8%80%83/" rel="tag"># 编码思考</a>
+              <a href="/tags/%E6%8A%80%E6%9C%AF%E5%93%B2%E5%AD%A6/" rel="tag"># 技术哲学</a>
+              <a href="/tags/V-s-Joker/" rel="tag"># V's Joker</a>
           </div>
 
         

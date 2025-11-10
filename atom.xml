@@ -36,9 +36,9 @@
     <category term="混沌理论" scheme="http://example.com/categories/chaos-theory/"/>
     
     
-    <category term="技术哲学" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF%E5%93%B2%E5%AD%A6/"/>
-    
     <category term="编码思考" scheme="http://example.com/tags/%E7%BC%96%E7%A0%81%E6%80%9D%E8%80%83/"/>
+    
+    <category term="技术哲学" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF%E5%93%B2%E5%AD%A6/"/>
     
     <category term="V&#39;s Joker" scheme="http://example.com/tags/V-s-Joker/"/>
     
@@ -49,7 +49,7 @@
     <link href="http://example.com/2025/11/09/My-New-Post/"/>
     <id>http://example.com/2025/11/09/My-New-Post/</id>
     <published>2025-11-08T16:22:54.088Z</published>
-    <updated>2025-11-08T16:36:08.159Z</updated>
+    <updated>2025-11-10T13:33:27.556Z</updated>
     
     <content type="html"><![CDATA[<p>摘要</p><span id="more"></span><p>正文</p>]]></content>
     
@@ -58,6 +58,10 @@
     
     
     
+    <category term="混沌理论" scheme="http://example.com/categories/chaos-theory/"/>
+    
+    
+    <category term="编码思考" scheme="http://example.com/tags/%E7%BC%96%E7%A0%81%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
