@@ -1222,7 +1222,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ffc3ff;
+    background: #cd9eff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2777,15 +2777,11 @@ header.header {
   --smile-yellow: #ffc107;
   --mask-silver: #c0c0c0;
 }
-/*  页面背景
 body {
-  background: linear-gradient(120deg, rgba(35, 55, 110, 0.92) 60%, rgba(70, 39, 90, 0.88) 40%);
+  background: linear-gradient(120deg, rgba(35,55,110,0.92) 60%, rgba(70,39,90,0.88) 40%);
   background-attachment: fixed;
-  background-image: 
-    linear-gradient(120deg, rgba(35, 55, 110, 0.92) 60%, rgba(70, 39, 90, 0.88) 40%),
-    radial-gradient(circle at center, rgba(255, 255, 255, 0.03) 0%, transparent 80%);
+  background-image: linear-gradient(120deg, rgba(35,55,110,0.92) 60%, rgba(70,39,90,0.88) 40%), radial-gradient(circle at center, rgba(255,255,255,0.03) 0%, transparent 80%);
 }
-*/
 /* 渐变流动动画 */
 .main-inner {
   background: rgba(255,255,255,0.95);
