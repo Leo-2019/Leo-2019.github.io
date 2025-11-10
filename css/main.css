@@ -1249,7 +1249,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #951aff;
+    background: #ff858e;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2832,13 +2832,12 @@ body {
   transition: color 0.3s ease;
 }
 blockquote {
-  border-left: 4px solid var(--joker-purple);
+  border-left: 4px solid var(--chaos-dark);
   background: linear-gradient(90deg, rgba(111,66,193,0.1) 0%, transparent 100%);
   position: relative;
   padding-left: 30px;
 }
 blockquote::before {
-  content: "⏩";
   position: absolute;
   left: 8px;
   top: 10px;
