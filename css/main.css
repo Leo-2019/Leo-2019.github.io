@@ -1222,7 +1222,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff61ff;
+    background: #fff275;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2778,14 +2778,11 @@ header.header {
   --mask-silver: #c0c0c0;
 }
 body {
-  background: linear-gradient(135deg, rgba(25,48,97,0.95) 70%, rgba(60,29,76,0.9) 0%);
+/* 低饱和深靛蓝，兼顾主题质感与阅读舒适度 */
+  background-color: #16264b;
   background-attachment: fixed;
-  background-image: linear-gradient(135deg, rgba(25,48,97,0.95) 70%, rgba(60,29,76,0.9) 0%), radial-gradient(circle at 20% 80%, rgba(111,66,193,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(40,167,69,0.1) 0%, transparent 50%);
-/* 缓慢流动动画，增强沉浸感 */
-  background-size: 200% 200%;
-  animation: gradientFlow 15s ease infinite;
+/* 纯单色无渐变/纹理，极致简约，完全聚焦内容 */
 }
-/* 渐变流动动画 */
 .main-inner {
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(10px);
@@ -2825,15 +2822,4 @@ blockquote::before {
   padding: 2px 8px;
   margin: 0 3px;
   font-size: 0.8em;
-}
-@keyframes gradientFlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
