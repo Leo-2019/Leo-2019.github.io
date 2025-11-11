@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2025/11/09/My-New-Post/</loc>
+    <loc>http://example.com/2025/11/11/My-New-Post/</loc>
     
     <lastmod>2025-11-10</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2025/11/08/hello-world/</loc>
+    <loc>http://example.com/2025/11/11/hello-world/</loc>
     
     <lastmod>2025-11-08</lastmod>
     
@@ -58,7 +58,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2025-11-10</lastmod>
+    <lastmod>2025-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,28 +66,28 @@
   
   <url>
     <loc>http://example.com/tags/%E7%BC%96%E7%A0%81%E6%80%9D%E8%80%83/</loc>
-    <lastmod>2025-11-10</lastmod>
+    <lastmod>2025-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/private/</loc>
-    <lastmod>2025-11-10</lastmod>
+    <lastmod>2025-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E6%8A%80%E6%9C%AF%E5%93%B2%E5%AD%A6/</loc>
-    <lastmod>2025-11-10</lastmod>
+    <lastmod>2025-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/V-s-Joker/</loc>
-    <lastmod>2025-11-10</lastmod>
+    <lastmod>2025-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -96,7 +96,7 @@
   
   <url>
     <loc>http://example.com/categories/chaos-theory/</loc>
-    <lastmod>2025-11-10</lastmod>
+    <lastmod>2025-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
