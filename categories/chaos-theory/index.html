@@ -298,10 +298,45 @@
   <p>"微笑是混乱的最佳面具。"</p>
 </footer>
 
-<div style="font-size: 0.85rem">
-<span id="timeDate">载入天数...</span>
-<span id="times">载入时分秒...</span>
-<script src="/runtime.js"></script>
+<div>
+  <span id="timeDate">载入天数...</span>
+  <span id="times">载入时分秒...</span>
+  <script>
+    var now = new Date();
+    function createtime() {
+      // 建站时间（月/日/年 时:分:秒，注意月份是从0开始的，这里"08/10/2020"实际是8月10日）
+      var grt = new Date("08/10/2020 00:00:00"); 
+      now.setTime(now.getTime() + 250); // 每次更新时间+250ms（避免定时器误差累积）
+      
+      // 计算时间差（毫秒）
+      var diff = now - grt;
+      
+      // 转换为天、时、分、秒
+      var days = diff / 1000 / 60 / 60 / 24;
+      var dnum = Math.floor(days);
+      
+      var hours = (diff / 1000 / 60 / 60) % 24; // 取余数，确保小时在0-23
+      var hnum = Math.floor(hours);
+      if (String(hnum).length === 1) hnum = "0" + hnum; // 补零（1→01）
+      
+      var minutes = (diff / 1000 / 60) % 60; // 取余数，确保分钟在0-59
+      var mnum = Math.floor(minutes);
+      if (String(mnum).length === 1) mnum = "0" + mnum; // 注意：原代码这里写的是"o"（字母），应改为"0"（数字）
+      
+      var seconds = (diff / 1000) % 60; // 取余数，确保秒在0-59
+      var snum = Math.round(seconds);
+      if (String(snum).length === 1) snum = "0" + snum; // 原代码"string"拼写错误，应为"String"
+      
+      // 更新DOM显示
+      document.getElementById("timeDate").innerHTML = "已运行 " + dnum + " 天 ";
+      document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    // 初始化执行一次，避免首次加载延迟
+    createtime();
+    // 每250ms更新一次（4次/秒，视觉上更流畅）
+    setInterval(createtime, 250);
+  </script>
+</div>
 
     </div>
   </footer>
