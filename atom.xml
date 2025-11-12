@@ -65,12 +65,24 @@
     <link href="http://example.com/2025/11/10/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/"/>
     <id>http://example.com/2025/11/10/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/</id>
     <published>2025-11-09T16:00:16.000Z</published>
-    <updated>2025-11-12T13:26:44.459Z</updated>
+    <updated>2025-11-12T14:05:47.772Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="文章标题"><a href="#文章标题" class="headerlink" title="文章标题"></a>文章标题</h1><blockquote><p>“一句富有哲理的小丑名言” - 引言内容</p></blockquote><p>文章开头内容…</p><span id="more"></span><h2 id="正文内容"><a href="#正文内容" class="headerlink" title="正文内容"></a>正文内容</h2><p>详细的文章内容…</p>]]></content>
+    <content type="html"><![CDATA[<p align="center"><a href="https://github.com/Leo-2019" target="_blank">   <img src="https://github.com/Leo-2019/Picture/blob/main/pictures/logo/square_mid.jpg?raw=true" width=""/></a></p><p align="center"><p>  <a href="https://github.com/Leo-2019"><img src="https://img.shields.io/badge/Author-Leo-blue.svg"></a><a href="https://www.ericsson.com"><img src="https://img.shields.io/badge/Blog-TB-brightgreen.svg"></a><a href="https://internal.ericsson.com/org/31580708?unit=31580708"><img src="https://img.shields.io/badge/Location-Beijing-red.svg"></a></p></p># 文章标题<blockquote><p>“一句富有哲理的小丑名言” - 引言内容</p></blockquote><p>文章开头内容…</p><span id="more"></span><h2 id="正文内容"><a href="#正文内容" class="headerlink" title="正文内容"></a>正文内容</h2><p>详细的文章内容…</p>]]></content>
     
     
-    <summary type="html">&lt;h1 id=&quot;文章标题&quot;&gt;&lt;a href=&quot;#文章标题&quot; class=&quot;headerlink&quot; title=&quot;文章标题&quot;&gt;&lt;/a&gt;文章标题&lt;/h1&gt;&lt;blockquote&gt;
+    <summary type="html">&lt;p align=&quot;center&quot;&gt;
+&lt;a href=&quot;https://github.com/Leo-2019&quot; target=&quot;_blank&quot;&gt;
+
+   &lt;img src=&quot;https://github.com/Leo-2019/Picture/blob/main/pictures/logo/square_mid.jpg?raw=true&quot; width=&quot;&quot;/&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+
+&lt;p&gt;  &lt;a href=&quot;https://github.com/Leo-2019&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Author-Leo-blue.svg&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.ericsson.com&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Blog-TB-brightgreen.svg&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://internal.ericsson.com/org/31580708?unit=31580708&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Location-Beijing-red.svg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+# 文章标题
+
+&lt;blockquote&gt;
 &lt;p&gt;“一句富有哲理的小丑名言” - 引言内容&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;文章开头内容…&lt;/p&gt;</summary>
