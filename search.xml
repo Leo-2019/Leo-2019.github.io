@@ -20,10 +20,10 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>成长</category>
       </categories>
       <tags>
-        <tag>个人成长</tag>
+        <tag>人情世故</tag>
       </tags>
   </entry>
   <entry>
@@ -42,10 +42,10 @@
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
-        <category>混沌理论</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>编码思考</tag>
+        <tag>滑板</tag>
         <tag>private</tag>
       </tags>
   </entry>
@@ -61,12 +61,11 @@
 <h2 id="正文内容"><a href="#正文内容" class="headerlink" title="正文内容"></a>正文内容</h2><p>详细的文章内容…</p>
 ]]></content>
       <categories>
-        <category>混沌理论</category>
+        <category>技术</category>
       </categories>
       <tags>
-        <tag>编码思考</tag>
         <tag>技术哲学</tag>
-        <tag>V&#39;s Joker</tag>
+        <tag>编码思考</tag>
       </tags>
   </entry>
 </search>
