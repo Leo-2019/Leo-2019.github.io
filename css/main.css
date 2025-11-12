@@ -1296,7 +1296,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #13548f;
+    background: #34415d;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2946,7 +2946,7 @@ p {
   margin-bottom: 10px;
 }
 :root {
-  --theme-color: #6495ed;
+  --theme-color: #000;
   --btn-default-color: #87cefa;
   --btn-default-border-color: #87cefa;
   --btn-default-hover-bg: #87cefa;
