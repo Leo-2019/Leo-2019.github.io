@@ -44,7 +44,7 @@
     <link href="http://example.com/2025/11/11/hello-world/"/>
     <id>http://example.com/2025/11/11/hello-world/</id>
     <published>2025-11-11T13:02:20.992Z</published>
-    <updated>2025-11-12T13:27:25.612Z</updated>
+    <updated>2025-11-12T14:14:03.538Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
@@ -61,38 +61,25 @@
   </entry>
   
   <entry>
-    <title>文章标题</title>
-    <link href="http://example.com/2025/11/10/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/"/>
-    <id>http://example.com/2025/11/10/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/</id>
+    <title>windows 快速启动</title>
+    <link href="http://example.com/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/"/>
+    <id>http://example.com/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</id>
     <published>2025-11-09T16:00:16.000Z</published>
-    <updated>2025-11-12T14:05:47.772Z</updated>
+    <updated>2025-11-12T14:59:55.395Z</updated>
     
-    <content type="html"><![CDATA[<p align="center"><a href="https://github.com/Leo-2019" target="_blank">   <img src="https://github.com/Leo-2019/Picture/blob/main/pictures/logo/square_mid.jpg?raw=true" width=""/></a></p><p align="center"><p>  <a href="https://github.com/Leo-2019"><img src="https://img.shields.io/badge/Author-Leo-blue.svg"></a><a href="https://www.ericsson.com"><img src="https://img.shields.io/badge/Blog-TB-brightgreen.svg"></a><a href="https://internal.ericsson.com/org/31580708?unit=31580708"><img src="https://img.shields.io/badge/Location-Beijing-red.svg"></a></p></p># 文章标题<blockquote><p>“一句富有哲理的小丑名言” - 引言内容</p></blockquote><p>文章开头内容…</p><span id="more"></span><h2 id="正文内容"><a href="#正文内容" class="headerlink" title="正文内容"></a>正文内容</h2><p>详细的文章内容…</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>使用电脑的工作场景下，你有没有在思考一个问题的时候，忽然需要查找某个文档里的信息去佐证你的想法，可能这个文档好久没有打开了，一时之间你也没法直接打开，需要用鼠标点点点找在哪个路径下，然后看着似曾相识的文档名字去判断是不是你需要的那个文档，然后找了一大圈后才打开文档，这时你又忘了当时为啥要找这个文档，要查什么信息，那个灵光一闪的idea是啥来着？咱能不能不要老是去找东西，能不能给每个咱们经常用的东西起个名字，在用的时候直接呼唤它的名字打开它呢？经过大量调研，总结，测试，我总结一个方法论，可以实现给任何应用（本质一点说是任何可执行程序）起名字并进行呼唤（调用）的实操方法。</p></blockquote><span id="more"></span><h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>通过在win+R中输入特定命令(名字)可以打开特定的应用程序、文件夹、文件、网址、系统面板。</p><p>eg:</p><center><figure><img src="image/image001.png" /><img src="image/image002.png" /></figure></center><p>👉</p><p>👉</p><p>👉</p><p>👉</p><p>👉</p>]]></content>
     
     
-    <summary type="html">&lt;p align=&quot;center&quot;&gt;
-&lt;a href=&quot;https://github.com/Leo-2019&quot; target=&quot;_blank&quot;&gt;
-
-   &lt;img src=&quot;https://github.com/Leo-2019/Picture/blob/main/pictures/logo/square_mid.jpg?raw=true&quot; width=&quot;&quot;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;p align=&quot;center&quot;&gt;
-
-&lt;p&gt;  &lt;a href=&quot;https://github.com/Leo-2019&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Author-Leo-blue.svg&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.ericsson.com&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Blog-TB-brightgreen.svg&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://internal.ericsson.com/org/31580708?unit=31580708&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Location-Beijing-red.svg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;
-# 文章标题
-
-&lt;blockquote&gt;
-&lt;p&gt;“一句富有哲理的小丑名言” - 引言内容&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;文章开头内容…&lt;/p&gt;</summary>
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;使用电脑的工作场景下，你有没有在思考一个问题的时候，忽然需要查找某个文档里的信息去佐证你的想法，可能这个文档好久没有打开了，一时之间你也没法直接打开，需要用鼠标点点点找在哪个路径下，然后看着似曾相识的文档名字去判断是不是你需要的那个文档，然后找了一大圈后才打开文档，这时你又忘了当时为啥要找这个文档，要查什么信息，那个灵光一闪的idea是啥来着？咱能不能不要老是去找东西，能不能给每个咱们经常用的东西起个名字，在用的时候直接呼唤它的名字打开它呢？经过大量调研，总结，测试，我总结一个方法论，可以实现给任何应用（本质一点说是任何可执行程序）起名字并进行呼唤（调用）的实操方法。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
     
     
     
     <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="技术哲学" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF%E5%93%B2%E5%AD%A6/"/>
+    <category term="工作习惯" scheme="http://example.com/tags/%E5%B7%A5%E4%BD%9C%E4%B9%A0%E6%83%AF/"/>
     
     <category term="编码思考" scheme="http://example.com/tags/%E7%BC%96%E7%A0%81%E6%80%9D%E8%80%83/"/>
     
