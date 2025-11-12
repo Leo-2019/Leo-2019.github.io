@@ -1,26 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Leo</title>
-    <url>/2025/11/11/My-New-Post/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
-  <script id="hbeData" type="hbeData" data-hmacdigest="05fa79c75a8375ca2dd3c05e981e3ccc103b761405c94cebe192c2f1707f855b">d57ba651e571aed89232e1c6212e32d6b77a0f8348811aec90ad97516f79bc728dc4552798d6a97b7d3b0cf3bd4c95032df1f2f94bb73b30d3230a154bd7e0fd678093318e81c71d4be05c45c3142b86</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">⛔请输入密码后查看</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <title>windows 快速启动</title>
+    <url>/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>使用电脑的工作场景下，你有没有在思考一个问题的时候，忽然需要查找某个文档里的信息去佐证你的想法，可能这个文档好久没有打开了，一时之间你也没法直接打开，需要用鼠标点点点找在哪个路径下，然后看着似曾相识的文档名字去判断是不是你需要的那个文档，然后找了一大圈后才打开文档，这时你又忘了当时为啥要找这个文档，要查什么信息，那个灵光一闪的idea是啥来着？咱能不能不要老是去找东西，能不能给每个咱们经常用的东西起个名字，在用的时候直接呼唤它的名字打开它呢？经过大量调研，总结，测试，我总结一个方法论，可以实现给任何应用（本质一点说是任何可执行程序）起名字并进行呼唤（调用）的实操方法。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>通过在win+R中输入特定命令(名字)可以打开特定的应用程序、文件夹、文件、网址、系统面板。</p>
+<p>eg:</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image001.png" alt="image001.png"></th>
+<th align="center">👉</th>
+<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image002.png" alt="image002.png"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image003.png" alt="image003.png"></td>
+<td align="center">👉</td>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image004.png" alt="image004.png"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image005.png" alt="image005.png"></td>
+<td align="center">👉</td>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image006.png" alt="image006.png"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image007.png" alt="image007.png"></td>
+<td align="center">👉</td>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image008.png" alt="image008.png"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image009.png" alt="image009.png"></td>
+<td align="center">👉</td>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image010.png" alt="image010.png"></td>
+</tr>
+</tbody></table>
+]]></content>
       <categories>
-        <category>生活</category>
+        <category>技术</category>
       </categories>
       <tags>
-        <tag>滑板</tag>
-        <tag>private</tag>
+        <tag>工作习惯</tag>
+        <tag>编码思考</tag>
       </tags>
   </entry>
   <entry>
@@ -50,58 +75,26 @@
       </tags>
   </entry>
   <entry>
-    <title>windows 快速启动</title>
-    <url>/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>使用电脑的工作场景下，你有没有在思考一个问题的时候，忽然需要查找某个文档里的信息去佐证你的想法，可能这个文档好久没有打开了，一时之间你也没法直接打开，需要用鼠标点点点找在哪个路径下，然后看着似曾相识的文档名字去判断是不是你需要的那个文档，然后找了一大圈后才打开文档，这时你又忘了当时为啥要找这个文档，要查什么信息，那个灵光一闪的idea是啥来着？咱能不能不要老是去找东西，能不能给每个咱们经常用的东西起个名字，在用的时候直接呼唤它的名字打开它呢？经过大量调研，总结，测试，我总结一个方法论，可以实现给任何应用（本质一点说是任何可执行程序）起名字并进行呼唤（调用）的实操方法。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>通过在win+R中输入特定命令(名字)可以打开特定的应用程序、文件夹、文件、网址、系统面板。<br>haahahahahhaa<br>eg:</p>
-<table>
-<thead>
-<tr>
-<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image001.png" alt="image001.png"></th>
-<th align="center">👉</th>
-<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image002.png" alt="image002.png"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image003.png" alt="image003.png"></td>
-<td align="center">👉</td>
-<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image004.png" alt="image004.png"></td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image005.png" alt="image005.png"></th>
-<th align="center">👉</th>
-<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image006.png" alt="image006.png"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image007.png" alt="image007.png"></td>
-<td align="center">👉</td>
-<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image008.png" alt="image008.png"></td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image009.png" alt="image009.png"></th>
-<th align="center">👉</th>
-<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image010.png" alt="image010.png"></th>
-</tr>
-</thead>
-</table>
-]]></content>
+    <title>Leo</title>
+    <url>/2025/11/11/My-New-Post/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
+  <script id="hbeData" type="hbeData" data-hmacdigest="05fa79c75a8375ca2dd3c05e981e3ccc103b761405c94cebe192c2f1707f855b">d57ba651e571aed89232e1c6212e32d6b77a0f8348811aec90ad97516f79bc728dc4552798d6a97b7d3b0cf3bd4c95032df1f2f94bb73b30d3230a154bd7e0fd678093318e81c71d4be05c45c3142b86</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">⛔请输入密码后查看</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
-        <category>技术</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>工作习惯</tag>
-        <tag>编码思考</tag>
+        <tag>滑板</tag>
+        <tag>private</tag>
       </tags>
   </entry>
 </search>
