@@ -122,8 +122,8 @@
 <p><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image024.png" alt="image024.png"></p>
 <p>4.另外，上述操作中已经将winr文件夹的路径添加到系统路径中了。以后需要看到底有哪些快捷方式和指令时直接win+R输入winr就能打开。</p>
 <p>5.为了在电脑中容易辨识出哪些文件夹和文件是可以通过快捷方式启动的，在文件或文件夹的命名时以&amp;或#开头。</p>
-<p><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image025.png" alt="image025.png"></p>
-<p><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image026.png" alt="image026.png"></p>
+<p><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image025.png" alt="image025.png">{:height&#x3D;”50%” width&#x3D;”50%”}</p>
+<p><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image026.png" alt="image026.png">{:height&#x3D;”50%” width&#x3D;”50%”}</p>
 <p>6.为了桌面看起来干净也可以在某个地方创建一个名为#Desktop的文件夹，平时的临时文档尽量放在这里面。并将其按上文提到的文件夹设置为快捷命令启动方式进行设置。解放桌面。</p>
 <p><strong>维护管理指令的关键是保证winr文件夹下快捷方式的名称和name.txt中的记录保持一致</strong></p>
 <h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>经过上面的配置，但凡你想快速打开的各种文件、文件夹、应用程序、网页、系统面板，你都可以通过敲键盘很快打开，十分装逼。这样便可以将桌面的图标全部清除，看起来桌面也很干净，并且也使自己的电脑只能自己使用，其他人用你的电脑不知道自定义命令会一脸懵逼，增加了电脑的安全性。🎉</p>
