@@ -2,9 +2,9 @@
 title: Hello World
 date: 2019/3/26 hh:mm:ss
 categories:
-    - 生活
+    - 成长
 tags:
-    - 个人成长
+    - 人情世故
 top: true
 ---
 

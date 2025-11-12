@@ -1,28 +1,33 @@
 ---
-title: 关于我
+title: 
 date: 2025-11-09 23:02:17
 comments: false
 ---
-# 🎭 关于 V's Joker
+<p align="center">
+<a href="https://github.com/Leo-2019" target="_blank">
+   <img src="https://github.com/Leo-2019/Picture/blob/main/pictures/logo/square_mid.jpg?raw=true" width=""/>
 
-> "面具背后，是真相的探寻者；代码之中，是混乱的创造者。"
+## 我是路小臻，一名软件开发工程师 ，喜欢宅家、滑板和编程。
 
-## 🃏 小丑的自白
+> "世界上有三种人：一种是懵懂的乐天派，一种是清醒的悲观者，还有一种是看透世界真相，却依然选择积极生活的人。而我，想做第三种"
 
-欢迎来到混沌与秩序交织的数字舞台。我是 V.Joker，一个在代码世界中寻找真相的数字小丑。
+<div style="display: flex; justify-content: center; gap: 15px;">
+<img src="https://img.shields.io/badge/%E5%B9%B3%E5%B9%B3%E6%97%A0%E5%A5%87%E7%9A%84%E4%BA%BA%E7%94%9F%E6%97%85%E4%BA%BA-6713C1" style="margin: 0 8px; border-radius: 6px; padding: 2px 8px;">
+<img src="https://img.shields.io/badge/%E6%BC%94%E6%8A%80%E6%8B%99%E5%8A%A3%E7%9A%84%E8%81%8C%E5%9C%BANPC-1707F7" style="margin: 0 8px; border-radius: 6px; padding: 2px 8px;">
+<img src="https://img.shields.io/badge/%E6%A2%A6%E6%83%B3%E8%BA%BA%E5%B9%B3%E7%9A%84%E5%80%94%E5%BC%BA%E9%9D%92%E9%93%9C-1C9E05" style="margin: 0 8px; border-radius: 6px; padding: 2px 8px;">
+</div>
 
-在这里，你会发现：
-- **混沌理论**：技术探索与代码哲学
-- **戏剧沉思**：对生活、技术、社会的深度思考
-- **蒙面真相**：揭示表象背后的本质
-- **笑面余音**：日常记录、阶段总结、生活琐事
-- **规则之外**：游戏体验、兴趣分享、数字叛逆
+| **⚒️ 语言**       | C/C++                              |
+| ----------------- | ---------------------------------- |
+| **✒️ 方向**       | 嵌入式软件                          |
+| **🔎 兴趣**       | 信号处理、雷达探测、多核处理          |
 
-## 🎪 舞台规则
+| **⛪ 家乡**       | 陕西                                |
+| ----------------- | ---------------------------------- |
+| **🎖️ 专业**       | 电子信息                            |
+| **⚓ 行业**       | 通信                                |
 
-1. **保持好奇心** - 质疑一切，包括这些规则
-2. **拥抱混沌** - 在不确定中寻找机会
-3. **微笑面对** - 即使在最黑暗的代码bug中
-4. **记住记住** - 每一次失败都是下一次成功的伏笔
-
-> "记住，记住，混沌与微笑" - V.Joker
+| **🏊 运动**       | 游泳、跑步、滑板                    |
+| ----------------- | ---------------------------------- |
+| **🏖️ 爱好**       | 呆着、哼歌                          |
+| **🎃 游戏**       | 英雄联盟手游                        |
