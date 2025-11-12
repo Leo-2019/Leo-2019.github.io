@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2025/11/11/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>成长</category>
+      </categories>
+      <tags>
+        <tag>人情世故</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Leo</title>
     <url>/2025/11/11/My-New-Post/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
@@ -31,41 +57,41 @@
 </blockquote>
 <span id="more"></span>
 
-<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>通过在win+R中输入特定命令(名字)可以打开特定的应用程序、文件夹、文件、网址、系统面板。<br>hahaha<br>eg:</p>
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>通过在win+R中输入特定命令(名字)可以打开特定的应用程序、文件夹、文件、网址、系统面板。<br>ha<br>eg:</p>
 <table>
 <thead>
 <tr>
-<th align="center"><img src="/image/image001.png" alt="图1"></th>
+<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image001.png" alt="图1"></th>
 <th align="center">👉</th>
-<th align="center"><img src="/image/image002.png" alt="图2"></th>
+<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image002.png" alt="图2"></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center"><img src="/image/image003.png" alt="图3"></td>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image003.png" alt="图3"></td>
 <td align="center">👉</td>
-<td align="center"><img src="/image/image004.png" alt="图4"></td>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image004.png" alt="图4"></td>
 </tr>
 </tbody></table>
 <table>
 <thead>
 <tr>
-<th align="center"><img src="/image/image005.png" alt="图5"></th>
+<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image005.png" alt="图5"></th>
 <th align="center">👉</th>
-<th align="center"><img src="/image/image006.png" alt="图6"></th>
+<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image006.png" alt="图6"></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center"><img src="/image/image007.png" alt="图7"></td>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image007.png" alt="图7"></td>
 <td align="center">👉</td>
-<td align="center"><img src="/image/image008.png" alt="图8"></td>
+<td align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image008.png" alt="图8"></td>
 </tr>
 </tbody></table>
 <table>
 <thead>
 <tr>
-<th align="center"><img src="/image/image009.png" alt="图9"></th>
+<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image009.png" alt="图9"></th>
 <th align="center">👉</th>
-<th align="center"><img src="/image/image010.png" alt="图10"></th>
+<th align="center"><img src="/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/image010.png" alt="图10"></th>
 </tr>
 </thead>
 </table>
@@ -76,32 +102,6 @@
       <tags>
         <tag>工作习惯</tag>
         <tag>编码思考</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2025/11/11/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>成长</category>
-      </categories>
-      <tags>
-        <tag>人情世故</tag>
       </tags>
   </entry>
 </search>
