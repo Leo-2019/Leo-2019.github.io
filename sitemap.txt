@@ -1,7 +1,7 @@
+http://example.com/about/index.html
 http://example.com/2025/11/10/windows%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/
 http://example.com/2025/11/11/hello-world/
 http://example.com/categories/index.html
-http://example.com/about/index.html
 http://example.com/tags/index.html
 http://example.com/2025/11/11/My-New-Post/
 http://example.com/
