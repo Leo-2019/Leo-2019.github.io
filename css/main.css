@@ -20,10 +20,10 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #1c1b1b;
-  --highlight-foreground: #fff;
-  --highlight-gutter-background: #323131;
-  --highlight-gutter-foreground: #e8e8e8;
+  --highlight-background: #f3f3f3;
+  --highlight-foreground: #444;
+  --highlight-gutter-background: #e1e1e1;
+  --highlight-gutter-foreground: #555;
   color-scheme: light;
 }
 html {
@@ -374,113 +374,113 @@ code.hljs {
   padding: 3px 5px
 }
 /*!
-  Theme: StackOverflow Dark
-  Description: Dark theme as used on stackoverflow.com
-  Author: stackoverflow.com
-  Maintainer: @Hirse
-  Website: https://github.com/StackExchange/Stacks
-  License: MIT
-  Updated: 2021-05-15
-
-  Updated for @stackoverflow/stacks v0.64.0
-  Code Blocks: /blob/v0.64.0/lib/css/components/_stacks-code-blocks.less
-  Colors: /blob/v0.64.0/lib/css/exports/_stacks-constants-colors.less
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
 */
-.hljs {
-  /* var(--highlight-color) */
-  color: #ffffff;
-  /* var(--highlight-bg) */
-  background: #1c1b1b
+/*
+This is left on purpose making default.css the single file that can be lifted
+as-is from the repository directly without the need for a build step
+
+Typically this "required" baseline CSS is added by `makestuff.js` during build.
+*/
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
 }
+code.hljs {
+  padding: 3px 5px
+}
+/* end baseline CSS */
+.hljs {
+  background: #F3F3F3;
+  color: #444
+}
+/* Base color: saturation 0; */
 .hljs-subst {
-  /* var(--highlight-color) */
-  color: #ffffff
+  /* default */
+  
+}
+/* purposely ignored */
+.hljs-formula,
+.hljs-attr,
+.hljs-property,
+.hljs-params {
+  
 }
 .hljs-comment {
-  /* var(--highlight-comment) */
-  color: #999999
+  color: #697070
+}
+.hljs-tag,
+.hljs-punctuation {
+  color: #444a
+}
+.hljs-tag .hljs-name,
+.hljs-tag .hljs-attr {
+  color: #444
 }
 .hljs-keyword,
+.hljs-attribute,
 .hljs-selector-tag,
 .hljs-meta .hljs-keyword,
 .hljs-doctag,
-.hljs-section {
-  /* var(--highlight-keyword) */
-  color: #88aece
+.hljs-name {
+  font-weight: bold
 }
-.hljs-attr {
-  /* var(--highlight-attribute); */
-  color: #88aece
-}
-.hljs-attribute {
-  /* var(--highlight-symbol) */
-  color: #c59bc1
-}
-.hljs-name,
+/* User color: hue: 0 */
 .hljs-type,
+.hljs-string,
 .hljs-number,
 .hljs-selector-id,
+.hljs-selector-class,
 .hljs-quote,
-.hljs-template-tag {
-  /* var(--highlight-namespace) */
-  color: #f08d49
+.hljs-template-tag,
+.hljs-deletion {
+  color: #880000
 }
-.hljs-selector-class {
-  /* var(--highlight-keyword) */
-  color: #88aece
+.hljs-title,
+.hljs-section {
+  color: #880000;
+  font-weight: bold
 }
-.hljs-string,
 .hljs-regexp,
 .hljs-symbol,
 .hljs-variable,
 .hljs-template-variable,
 .hljs-link,
-.hljs-selector-attr {
-  /* var(--highlight-variable) */
-  color: #b5bd68
-}
-.hljs-meta,
+.hljs-selector-attr,
+.hljs-operator,
 .hljs-selector-pseudo {
-  /* var(--highlight-keyword) */
-  color: #88aece
+  color: #ab5656
+}
+/* Language color: hue: 90; */
+.hljs-literal {
+  color: #695
 }
 .hljs-built_in,
-.hljs-title,
-.hljs-literal {
-  /* var(--highlight-literal) */
-  color: #f08d49
-}
 .hljs-bullet,
-.hljs-code {
-  /* var(--highlight-punctuation) */
-  color: #cccccc
+.hljs-code,
+.hljs-addition {
+  color: #397300
+}
+/* Meta color: hue: 200 */
+.hljs-meta {
+  color: #1f7199
 }
 .hljs-meta .hljs-string {
-  /* var(--highlight-variable) */
-  color: #b5bd68
+  color: #38a
 }
-.hljs-deletion {
-  /* var(--highlight-deletion) */
-  color: #de7176
-}
-.hljs-addition {
-  /* var(--highlight-addition) */
-  color: #76c490
-}
+/* Misc effects */
 .hljs-emphasis {
   font-style: italic
 }
 .hljs-strong {
   font-weight: bold
-}
-.hljs-formula,
-.hljs-operator,
-.hljs-params,
-.hljs-property,
-.hljs-punctuation,
-.hljs-tag {
-  /* purposely ignored */
-  
 }
 .highlight:hover .copy-btn,
 .code-container:hover .copy-btn {
@@ -505,29 +505,11 @@ code.hljs {
   padding: 2px 6px;
   position: absolute;
   transition: opacity 0.2s ease-in-out;
-  color: var(--highlight-foreground);
-  font-size: 14px;
+  background: #fff;
+  border: 0;
+  font-size: 0.8125em;
   right: 0;
-  top: 2px;
-}
-figure.highlight {
-  border-radius: 5px;
-  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.4);
-  padding-top: 30px;
-}
-figure.highlight .table-container {
-  border-radius: 0 0 5px 5px;
-}
-figure.highlight::before {
-  background: #fc625d;
-  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
-  left: 12px;
-  margin-top: -20px;
-  position: absolute;
-  border-radius: 50%;
-  content: ' ';
-  height: 12px;
-  width: 12px;
+  top: 0;
 }
 .expand-btn {
   bottom: 0;
@@ -1296,7 +1278,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff3cbd;
+    background: #dbd995;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
