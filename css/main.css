@@ -993,6 +993,7 @@ pre code {
   border-top: 3px solid transparent;
   flex-grow: 1;
   list-style-type: none;
+  transition: all 0.2s ease-out;
 }
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs li.tab,
@@ -1016,7 +1017,6 @@ pre code {
   line-height: 1.8;
   padding: 0.25em 0.75em;
   text-align: center;
-  transition: all 0.2s ease-out;
 }
 .post-body .tabs ul.nav-tabs li.tab a i[class^='fa'],
 .tabs-comment ul.nav-tabs li.tab a i[class^='fa'] {
@@ -1342,7 +1342,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #b52d81;
+    background: #a85341;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
