@@ -1,62 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Markdown 语法整理</title>
-    <url>/2025/11/15/%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<blockquote>
-<p>一些复杂的Mardown 语法。</p>
-</blockquote>
-<span id="more"></span>
-
-<h3 id="居中引用"><a href="#居中引用" class="headerlink" title="居中引用"></a>居中引用</h3><p>效果：</p>
-<blockquote class="blockquote-center">
-<p>引用文字 </p>
-
-</blockquote>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;blockquote class=&quot;blockquote-center&quot;&gt;</span><br><span class="line">&lt;p&gt;引用文字 &lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="彩色-Tags"><a href="#彩色-Tags" class="headerlink" title="彩色 Tags"></a>彩色 Tags</h2><p>效果：</p>
-<mark class="label default"> default</mark> 
-<mark class="label primary"> primary</mark> 
-<mark class="label success"> success</mark> 
-<mark class="label info"> info</mark> 
-<mark class="label warning"> warning</mark> 
-<mark class="label danger"> danger</mark> 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mark class=&quot;label [class]&quot;&gt; 标签内容&lt;/mark&gt;</span><br><span class="line"></span><br><span class="line">class：</span><br><span class="line"> - default: 浅灰色,可留空</span><br><span class="line"> - primary: 浅紫色</span><br><span class="line"> - success: 浅绿色</span><br><span class="line"> - info: 浅蓝色</span><br><span class="line"> - warning: 浅黄色</span><br><span class="line"> - danger: 浅红色</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h3 id="彩色-Note"><a href="#彩色-Note" class="headerlink" title="彩色 Note"></a>彩色 Note</h3><p>效果：</p>
-<div class="note success"><p>内容</p>
-</div>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;details class=&quot;note &quot;&gt;&lt;summary&gt;&lt;p&gt;[class]&lt;/p&gt;</span><br><span class="line">&lt;/summary&gt;</span><br><span class="line">&lt;p&gt;内容&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/details&gt;</span><br><span class="line"></span><br><span class="line">class: </span><br><span class="line"> - default: 灰色</span><br><span class="line"> - primary: 紫色</span><br><span class="line"> - success: 绿色</span><br><span class="line"> - info: 蓝色</span><br><span class="line"> - warning: 黄色</span><br><span class="line"> - danger: 红色</span><br></pre></td></tr></table></figure>
-
-<h2 id="切换Tabs"><a href="#切换Tabs" class="headerlink" title="切换Tabs"></a>切换Tabs</h2><p>效果：</p>
-<div class="tabs" id="[class]"><ul class="nav-tabs"><li class="tab active"><a href="#[class]-1">1号Tab</a></li><li class="tab"><a href="#[class]-2">2号Tab</a></li><li class="tab"><a href="#[class]-3">3号Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="[class]-1"><p>这里是1号Tab内容</p></div><div class="tab-pane" id="[class]-2"><p>这里是2号Tab内容</p></div><div class="tab-pane" id="[class]-3"><p>这里是3号Tab内容</p></div></div></div>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;div class=&quot;tabs&quot; id=&quot;[class]&quot;&gt;&lt;ul class=&quot;nav-tabs&quot;&gt;&lt;li class=&quot;tab active&quot;&gt;&lt;a href=&quot;#[class]-1&quot;&gt;1号Tab&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#[class]-2&quot;&gt;2号Tab&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#[class]-3&quot;&gt;3号Tab&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;tab-content&quot;&gt;&lt;div class=&quot;tab-pane active&quot; id=&quot;[class]-1&quot;&gt;&lt;p&gt;这里是1号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;[class]-2&quot;&gt;&lt;p&gt;这里是2号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;[class]-3&quot;&gt;&lt;p&gt;这里是3号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="按钮-Btn"><a href="#按钮-Btn" class="headerlink" title="按钮 Btn"></a>按钮 Btn</h2><a class="btn" href="https://example.com "><i class="fa fa-external-link fa-lg"></i>访问示例网站</a>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a class=&quot;btn&quot; href=&quot;[地址] &quot;&gt;&lt;i class=&quot;fa fa-[图标 规格]&quot;&gt;&lt;/i&gt;[内容]&lt;/a&gt;</span><br><span class="line">[地址]：当使用外链绝对引用时，无按钮，样式类似Markdown链接跳转</span><br><span class="line">[图标 规格]: 使用无`fa-`开头的FontAwesome图标，可以用以下规格定义图标大小</span><br><span class="line">fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows快速启动</title>
     <url>/2025/11/10/Window%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</url>
     <content><![CDATA[<div align="center">
@@ -171,6 +115,62 @@
       </categories>
       <tags>
         <tag>人情世故</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown 语法整理</title>
+    <url>/2025/11/15/%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<blockquote>
+<p>一些复杂的Mardown 语法。</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="居中引用"><a href="#居中引用" class="headerlink" title="居中引用"></a>居中引用</h3><p>效果：</p>
+<blockquote class="blockquote-center">
+<p>引用文字 </p>
+
+</blockquote>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;blockquote class=&quot;blockquote-center&quot;&gt;</span><br><span class="line">&lt;p&gt;引用文字 &lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="彩色-Tags"><a href="#彩色-Tags" class="headerlink" title="彩色 Tags"></a>彩色 Tags</h2><p>效果：</p>
+<mark class="label default"> default</mark> 
+<mark class="label primary"> primary</mark> 
+<mark class="label success"> success</mark> 
+<mark class="label info"> info</mark> 
+<mark class="label warning"> warning</mark> 
+<mark class="label danger"> danger</mark> 
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mark class=&quot;label [class]&quot;&gt; 标签内容&lt;/mark&gt;</span><br><span class="line"></span><br><span class="line">class：</span><br><span class="line"> - default: 浅灰色,可留空</span><br><span class="line"> - primary: 浅紫色</span><br><span class="line"> - success: 浅绿色</span><br><span class="line"> - info: 浅蓝色</span><br><span class="line"> - warning: 浅黄色</span><br><span class="line"> - danger: 浅红色</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="彩色-Note"><a href="#彩色-Note" class="headerlink" title="彩色 Note"></a>彩色 Note</h3><p>效果：</p>
+<div class="note success"><p>内容</p>
+</div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;details class=&quot;note &quot;&gt;&lt;summary&gt;&lt;p&gt;[class]&lt;/p&gt;</span><br><span class="line">&lt;/summary&gt;</span><br><span class="line">&lt;p&gt;内容&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/details&gt;</span><br><span class="line"></span><br><span class="line">class: </span><br><span class="line"> - default: 灰色</span><br><span class="line"> - primary: 紫色</span><br><span class="line"> - success: 绿色</span><br><span class="line"> - info: 蓝色</span><br><span class="line"> - warning: 黄色</span><br><span class="line"> - danger: 红色</span><br></pre></td></tr></table></figure>
+
+<h2 id="切换Tabs"><a href="#切换Tabs" class="headerlink" title="切换Tabs"></a>切换Tabs</h2><p>效果：</p>
+<div class="tabs" id="[class]"><ul class="nav-tabs"><li class="tab active"><a href="#[class]-1">1号Tab</a></li><li class="tab"><a href="#[class]-2">2号Tab</a></li><li class="tab"><a href="#[class]-3">3号Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="[class]-1"><p>这里是1号Tab内容</p></div><div class="tab-pane" id="[class]-2"><p>这里是2号Tab内容</p></div><div class="tab-pane" id="[class]-3"><p>这里是3号Tab内容</p></div></div></div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;div class=&quot;tabs&quot; id=&quot;[class]&quot;&gt;&lt;ul class=&quot;nav-tabs&quot;&gt;&lt;li class=&quot;tab active&quot;&gt;&lt;a href=&quot;#[class]-1&quot;&gt;1号Tab&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#[class]-2&quot;&gt;2号Tab&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#[class]-3&quot;&gt;3号Tab&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;tab-content&quot;&gt;&lt;div class=&quot;tab-pane active&quot; id=&quot;[class]-1&quot;&gt;&lt;p&gt;这里是1号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;[class]-2&quot;&gt;&lt;p&gt;这里是2号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;[class]-3&quot;&gt;&lt;p&gt;这里是3号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="按钮-Btn"><a href="#按钮-Btn" class="headerlink" title="按钮 Btn"></a>按钮 Btn</h2><a class="btn" href="https://example.com "><i class="fa fa-external-link fa-lg"></i>访问示例网站</a>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a class=&quot;btn&quot; href=&quot;[地址] &quot;&gt;&lt;i class=&quot;fa fa-[图标 规格]&quot;&gt;&lt;/i&gt;[内容]&lt;/a&gt;</span><br><span class="line">[地址]：当使用外链绝对引用时，无按钮，样式类似Markdown链接跳转</span><br><span class="line">[图标 规格]: 使用无`fa-`开头的FontAwesome图标，可以用以下规格定义图标大小</span><br><span class="line">fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
