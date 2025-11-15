@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-11-15T10:24:51.974Z</updated>
+  <updated>2025-11-15T10:34:29.964Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,8 +21,15 @@
     <link href="http://example.com/2025/11/15/%E8%AF%AD%E6%B3%95/"/>
     <id>http://example.com/2025/11/15/%E8%AF%AD%E6%B3%95/</id>
     <published>2025-11-15T10:24:51.000Z</published>
-    <updated>2025-11-15T10:24:51.974Z</updated>
+    <updated>2025-11-15T10:34:29.964Z</updated>
     
+    <content type="html"><![CDATA[<figure class="highlight plaintext"><figcaption><span>[title] [lang:language] [url] [link text] [additional options]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;details class=&quot;note &quot;&gt;&lt;summary&gt;&lt;p&gt;[info]&lt;/p&gt;</span><br><span class="line">&lt;/summary&gt;</span><br><span class="line">&lt;p&gt;内容&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/details&gt;</span><br><span class="line"></span><br><span class="line">class: </span><br><span class="line"> - default: 灰色</span><br><span class="line"> - primary: 紫色</span><br><span class="line"> - success: 绿色</span><br><span class="line"> - info: 蓝色</span><br><span class="line"> - warning: 黄色</span><br><span class="line"> - danger: 红色</span><br></pre></td></tr></table></figure><details class="note "><summary><p>[info]</p></summary><p>内容</p></details><p>class: </p><ul><li>default: 灰色</li><li>primary: 紫色</li><li>success: 绿色</li><li>info: 蓝色</li><li>warning: 黄色</li><li>danger: 红色</li></ul><div class="tabs" id="[class]"><ul class="nav-tabs"><li class="tab active"><a href="#[class]-1">1号Tab</a></li><li class="tab"><a href="#[class]-2">2号Tab</a></li><li class="tab"><a href="#[class]-3">3号Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="[class]-1"><p>这里是1号Tab内容</p></div><div class="tab-pane" id="[class]-2"><p>这里是2号Tab内容</p></div><div class="tab-pane" id="[class]-3"><p>这里是3号Tab内容</p></div></div></div><a class="btn" href="[地址] "><i class="fa fa-[图标 规格]"></i>[内容]</a><p>[地址]：当使用外链绝对引用时，无按钮，样式类似Markdown链接跳转<br>[图标 规格]: 使用无<code>fa-</code>开头的FontAwesome图标，可以用以下规格定义图标大小<br>fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;figcaption&gt;&lt;span&gt;[title] [lang:language] [url] [link text] [additional options]&lt;/span&gt;&lt;/figcaption&gt;&lt;tab</summary>
+      
     
     
     

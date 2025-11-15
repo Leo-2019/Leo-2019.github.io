@@ -114,11 +114,6 @@
       </tags>
   </entry>
   <entry>
-    <title>语法</title>
-    <url>/2025/11/15/%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>常用信息</title>
     <url>/2025/11/11/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
@@ -139,5 +134,33 @@
       <tags>
         <tag>private</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>语法</title>
+    <url>/2025/11/15/%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><figcaption><span>[title] [lang:language] [url] [link text] [additional options]</span></figcaption><table><tr><td class="code"><pre><span class="line">&lt;details class=&quot;note &quot;&gt;&lt;summary&gt;&lt;p&gt;[info]&lt;/p&gt;</span><br><span class="line">&lt;/summary&gt;</span><br><span class="line">&lt;p&gt;内容&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/details&gt;</span><br><span class="line"></span><br><span class="line">class: </span><br><span class="line"> - default: 灰色</span><br><span class="line"> - primary: 紫色</span><br><span class="line"> - success: 绿色</span><br><span class="line"> - info: 蓝色</span><br><span class="line"> - warning: 黄色</span><br><span class="line"> - danger: 红色</span><br></pre></td></tr></table></figure>
+
+<details class="note "><summary><p>[info]</p>
+</summary>
+<p>内容</p>
+
+</details>
+
+<p>class: </p>
+<ul>
+<li>default: 灰色</li>
+<li>primary: 紫色</li>
+<li>success: 绿色</li>
+<li>info: 蓝色</li>
+<li>warning: 黄色</li>
+<li>danger: 红色</li>
+</ul>
+<div class="tabs" id="[class]"><ul class="nav-tabs"><li class="tab active"><a href="#[class]-1">1号Tab</a></li><li class="tab"><a href="#[class]-2">2号Tab</a></li><li class="tab"><a href="#[class]-3">3号Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="[class]-1"><p>这里是1号Tab内容</p></div><div class="tab-pane" id="[class]-2"><p>这里是2号Tab内容</p></div><div class="tab-pane" id="[class]-3"><p>这里是3号Tab内容</p></div></div></div>
+
+
+<a class="btn" href="[地址] "><i class="fa fa-[图标 规格]"></i>[内容]</a>
+
+<p>[地址]：当使用外链绝对引用时，无按钮，样式类似Markdown链接跳转<br>[图标 规格]: 使用无<code>fa-</code>开头的FontAwesome图标，可以用以下规格定义图标大小<br>fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x</p>
+]]></content>
   </entry>
 </search>
