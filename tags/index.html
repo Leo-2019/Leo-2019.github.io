@@ -241,6 +241,48 @@
   <div class="tag-cloud-tags">
     <a href="/tags/private/" style="font-size: 12px;" class="tag-cloud-0">private</a> <a href="/tags/%E4%BA%BA%E6%83%85%E4%B8%96%E6%95%85/" style="font-size: 12px;" class="tag-cloud-0">人情世故</a> <a href="/tags/%E5%B7%A5%E4%BD%9C%E4%B9%A0%E6%83%AF/" style="font-size: 12px;" class="tag-cloud-0">工作习惯</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 12px;" class="tag-cloud-0">笔记</a>
   </div>
+  <script type="text/javascript">
+// 注意：getElementsByClassName 首字母大写（ClassName）
+var alltags = document.getElementsByClassName('tag-cloud-tags');
+// 修正错误符号 · 为 . 
+var tags = alltags[0].getElementsByTagName('a');
+for (var i = tags.length - 1; i >= 0; i--) {
+  var r = Math.floor(Math.random() * 75 + 130);
+  var g = Math.floor(Math.random() * 75 + 100);
+  var b = Math.floor(Math.random() * 75 + 80);
+  tags[i].style.background = "rgb(" + r + "," + g + "," + b + ")";
+} // 补充缺失的 for 循环闭合括号
+</script>
+
+<style>
+.tag-cloud-tags {
+  text-align: center;
+  counter-reset: tags;
+} /* 补充缺失的闭合大括号 */
+
+/* 修正笔误：af → a */
+.tag-cloud-tags a {
+  border-radius: 6px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 8px 5px 0px 0px;
+  /* 建议补充默认样式，如文本颜色、无下划线等 */
+  color: white;
+  text-decoration: none;
+  display: inline-block; /* 让 margin/padding 正常生效 */
+}
+
+.tag-cloud-tags a:before {
+  content: "?"; /* 这里可能是想显示标签符号，比如 "#"，可自行修改 */
+  margin-right: 3px; /* 增加与文字的间距 */
+}
+
+.tag-cloud-tags a:hover {
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,.4);
+  transform: scale(1.1);
+  transition-duration: 0.15s;
+} /* 补充缺失的闭合大括号 */
+</style>
 </div>
 
       </div>
