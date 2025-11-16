@@ -1,12 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Windows快速启动</title>
+    <title>Markdown 语法整理</title>
+    <url>/2025/11/15/%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+<p>一些复杂的Mardown 语法。</p>
+
+</blockquote>
+
+<span id="more"></span>
+
+<h3 id="⏩图片插入"><a href="#⏩图片插入" class="headerlink" title="⏩图片插入"></a>⏩图片插入</h3><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251115205846524.jpg" width="50%" alt="按宽度比例缩放">
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;img class=&quot;img-center&quot; align=&quot;center&quot; src=&quot;https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251115205846524.jpg&quot; width=&quot;50%&quot; alt=&quot;按宽度比例缩放&quot;&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="⏩fontAwesom-图标基本使用"><a href="#⏩fontAwesom-图标基本使用" class="headerlink" title="⏩fontAwesom 图标基本使用"></a>⏩fontAwesom 图标基本使用</h3><div class="quote-block">
+  <i class="far fa-envelope"></i> 盖茨比相信绿灯。。。。。
+</div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;quote-block&quot;&gt;</span><br><span class="line">  &lt;i class=&quot;far fa-envelope&quot;&gt;&lt;/i&gt; 盖茨比相信绿灯。。。。。</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="⏩居中引用"><a href="#⏩居中引用" class="headerlink" title="⏩居中引用"></a>⏩居中引用</h3><p>方法1：</p>
+<blockquote class="blockquote-center">
+<p>引用文字 </p>
+
+</blockquote>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;blockquote class=&quot;blockquote-center&quot;&gt;</span><br><span class="line">&lt;p&gt;引用文字 &lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这个是NEXT 主题自带的样式，但文字只能中心对齐。要改成两边对齐或左对齐比较麻烦。</p>
+</blockquote>
+<p>方法2：</p>
+<div class="tabs" id="复杂写法"><ul class="nav-tabs"><li class="tab active"><a href="#复杂写法-1">1号Tab</a></li><li class="tab"><a href="#复杂写法-2">2号Tab</a></li><li class="tab"><a href="#复杂写法-3">3号Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="复杂写法-1"><div class="quote-block">
+  <i class="fas fa-quote-left fa-pull-left fa-2x"></i>
+    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。
+  <i class="fas fa-quote-right fa-pull-right fa-2x"></i>
+</div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;div class=&quot;quote-block&quot;&gt;</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-left fa-pull-left fa-2x&quot;&gt;&lt;/i&gt;</span><br><span class="line">    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-right fa-pull-right fa-2x&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="复杂写法-2"><div class="quote-block">
+  <i class="fas fa-quote-left fa-2x"></i>
+    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。
+  <i class="fas fa-quote-right fa-2x"></i>
+</div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;quote-block&quot;&gt;</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-left fa-2x&quot;&gt;&lt;/i&gt;</span><br><span class="line">    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-right fa-2x&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="复杂写法-3"><div class="quote-block">
+  <!-- 左引号：设置为深蓝色 -->
+  <i class="fas fa-quote-left fa-2x" style="color: #6f42c1;"></i>
+    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。
+  <!-- 右引号：设置为灰色 -->
+  <i class="fas fa-quote-right fa-2x" style="color: #6f42c1;"></i>
+</div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;quote-block&quot;&gt;</span><br><span class="line">  &lt;!-- 左引号：设置为深蓝色 --&gt;</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-left fa-2x&quot; style=&quot;color: #6f42c1;&quot;&gt;&lt;/i&gt;</span><br><span class="line">    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。</span><br><span class="line">  &lt;!-- 右引号：设置为灰色 --&gt;</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-right fa-2x&quot; style=&quot;color: #6f42c1;&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></div></div></div>
+
+
+
+
+
+<h2 id="⏩彩色-Tags"><a href="#⏩彩色-Tags" class="headerlink" title="⏩彩色 Tags"></a>⏩彩色 Tags</h2><p>效果：</p>
+<mark class="label default"> default</mark> 
+<mark class="label primary"> primary</mark> 
+<mark class="label success"> success</mark> 
+<mark class="label info"> info</mark> 
+<mark class="label warning"> warning</mark> 
+<mark class="label danger"> danger</mark> 
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mark class=&quot;label [class]&quot;&gt; 标签内容&lt;/mark&gt;</span><br><span class="line"></span><br><span class="line">class：</span><br><span class="line"> - default: 浅灰色,可留空</span><br><span class="line"> - primary: 浅紫色</span><br><span class="line"> - success: 浅绿色</span><br><span class="line"> - info: 浅蓝色</span><br><span class="line"> - warning: 浅黄色</span><br><span class="line"> - danger: 浅红色</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="⏩彩色-Note"><a href="#⏩彩色-Note" class="headerlink" title="⏩彩色 Note"></a>⏩彩色 Note</h2><p>效果：</p>
+<div class="note success"><p>内容</p>
+</div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;details class=&quot;note &quot;&gt;&lt;summary&gt;&lt;p&gt;[class]&lt;/p&gt;</span><br><span class="line">&lt;/summary&gt;</span><br><span class="line">&lt;p&gt;内容&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/details&gt;</span><br><span class="line"></span><br><span class="line">class: </span><br><span class="line"> - default: 灰色</span><br><span class="line"> - primary: 紫色</span><br><span class="line"> - success: 绿色</span><br><span class="line"> - info: 蓝色</span><br><span class="line"> - warning: 黄色</span><br><span class="line"> - danger: 红色</span><br></pre></td></tr></table></figure>
+
+<h2 id="⏩切换Tabs"><a href="#⏩切换Tabs" class="headerlink" title="⏩切换Tabs"></a>⏩切换Tabs</h2><p>效果：</p>
+<div class="tabs" id="[class]"><ul class="nav-tabs"><li class="tab active"><a href="#[class]-1">1号Tab</a></li><li class="tab"><a href="#[class]-2">2号Tab</a></li><li class="tab"><a href="#[class]-3">3号Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="[class]-1"><p>这里是1号Tab内容</p></div><div class="tab-pane" id="[class]-2"><p>这里是2号Tab内容</p></div><div class="tab-pane" id="[class]-3"><p>这里是3号Tab内容</p></div></div></div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;div class=&quot;tabs&quot; id=&quot;[class]&quot;&gt;&lt;ul class=&quot;nav-tabs&quot;&gt;&lt;li class=&quot;tab active&quot;&gt;&lt;a href=&quot;#[class]-1&quot;&gt;1号Tab&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#[class]-2&quot;&gt;2号Tab&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#[class]-3&quot;&gt;3号Tab&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;tab-content&quot;&gt;&lt;div class=&quot;tab-pane active&quot; id=&quot;[class]-1&quot;&gt;&lt;p&gt;这里是1号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;[class]-2&quot;&gt;&lt;p&gt;这里是2号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;[class]-3&quot;&gt;&lt;p&gt;这里是3号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="⏩按钮-Btn"><a href="#⏩按钮-Btn" class="headerlink" title="⏩按钮 Btn"></a>⏩按钮 Btn</h2><a class="btn" href="https://example.com "><i class="fa fa-external-link fa-lg"></i>访问示例网站</a>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a class=&quot;btn&quot; href=&quot;[地址] &quot;&gt;&lt;i class=&quot;fa fa-[图标 规格]&quot;&gt;&lt;/i&gt;[内容]&lt;/a&gt;</span><br><span class="line">[地址]：当使用外链绝对引用时，无按钮，样式类似Markdown链接跳转</span><br><span class="line">[图标 规格]: 使用无`fa-`开头的FontAwesome图标，可以用以下规格定义图标大小</span><br><span class="line">fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="⏩图标列表"><a href="#⏩图标列表" class="headerlink" title="⏩图标列表"></a>⏩图标列表</h2><ul class="fa-ul">
+  <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List icons can</li>
+  <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
+  <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
+  <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
+</ul>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;ul class=&quot;fa-ul&quot;&gt;</span><br><span class="line">  &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-check-square&quot;&gt;&lt;/i&gt;&lt;/span&gt;List icons can&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-check-square&quot;&gt;&lt;/i&gt;&lt;/span&gt;be used to&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-spinner fa-pulse&quot;&gt;&lt;/i&gt;&lt;/span&gt;replace bullets&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;far fa-square&quot;&gt;&lt;/i&gt;&lt;/span&gt;in lists&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 一键召唤🎃：给应用文件 “起名”</title>
     <url>/2025/11/10/Window%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</url>
     <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251115205846524.jpg" width="70%" alt="按宽度比例缩放">
 
 <blockquote class="blockquote-center">
-<p>使用windows电脑的工作场景下，你有没有在思考一个问题的时候，忽然需要查找某个文档里的信息去佐证你的想法，可能这个文档好久没有打开了，一时之间你也没法直接打开，需要用鼠标点点点找在哪个路径下，然后看着似曾相识的文档名字去判断是不是你需要的那个文档，然后找了一大圈后才打开文档，这时你又忘了当时为啥要找这个文档，要查什么信息，那个灵光一闪的idea是啥来着？咱能不能不要老是去找东西，能不能给每个咱们经常用的东西起个名字，在用的时候直接呼唤它的名字打开它呢？经过大量调研，总结，测试，我总结一个方法论，可以实现给任何应用（本质一点说是任何可执行程序）起名字并进行呼唤（调用）的实操方法。 </p>
+<p>  用 Windows 办公时，你大概率遇到过这种糟心场景：正顺着思路深耕某个问题，突然需要调取一份旧文档佐证想法。可这份文件久未打开，早已忘了藏在哪个层层嵌套的文件夹里，只能鼠标点来点去逐个排查，对着一堆似曾相识的文件名反复确认。等费了半天劲找到并打开，当初要查的核心信息、那灵光一闪的灵感，早就没了踪影。<br>难道 “找东西” 的时间，只能白白浪费？当然不！能不能给常用的应用、文档、网页都起个好记的 “专属名字”，需要时直接 “呼唤” 名字就能一键打开？经过大量调研、测试和总结，我整理出一套实操方法论，不管是可执行程序、常用文档，还是高频网页，都能实现 “起名 + 召唤” 的高效操作，彻底告别无效查找。 </p>
 
 </blockquote>
 
@@ -118,111 +223,6 @@
       </categories>
       <tags>
         <tag>private</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown 语法整理</title>
-    <url>/2025/11/15/%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-<p>一些复杂的Mardown 语法。</p>
-
-</blockquote>
-
-<span id="more"></span>
-
-<h3 id="⏩图片插入"><a href="#⏩图片插入" class="headerlink" title="⏩图片插入"></a>⏩图片插入</h3><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251115205846524.jpg" width="50%" alt="按宽度比例缩放">
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;img class=&quot;img-center&quot; align=&quot;center&quot; src=&quot;https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251115205846524.jpg&quot; width=&quot;50%&quot; alt=&quot;按宽度比例缩放&quot;&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="⏩fontAwesom-图标基本使用"><a href="#⏩fontAwesom-图标基本使用" class="headerlink" title="⏩fontAwesom 图标基本使用"></a>⏩fontAwesom 图标基本使用</h3><div class="quote-block">
-  <i class="far fa-envelope"></i> 盖茨比相信绿灯。。。。。
-</div>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;quote-block&quot;&gt;</span><br><span class="line">  &lt;i class=&quot;far fa-envelope&quot;&gt;&lt;/i&gt; 盖茨比相信绿灯。。。。。</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="⏩居中引用"><a href="#⏩居中引用" class="headerlink" title="⏩居中引用"></a>⏩居中引用</h3><p>方法1：</p>
-<blockquote class="blockquote-center">
-<p>引用文字 </p>
-
-</blockquote>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;blockquote class=&quot;blockquote-center&quot;&gt;</span><br><span class="line">&lt;p&gt;引用文字 &lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这个是NEXT 主题自带的样式，但文字只能中心对齐。要改成两边对齐或左对齐比较麻烦。</p>
-</blockquote>
-<p>方法2：</p>
-<div class="tabs" id="复杂写法"><ul class="nav-tabs"><li class="tab active"><a href="#复杂写法-1">1号Tab</a></li><li class="tab"><a href="#复杂写法-2">2号Tab</a></li><li class="tab"><a href="#复杂写法-3">3号Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="复杂写法-1"><div class="quote-block">
-  <i class="fas fa-quote-left fa-pull-left fa-2x"></i>
-    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。
-  <i class="fas fa-quote-right fa-pull-right fa-2x"></i>
-</div>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;div class=&quot;quote-block&quot;&gt;</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-left fa-pull-left fa-2x&quot;&gt;&lt;/i&gt;</span><br><span class="line">    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-right fa-pull-right fa-2x&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="复杂写法-2"><div class="quote-block">
-  <i class="fas fa-quote-left fa-2x"></i>
-    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。
-  <i class="fas fa-quote-right fa-2x"></i>
-</div>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;quote-block&quot;&gt;</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-left fa-2x&quot;&gt;&lt;/i&gt;</span><br><span class="line">    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-right fa-2x&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="复杂写法-3"><div class="quote-block">
-  <!-- 左引号：设置为深蓝色 -->
-  <i class="fas fa-quote-left fa-2x" style="color: #6f42c1;"></i>
-    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。
-  <!-- 右引号：设置为灰色 -->
-  <i class="fas fa-quote-right fa-2x" style="color: #6f42c1;"></i>
-</div>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;quote-block&quot;&gt;</span><br><span class="line">  &lt;!-- 左引号：设置为深蓝色 --&gt;</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-left fa-2x&quot; style=&quot;color: #6f42c1;&quot;&gt;&lt;/i&gt;</span><br><span class="line">    盖茨比相信绿灯，一个年复一年在我们面前消退的极乐未来。那时它躲过了我们，但这没关系——明天我们会跑得更快，把我们的手臂伸得更远……在一个晴朗的早晨——所以我们继续前进，逆水行舟，不断地回到过去。</span><br><span class="line">  &lt;!-- 右引号：设置为灰色 --&gt;</span><br><span class="line">  &lt;i class=&quot;fas fa-quote-right fa-2x&quot; style=&quot;color: #6f42c1;&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></div></div></div>
-
-
-
-
-
-<h2 id="⏩彩色-Tags"><a href="#⏩彩色-Tags" class="headerlink" title="⏩彩色 Tags"></a>⏩彩色 Tags</h2><p>效果：</p>
-<mark class="label default"> default</mark> 
-<mark class="label primary"> primary</mark> 
-<mark class="label success"> success</mark> 
-<mark class="label info"> info</mark> 
-<mark class="label warning"> warning</mark> 
-<mark class="label danger"> danger</mark> 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mark class=&quot;label [class]&quot;&gt; 标签内容&lt;/mark&gt;</span><br><span class="line"></span><br><span class="line">class：</span><br><span class="line"> - default: 浅灰色,可留空</span><br><span class="line"> - primary: 浅紫色</span><br><span class="line"> - success: 浅绿色</span><br><span class="line"> - info: 浅蓝色</span><br><span class="line"> - warning: 浅黄色</span><br><span class="line"> - danger: 浅红色</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h2 id="⏩彩色-Note"><a href="#⏩彩色-Note" class="headerlink" title="⏩彩色 Note"></a>⏩彩色 Note</h2><p>效果：</p>
-<div class="note success"><p>内容</p>
-</div>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;details class=&quot;note &quot;&gt;&lt;summary&gt;&lt;p&gt;[class]&lt;/p&gt;</span><br><span class="line">&lt;/summary&gt;</span><br><span class="line">&lt;p&gt;内容&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/details&gt;</span><br><span class="line"></span><br><span class="line">class: </span><br><span class="line"> - default: 灰色</span><br><span class="line"> - primary: 紫色</span><br><span class="line"> - success: 绿色</span><br><span class="line"> - info: 蓝色</span><br><span class="line"> - warning: 黄色</span><br><span class="line"> - danger: 红色</span><br></pre></td></tr></table></figure>
-
-<h2 id="⏩切换Tabs"><a href="#⏩切换Tabs" class="headerlink" title="⏩切换Tabs"></a>⏩切换Tabs</h2><p>效果：</p>
-<div class="tabs" id="[class]"><ul class="nav-tabs"><li class="tab active"><a href="#[class]-1">1号Tab</a></li><li class="tab"><a href="#[class]-2">2号Tab</a></li><li class="tab"><a href="#[class]-3">3号Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="[class]-1"><p>这里是1号Tab内容</p></div><div class="tab-pane" id="[class]-2"><p>这里是2号Tab内容</p></div><div class="tab-pane" id="[class]-3"><p>这里是3号Tab内容</p></div></div></div>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;div class=&quot;tabs&quot; id=&quot;[class]&quot;&gt;&lt;ul class=&quot;nav-tabs&quot;&gt;&lt;li class=&quot;tab active&quot;&gt;&lt;a href=&quot;#[class]-1&quot;&gt;1号Tab&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#[class]-2&quot;&gt;2号Tab&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#[class]-3&quot;&gt;3号Tab&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;tab-content&quot;&gt;&lt;div class=&quot;tab-pane active&quot; id=&quot;[class]-1&quot;&gt;&lt;p&gt;这里是1号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;[class]-2&quot;&gt;&lt;p&gt;这里是2号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;[class]-3&quot;&gt;&lt;p&gt;这里是3号Tab内容&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="⏩按钮-Btn"><a href="#⏩按钮-Btn" class="headerlink" title="⏩按钮 Btn"></a>⏩按钮 Btn</h2><a class="btn" href="https://example.com "><i class="fa fa-external-link fa-lg"></i>访问示例网站</a>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a class=&quot;btn&quot; href=&quot;[地址] &quot;&gt;&lt;i class=&quot;fa fa-[图标 规格]&quot;&gt;&lt;/i&gt;[内容]&lt;/a&gt;</span><br><span class="line">[地址]：当使用外链绝对引用时，无按钮，样式类似Markdown链接跳转</span><br><span class="line">[图标 规格]: 使用无`fa-`开头的FontAwesome图标，可以用以下规格定义图标大小</span><br><span class="line">fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="⏩图标列表"><a href="#⏩图标列表" class="headerlink" title="⏩图标列表"></a>⏩图标列表</h2><ul class="fa-ul">
-  <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List icons can</li>
-  <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
-  <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
-  <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
-</ul>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;ul class=&quot;fa-ul&quot;&gt;</span><br><span class="line">  &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-check-square&quot;&gt;&lt;/i&gt;&lt;/span&gt;List icons can&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-check-square&quot;&gt;&lt;/i&gt;&lt;/span&gt;be used to&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-spinner fa-pulse&quot;&gt;&lt;/i&gt;&lt;/span&gt;replace bullets&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;far fa-square&quot;&gt;&lt;/i&gt;&lt;/span&gt;in lists&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
