@@ -1342,7 +1342,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #a420ff;
+    background: #ffff98;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3086,4 +3086,14 @@ blockquote > p {
 }
 ol > li > p {
   text-indent: 0;
+}
+.post-body {
+  user-select: none; /* 标准属性 */
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+}
+.post-body pre,
+.post-body code {
+  user-select: text !important; /* 覆盖禁止选中，允许代码块复制 */
 }
