@@ -1342,7 +1342,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #03ffb9;
+    background: #be3017;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3033,11 +3033,15 @@ body {
 }
 blockquote {
   border-left: 4px solid var(--chaos-dark);
-  background: linear-gradient(90deg, rgba(111,66,193,0.1) 0%, transparent 100%);
+  background: rgba(230,240,255,0.85); /* 淡蓝底色 + 85%不透明度 */
   position: relative;
   padding-left: 30px;
+/* 替换为指定的文本样式 */
+  text-align: left !important;
 }
 blockquote::before {
+/* 保留原伪元素配置 */
+  content: "🎭";
   position: absolute;
   left: 8px;
   top: 10px;
