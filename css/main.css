@@ -1342,7 +1342,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #69ff33;
+    background: #a2221d;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3096,82 +3096,4 @@ ol > li > p {
 .post-body pre,
 .post-body code {
   user-select: text !important; /* 覆盖禁止选中，允许代码块复制 */
-}
-.blockquote-center {
-/* 终极重置：保留原逻辑 */
-  all: initial !important;
-  display: block !important;
-  box-sizing: border-box !important;
-/* 清除顶部横线：保留原逻辑 */
-  border-top: none !important;
-  border-top-width: 0 !important;
-  box-shadow: none !important;
-/* 毛玻璃核心样式：保留原风格 */
-  background-color: rgba(0,0,0,0.85) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-/* 边框与布局：仅缩小尺寸 */
-  border: 1px solid rgba(255,255,255,0.15) !important; /* 保留原边框 */
-  border-radius: 8px !important; /* 保留原圆角 */
-  padding: 20px 25px 15px !important; /* 内边距缩小约40% */
-  margin: 15px auto !important; /* 外边距缩小约40% */
-  max-width: 90% !important; /* 宽度略放宽，适配摘要展示 */
-  position: relative !important;
-/* 文本样式：仅缩小尺寸，保留字体和对齐 */
-  font-family: "STKaiti", "KaiTi", "Microsoft YaHei", Georgia, serif !important; /* 保留原字体 */
-  font-size: 15px !important; /* 字号从19px缩至15px（缩小20%） */
-  color: #fff !important; /* 保留原文字色 */
-  line-height: 1.8 !important; /* 行高从2.2缩至1.8（紧凑30%） */
-  letter-spacing: 0.8px !important; /* 字间距从1.2px缩至0.8px */
-  text-align: left !important; /* 保留左对齐 */
-  text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important; /* 保留原阴影 */
-}
-.blockquote-center::before {
-  content: "“" !important;
-  position: absolute !important;
-  top: 5px !important; /* 上移适配小尺寸 */
-  left: 10px !important; /* 左移适配小尺寸 */
-  font-size: 30px !important; /* 引号从50px缩至30px（缩小40%） */
-  color: rgba(235,235,237,0.75) !important; /* 保留原颜色 */
-  font-family: serif !important;
-  line-height: 1 !important;
-  text-shadow: none !important;
-  z-index: 1 !important;
-  display: inline-block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-.blockquote-center::after {
-  content: "”" !important;
-  position: absolute !important;
-  bottom: -5px !important; /* 上移适配小尺寸 */
-  right: 10px !important; /* 右移适配小尺寸 */
-  font-size: 30px !important; /* 引号从50px缩至30px */
-  color: rgba(255,255,255,0.76) !important; /* 保留原颜色 */
-  font-family: serif !important;
-  line-height: 1 !important;
-  text-shadow: none !important;
-  z-index: 1 !important;
-  display: inline-block !important;
-}
-.blockquote-center p {
-  all: unset !important;
-  display: block !important;
-  margin: 6px 0 !important; /* 段落间距从10px缩至6px（缩小40%） */
-  font-family: inherit !important;
-  font-size: inherit !important; /* 继承缩小后的字号 */
-  color: inherit !important;
-  line-height: inherit !important; /* 继承缩小后的行高 */
-  text-align: left !important;
-  z-index: 2 !important;
-  position: relative !important;
-}
-.blockquote-center::before {
-  border-top: none !important;
-  content: "“ " !important; /* 大引号在此处保留 */
-}
-.blockquote-center > :first-child::before {
-  border-top: none !important;
-  content: none !important; /* 彻底清除子元素前的小引号 */
-  display: none !important; /* 双重保险，确保不显示 */
 }

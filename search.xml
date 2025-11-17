@@ -5,10 +5,13 @@
     <url>/2025/11/10/Window%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</url>
     <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251115205846524.jpg" width="70%" alt="按宽度比例缩放">
 
-<blockquote class="blockquote-center">
-<p> 用 Windows 办公时，你大概率遇到过这种糟心场景：正顺着思路深耕某个问题，突然需要调取一份旧文档佐证想法。可这份文件久未打开，早已忘了藏在哪个层层嵌套的文件夹里，只能鼠标点来点去逐个排查，对着一堆似曾相识的文件名反复确认。等费了半天劲找到并打开，当初要查的核心信息、那灵光一闪的灵感，早就没了踪影。<br>难道 “找东西” 的时间，只能白白浪费？当然不！能不能给常用的应用、文档、网页都起个好记的 “专属名字”，需要时直接 “呼唤” 名字就能一键打开？经过大量调研、测试和总结，我整理出一套实操方法论，不管是可执行程序、常用文档，还是高频网页，都能实现 “起名 + 召唤” 的高效操作，彻底告别无效查找。 </p>
+<div class="blockquote-compact">
+  <p>
+  用 Windows 办公时，你大概率遇到过这种糟心场景：正顺着思路深耕某个问题，突然需要调取一份旧文档佐证想法。可这份文件久未打开，早已忘了藏在哪个层层嵌套的文件夹里，只能鼠标点来点去逐个排查，对着一堆似曾相识的文件名反复确认。等费了半天劲找到并打开，当初要查的核心信息、那灵光一闪的灵感，早就没了踪影。
+难道 “找东西” 的时间，只能白白浪费？当然不！能不能给常用的应用、文档、网页都起个好记的 “专属名字”，需要时直接 “呼唤” 名字就能一键打开？经过大量调研、测试和总结，我整理出一套实操方法论，不管是可执行程序、常用文档，还是高频网页，都能实现 “起名 + 召唤” 的高效操作，彻底告别无效查找。
+</p>
+</div>
 
-</blockquote>
 
 <span id="more"></span>
 
@@ -139,93 +142,6 @@
       </tags>
   </entry>
   <entry>
-    <title>常用工具网站</title>
-    <url>/2025/11/15/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116143055713.jpg" width="70%" alt="按宽度比例缩放">
-
-<blockquote class="blockquote-center">
-<p>一些工作中常用的网站链接，备忘（如何你有好用的工具网站推荐，请留言分享）。</p>
-
-</blockquote>
-
-<span id="more"></span>
-
-<h2 id="✒️办公类"><a href="#✒️办公类" class="headerlink" title="✒️办公类"></a>✒️办公类</h2><table>
-<thead>
-<tr>
-<th align="left">Item</th>
-<th align="center"></th>
-<th align="left">Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">画示意图</td>
-<td align="center">👉</td>
-<td align="left"><a href="https://excalidraw.com/">excalidraw</a></td>
-</tr>
-<tr>
-<td align="left">画思维导图</td>
-<td align="center">👉</td>
-<td align="left"><a href="https://wanglin2.github.io/mind-map/#/">mind-map</a></td>
-</tr>
-<tr>
-<td align="left">画UML图</td>
-<td align="center">👉</td>
-<td align="left"><a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003">plantuml</a></td>
-</tr>
-<tr>
-<td align="left">翻译</td>
-<td align="center">👉</td>
-<td align="left"><a href="https://www.deepl.com/en/translator">deepL</a></td>
-</tr>
-<tr>
-<td align="left">去水印</td>
-<td align="center">👉</td>
-<td align="left"><a href="https://magiceraser.org/zh/remove-watermark-from-image/">https://magiceraser.org/zh/remove-watermark-from-image/</a></td>
-</tr>
-</tbody></table>
-<h2 id="⚒️工具类"><a href="#⚒️工具类" class="headerlink" title="⚒️工具类"></a>⚒️工具类</h2><table>
-<thead>
-<tr>
-<th align="left">Item</th>
-<th align="center"></th>
-<th align="left">Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">正则表达式</td>
-<td align="center">👉</td>
-<td align="left"><a href="https://regexr.com/">https://regexr.com/</a></td>
-</tr>
-</tbody></table>
-<h2 id="📚学习类"><a href="#📚学习类" class="headerlink" title="📚学习类"></a>📚学习类</h2><table>
-<thead>
-<tr>
-<th align="left">Item</th>
-<th align="center"></th>
-<th align="left">Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Markdown 语法</td>
-<td align="center">👉</td>
-<td align="left"><a href="https://www.imczw.com/post/tech/hexo-next-tags-markdown.html">https://www.imczw.com/post/tech/hexo-next-tags-markdown.html</a></td>
-</tr>
-<tr>
-<td align="left">fontawesome 图标</td>
-<td align="center">👉</td>
-<td align="left"><a href="https://fontawesome.com.cn/docs/v5/styles/list">fontawesome</a></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown 语法整理</title>
     <url>/2025/11/15/%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -322,6 +238,93 @@
 
 
 
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用工具网站</title>
+    <url>/2025/11/15/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116143055713.jpg" width="70%" alt="按宽度比例缩放">
+
+<blockquote class="blockquote-center">
+<p>一些工作中常用的网站链接，备忘（如何你有好用的工具网站推荐，请留言分享）。</p>
+
+</blockquote>
+
+<span id="more"></span>
+
+<h2 id="✒️办公类"><a href="#✒️办公类" class="headerlink" title="✒️办公类"></a>✒️办公类</h2><table>
+<thead>
+<tr>
+<th align="left">Item</th>
+<th align="center"></th>
+<th align="left">Link</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">画示意图</td>
+<td align="center">👉</td>
+<td align="left"><a href="https://excalidraw.com/">excalidraw</a></td>
+</tr>
+<tr>
+<td align="left">画思维导图</td>
+<td align="center">👉</td>
+<td align="left"><a href="https://wanglin2.github.io/mind-map/#/">mind-map</a></td>
+</tr>
+<tr>
+<td align="left">画UML图</td>
+<td align="center">👉</td>
+<td align="left"><a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003">plantuml</a></td>
+</tr>
+<tr>
+<td align="left">翻译</td>
+<td align="center">👉</td>
+<td align="left"><a href="https://www.deepl.com/en/translator">deepL</a></td>
+</tr>
+<tr>
+<td align="left">去水印</td>
+<td align="center">👉</td>
+<td align="left"><a href="https://magiceraser.org/zh/remove-watermark-from-image/">https://magiceraser.org/zh/remove-watermark-from-image/</a></td>
+</tr>
+</tbody></table>
+<h2 id="⚒️工具类"><a href="#⚒️工具类" class="headerlink" title="⚒️工具类"></a>⚒️工具类</h2><table>
+<thead>
+<tr>
+<th align="left">Item</th>
+<th align="center"></th>
+<th align="left">Link</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">正则表达式</td>
+<td align="center">👉</td>
+<td align="left"><a href="https://regexr.com/">https://regexr.com/</a></td>
+</tr>
+</tbody></table>
+<h2 id="📚学习类"><a href="#📚学习类" class="headerlink" title="📚学习类"></a>📚学习类</h2><table>
+<thead>
+<tr>
+<th align="left">Item</th>
+<th align="center"></th>
+<th align="left">Link</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Markdown 语法</td>
+<td align="center">👉</td>
+<td align="left"><a href="https://www.imczw.com/post/tech/hexo-next-tags-markdown.html">https://www.imczw.com/post/tech/hexo-next-tags-markdown.html</a></td>
+</tr>
+<tr>
+<td align="left">fontawesome 图标</td>
+<td align="center">👉</td>
+<td align="left"><a href="https://fontawesome.com.cn/docs/v5/styles/list">fontawesome</a></td>
+</tr>
+</tbody></table>
 ]]></content>
       <categories>
         <category>工作</category>
