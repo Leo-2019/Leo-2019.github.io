@@ -1342,7 +1342,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #aac3e9;
+    background: #03ffb9;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3096,4 +3096,79 @@ ol > li > p {
 .post-body pre,
 .post-body code {
   user-select: text !important; /* 覆盖禁止选中，允许代码块复制 */
+}
+.card {
+/* 终极重置：保留原逻辑 */
+  all: initial !important;
+  display: block !important;
+  box-sizing: border-box !important;
+/* 清除顶部横线：保留原逻辑 */
+  border-top: none !important;
+  border-top-width: 0 !important;
+  box-shadow: none !important;
+/* 毛玻璃核心样式：保留原风格 */
+  background-color: rgba(0,0,0,0.85) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+/* 边框与布局：仅缩小尺寸 */
+  border: 1px solid rgba(255,255,255,0.15) !important;
+  border-radius: 8px !important;
+  padding: 20px 25px 15px !important;
+  margin: 15px auto !important;
+  max-width: 90% !important;
+  position: relative !important;
+/* 文本样式：仅缩小尺寸，保留字体和对齐 */
+  font-family: "STKaiti", "KaiTi", "Microsoft YaHei", Georgia, serif !important;
+  font-size: 15px !important;
+  color: #fff !important;
+  line-height: 1.8 !important;
+  letter-spacing: 0.8px !important;
+  text-align: left !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
+}
+.card::before {
+  content: "“" !important;
+  position: absolute !important;
+  top: 5px !important;
+  left: 10px !important;
+  font-size: 30px !important;
+  color: rgba(235,235,237,0.75) !important;
+  font-family: serif !important;
+  line-height: 1 !important;
+  text-shadow: none !important;
+  z-index: 1 !important;
+  display: inline-block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  border-top: none !important;
+}
+.card::after {
+  content: "”" !important;
+  position: absolute !important;
+  bottom: -5px !important;
+  right: 10px !important;
+  font-size: 30px !important;
+  color: rgba(255,255,255,0.76) !important;
+  font-family: serif !important;
+  line-height: 1 !important;
+  text-shadow: none !important;
+  z-index: 1 !important;
+  display: inline-block !important;
+}
+.card p {
+  all: unset !important;
+  display: block !important;
+  margin: 6px 0 !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  line-height: inherit !important;
+  text-align: left !important;
+  z-index: 2 !important;
+  position: relative !important;
+}
+.card > :first-child::before {
+  border-top: none !important;
+  content: none !important;
+  display: none !important;
 }
