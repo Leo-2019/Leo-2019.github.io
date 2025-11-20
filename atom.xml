@@ -6,7 +6,7 @@
   <link href="https://leo-2019.github.io/atom.xml" rel="self"/>
   
   <link href="https://leo-2019.github.io/"/>
-  <updated>2025-11-20T12:12:46.957Z</updated>
+  <updated>2025-11-20T12:56:43.033Z</updated>
   <id>https://leo-2019.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://leo-2019.github.io/2025/11/20/Hexo/"/>
     <id>https://leo-2019.github.io/2025/11/20/Hexo/</id>
     <published>2025-11-20T09:48:06.000Z</published>
-    <updated>2025-11-20T12:12:46.957Z</updated>
+    <updated>2025-11-20T12:56:43.033Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="blockquote-center">🎯Hexo Next 的优化或配置方法。</blockquote><span id="more"></span><div class="link-grid"><div class="link-grid-container"><object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object><p>Theme NexT</p><p>Stay Simple. Stay NexT.</p><a href="https://theme-next.js.org/"></a></div></div><h2 id="⏩-取消特定页面的评论区"><a href="#⏩-取消特定页面的评论区" class="headerlink" title="⏩ 取消特定页面的评论区"></a>⏩ 取消特定页面的评论区</h2><p>当安装了评论功能后，基本上所有页面都会有评论区，如果我们需要关掉某些页面（如标签页，分类页面，个人介绍页面）的评论区，可以在页面顶部的添加一行配置项。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2025-11-09 23:11:17</span><br><span class="line">type: categories</span><br><span class="line"><span class="section">comments: false   #关闭评论</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure><h2 id="⏩-特制化初始页面模板"><a href="#⏩-特制化初始页面模板" class="headerlink" title="⏩ 特制化初始页面模板"></a>⏩ 特制化初始页面模板</h2><p>通过 <mark class="label danger"> hexo new</mark> 创建新的博文时，页面初始化状态较为简单，如果想做一些个性化设置，可以直接在 <mark class="label danger"> <em>\scaffolds\page.md</em></mark> 路径下 的 <mark class="label danger"> <strong>page.md</strong></mark> 里进行模板修改。</p><hr>]]></content>
+    <content type="html"><![CDATA[<blockquote class="blockquote-center">Hexo Next 的优化或配置方法。</blockquote><span id="more"></span><div class="link-grid"><div class="link-grid-container"><object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object><p>Theme NexT</p><p>Stay Simple. Stay NexT.</p><a href="https://theme-next.js.org/"></a></div></div><h2 id="⏩-取消特定页面的评论区"><a href="#⏩-取消特定页面的评论区" class="headerlink" title="⏩ 取消特定页面的评论区"></a>⏩ 取消特定页面的评论区</h2><p>当安装了评论功能后，基本上所有页面都会有评论区，如果我们需要关掉某些页面（如标签页，分类页面，个人介绍页面）的评论区，可以在页面顶部的添加一行配置项。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2025-11-09 23:11:17</span><br><span class="line">type: categories</span><br><span class="line"><span class="section">comments: false   #关闭评论</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure><h2 id="⏩-特制化初始页面模板"><a href="#⏩-特制化初始页面模板" class="headerlink" title="⏩ 特制化初始页面模板"></a>⏩ 特制化初始页面模板</h2><p>通过 <mark class="label danger"> hexo new</mark> 创建新的博文时，页面初始化状态较为简单，如果想做一些个性化设置，可以直接在 <mark class="label danger"> <em>\scaffolds\page.md</em></mark> 路径下 的 <mark class="label danger"> <strong>page.md</strong></mark> 里进行模板修改。</p><hr>]]></content>
     
     
     <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
-🎯Hexo Next 的优化或配置方法。
+Hexo Next 的优化或配置方法。
 &lt;/blockquote&gt;</summary>
     
     
