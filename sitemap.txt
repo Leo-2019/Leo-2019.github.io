@@ -11,10 +11,10 @@ https://leo-2019.github.io/categories/index.html
 https://leo-2019.github.io/2025/11/11/hello-world/
 https://leo-2019.github.io/
 https://leo-2019.github.io/tags/Hexo/
+https://leo-2019.github.io/tags/private/
 https://leo-2019.github.io/tags/%E5%B7%A5%E4%BD%9C%E4%B9%A0%E6%83%AF/
 https://leo-2019.github.io/tags/%E7%AC%94%E8%AE%B0/
-https://leo-2019.github.io/tags/private/
 https://leo-2019.github.io/categories/%E6%8A%80%E6%9C%AF/
-https://leo-2019.github.io/categories/Note/
-https://leo-2019.github.io/categories/%E6%88%90%E9%95%BF/
+https://leo-2019.github.io/categories/%E8%8C%A7%E9%87%8C%E7%9A%84%E8%AF%97/
 https://leo-2019.github.io/categories/%E5%B7%A5%E4%BD%9C/
+https://leo-2019.github.io/categories/%E6%88%90%E9%95%BF/
