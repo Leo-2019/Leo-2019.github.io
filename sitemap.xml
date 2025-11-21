@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://leo-2019.github.io/2025/11/15/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</loc>
+    
+    <lastmod>2025-11-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://leo-2019.github.io/about/skate_board.html</loc>
     
     <lastmod>2025-11-21</lastmod>
@@ -83,15 +92,6 @@
   </url>
   
   <url>
-    <loc>https://leo-2019.github.io/2025/11/15/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</loc>
-    
-    <lastmod>2025-11-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://leo-2019.github.io/2025/11/11/hello-world/</loc>
     
     <lastmod>2025-11-16</lastmod>
@@ -147,7 +147,7 @@
   </url>
   
   <url>
-    <loc>https://leo-2019.github.io/categories/%E5%B7%A5%E4%BD%9C/</loc>
+    <loc>https://leo-2019.github.io/categories/Note/</loc>
     <lastmod>2025-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -155,6 +155,13 @@
   
   <url>
     <loc>https://leo-2019.github.io/categories/%E6%88%90%E9%95%BF/</loc>
+    <lastmod>2025-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://leo-2019.github.io/categories/%E5%B7%A5%E4%BD%9C/</loc>
     <lastmod>2025-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
