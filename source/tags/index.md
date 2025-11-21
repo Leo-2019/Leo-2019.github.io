@@ -1,7 +1,8 @@
 ---
-title: tags
+title: 标签页
 date: 2025-11-09 23:12:29
 type: tags
+comments: false   #关闭评论
 ---
 
 ## 🏷️标签说明

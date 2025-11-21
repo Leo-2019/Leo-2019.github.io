@@ -1,7 +1,8 @@
 ---
-title: categories
+title: 文章分类
 date: 2025-11-09 23:11:17
 type: categories
+comments: false   #关闭评论
 ---
 
 # 文章分类

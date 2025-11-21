@@ -9,7 +9,7 @@
 
 // 整体背景设置
 body {
-	background:url(/images/background.png);// 设定背景图片,注意修改图片后缀
+	background:url(/images/desktop2.png);// 设定背景图片,注意修改图片后缀
 	background-repeat: no-repeat;// 设定背景图片非重复填充
 	background-attachment:fixed;// 设置背景图片不随页面滚动
 	background-position:50% 50%;// 设置背景图片位置
@@ -47,13 +47,17 @@ body {
 // 引用块样式
 blockquote {
   border-left: 4px solid var(--chaos-dark);
-  background: linear-gradient(90deg, rgba(111, 66, 193, 0.1) 0%, transparent 100%);
+  background: rgba(253, 253, 253, 1); /* 淡蓝底色 + 85%不透明度 */
   position: relative;
   padding-left: 30px;
   
+  /* 替换为指定的文本样式 */
+  text-align: left !important;
+  
   &::before {
-    //content: "🎭";
-    //content: "⏩";
+    /* 保留原伪元素配置 */
+     content: "🎭";
+    // content: "⏩";
     position: absolute;
     left: 8px;
     top: 10px;
