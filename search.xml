@@ -40,8 +40,49 @@ Hexo Next 的优化或配置方法。
 
 <span id="more"></span>
 
-<h2 id="Git"><a href="#Git" class="headerlink" title=" Git"></a><i class="fas fa-github"></i> Git</h2><p>| 描述 |  |命令  | 备注 |<br>| :————————- | :-: | :————————- |<br>| 画示意图 |  | <a href="https://excalidraw.com/">excalidraw</a> |<br>| 画思维导图 |  | <a href="https://wanglin2.github.io/mind-map/#/">mind-map</a> |<br>| 画UML图 |  | <a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003">plantuml</a> |<br>| 翻译 |  | <a href="https://www.deepl.com/en/translator">deepL</a> |<br>| 去水印 |  | <a href="https://magiceraser.org/zh/remove-watermark-from-image/">https://magiceraser.org/zh/remove-watermark-from-image/</a> |<br>| 壁纸|  | <a href="https://haowallpaper.com/homeViewLook/17673953739525504">https://haowallpaper.com/homeViewLook/17673953739525504</a> |</p>
-<h2 id="fa-linux-Git"><a href="#fa-linux-Git" class="headerlink" title="fa-linux Git"></a>fa-linux Git</h2><hr>
+<h2 id="Git"><a href="#Git" class="headerlink" title=" Git"></a><i class="fab fa-github"></i> Git</h2><h3 id="⏩-本地改动-临时保存"><a href="#⏩-本地改动-临时保存" class="headerlink" title="⏩ 本地改动 临时保存"></a>⏩ 本地改动 临时保存</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">保存：git stash</span><br><span class="line">弹出：git stash pop</span><br></pre></td></tr></table></figure>
+<h3 id="⏩-Commit-整体撤销"><a href="#⏩-Commit-整体撤销" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
+<thead>
+<tr>
+<th align="left">描述</th>
+<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">撤销commit 不撤销add,不删除工作空间改动</td>
+<td align="left"><code>git reset --soft HEAD^</code></td>
+</tr>
+<tr>
+<td align="left">撤销commit 撤销add,  不删除工作空间改动</td>
+<td align="left"><code>git reset --mixed HEAD^</code></td>
+</tr>
+<tr>
+<td align="left">撤销commit 撤销add,  删除工作空间改动</td>
+<td align="left"><code>git reset --hard HEAD^</code></td>
+</tr>
+</tbody></table>
+<h3 id="⏩-Commit-撤销单独一个文件"><a href="#⏩-Commit-撤销单独一个文件" class="headerlink" title="⏩ Commit 撤销单独一个文件"></a>⏩ Commit 撤销单独一个文件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git restore --source=HEAD^ 文件名.txt</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Shell"><a href="#Shell" class="headerlink" title=" Shell"></a><i class="fab fa-linux"></i> Shell</h2><table>
+<thead>
+<tr>
+<th align="left">描述</th>
+<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">本地改动临时保存</td>
+<td align="left"><code>保存：git stash   弹出：git stash pop</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">撤销commit 不撤销add,不删除工作空间改动</td>
+<td align="left"><code>git reset --soft HEAD^</code></td>
+<td align="left">在别人的commit修改基础上做自己的改动时会用到</td>
+</tr>
+</tbody></table>
+<hr>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -230,32 +271,32 @@ Hexo Next 的优化或配置方法。
 <tbody><tr>
 <td align="left">画示意图</td>
 <td align="center">👉</td>
-<td align="left"><i class="fas fa-link"></i>  Web:<a href="https://excalidraw.com/">excalidraw</a></td>
+<td align="left"><i class="fas fa-link"></i>  <a href="https://excalidraw.com/">excalidraw</a></td>
 </tr>
 <tr>
 <td align="left">画思维导图</td>
 <td align="center">👉</td>
-<td align="left">fa-link Web:<a href="https://wanglin2.github.io/mind-map/#/">mind-map</a></td>
+<td align="left"><i class="fas fa-link"></i><a href="https://wanglin2.github.io/mind-map/#/">mind-map</a></td>
 </tr>
 <tr>
 <td align="left">画UML图</td>
 <td align="center">👉</td>
-<td align="left">Web:<a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003">plantuml</a></td>
+<td align="left"><i class="fas fa-link"></i><a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003">plantuml</a></td>
 </tr>
 <tr>
 <td align="left">翻译</td>
 <td align="center">👉</td>
-<td align="left">Web:<a href="https://www.deepl.com/en/translator">deepL</a></td>
+<td align="left"><i class="fas fa-link"></i><a href="https://www.deepl.com/en/translator">deepL</a></td>
 </tr>
 <tr>
 <td align="left">去水印</td>
 <td align="center">👉</td>
-<td align="left">Web: <a href="https://magiceraser.org/zh/remove-watermark-from-image/">https://magiceraser.org/zh/remove-watermark-from-image/</a></td>
+<td align="left"><i class="fas fa-link"></i> <a href="https://magiceraser.org/zh/remove-watermark-from-image/">https://magiceraser.org/zh/remove-watermark-from-image/</a></td>
 </tr>
 <tr>
 <td align="left">壁纸</td>
 <td align="center">👉</td>
-<td align="left">Web: <a href="https://haowallpaper.com/homeViewLook/17673953739525504">https://haowallpaper.com/homeViewLook/17673953739525504</a></td>
+<td align="left"><i class="fas fa-link"></i> <a href="https://haowallpaper.com/homeViewLook/17673953739525504">https://haowallpaper.com/homeViewLook/17673953739525504</a></td>
 </tr>
 </tbody></table>
 <h2 id="⚒️工具类"><a href="#⚒️工具类" class="headerlink" title="⚒️工具类"></a>⚒️工具类</h2><table>
@@ -269,7 +310,7 @@ Hexo Next 的优化或配置方法。
 <tbody><tr>
 <td align="left">正则表达式</td>
 <td align="center">👉</td>
-<td align="left">Web: <a href="https://regexr.com/">https://regexr.com/</a></td>
+<td align="left"><i class="fas fa-link"></i> <a href="https://regexr.com/">https://regexr.com/</a></td>
 </tr>
 </tbody></table>
 <h2 id="📚学习类"><a href="#📚学习类" class="headerlink" title="📚学习类"></a>📚学习类</h2><table>
@@ -283,12 +324,12 @@ Hexo Next 的优化或配置方法。
 <tbody><tr>
 <td align="left">Markdown 语法</td>
 <td align="center">👉</td>
-<td align="left">Web: <a href="https://www.imczw.com/post/tech/hexo-next-tags-markdown.html">https://www.imczw.com/post/tech/hexo-next-tags-markdown.html</a></td>
+<td align="left"><i class="fas fa-link"></i> <a href="https://www.imczw.com/post/tech/hexo-next-tags-markdown.html">https://www.imczw.com/post/tech/hexo-next-tags-markdown.html</a></td>
 </tr>
 <tr>
 <td align="left">fontawesome 图标</td>
 <td align="center">👉</td>
-<td align="left">Web:<a href="https://fontawesome.com.cn/docs/v5/styles/list">fontawesome 使用</a>、<a href="https://fontawesome.dashgame.com/">fontawesome 素材</a></td>
+<td align="left"><i class="fas fa-link"></i><a href="https://fontawesome.com.cn/docs/v5/styles/list">fontawesome 使用</a>、<i class="fas fa-link"></i><a href="https://fontawesome.dashgame.com/">fontawesome 素材</a></td>
 </tr>
 </tbody></table>
 ]]></content>
