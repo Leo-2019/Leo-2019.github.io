@@ -221,6 +221,28 @@ Hexo Next 的优化或配置方法。
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2025/11/11/hello-world/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
+  <script id="hbeData" type="hbeData" data-hmacdigest="b92bfee25d8a50b66f9c3781681b7fd7e426b0d631cb77c2c1da2ab12b6d9ee8">d57ba651e571aed89232e1c6212e32d6ff8e592e87c7cd24732f40ca8474bc77bf59a0a0832046625c2e51ff015d4b0b4943504e9b5e1876542f497d7aa2e9987491b60f57ba51e82a0ad8601708b2b1fc393adab32f80e7ad142ad05990285b7256d8f1f0f102c72179f0752c1bd1ac67478c9815478c15308a6e771cf435279727f43a0eb1baf72d451541786f1edb96590911b782f235148161b4fe01a60af9a0552982be65182e6628bbf9ad970547ecbdf8d1aa89b6cdb0e273592df3e8d76447c0ebb1c6aa7a25ad3421bceaca007e4eb73c31af133f1cf0dfd1f3a10de728dfb53cddfa06c01aee5075abd59cedebd980cfb625b86dbb94917f10da351e8f9587fe4760df930b8e6c40dabc762a009762d72ec59e7f1872edc9fcdfedb12083061a328e3ff9c3fca1c8245e1771dcc59ba45ea61444101532ad3cff881d6eb06412150cb6c6b392252db6e03cacb00a0dcc97b875268ecf96c1b5984a9949275ff1c99f3b7edc18d29777cf308ab1df20d52110db7c8491c52d5859a1e151e9929001aecfbe28209e85c75f17456363e312def77ca36f832f9bcb34398317cacf700c0bd39efa4000c6ed5c624303a5112a77885f407d6349b290bdda2fb2e845611afc40f5d2b45418af268b050d8f074de207dae7d0042385ec8f5f7549a5b3ce779ede3c6b967996911fa65760737c002c4c6d5e6f3f44c1ef1b1c8b13787d35d486588296fc0ecc872de2eb70c93ba6763d1ba9d0be55968910fefb9359c8b1a5e424a9990107dbf8458417eb60b0f21c50f67017220765c4743b0318783d3774e15391657dfbd660f324a9d143365c5848d56d7425a06d0f0ececaf506408baddf79658c749a1a75e6196037bb5bcdefadf3580e2e5e03d0dd498bbdbbb7ac616c39d97cb56988a74d04acf987df24f8837647fc565cabaab95a2bb5cbffc69ba4509ef4022f277a0d4782d271db1de37d6b4ba8efe70c9db9eb580f394c33014bc9e5079ae866f7a200459aa33df5b0685d3a35ca208be959db69ec2228c214e04a0a7a9ee91a83fc9aeac7b0b5a3e3b30b9a9b2ec068ba399a2588800ef7916ffbcf06740efddebc1635a22d11f5fbc1e66fac3274b3e0c6709eec6e1c143ce8ade85ec41b97a866d4aafaa43398e8fab5bf8205ae769b3e477f4d8efb8fef192b5e2f47eb6281d896b82c8da324d966ac4fe3e75897e6fcb16f817a2e271861568dcc9ff22642dc3960e3b9c6d61bc6767faf17860b99a35118a39e6020348f198b17f32ffda9349e3aa1be1b35ed1766bffd48de4eba02f0b7d223481e62dd2d2ac7ed2ca1e52082c556826133a297f6b576e793fc4d27f90f3129a5fb752da5665df3d53a607b927f760a592e50ff49541fe6a4d3e104f8c0e42ee1779d67d97866b2be7fb594c89b47f67a42c5702b2ca1026d828abcdc37b452d957761f22f26ce9a5f4d50b6fcdaabca4ea59dbf3b49d01d2164668758a2045f6d33209fd093fffbbe8a9f6d5862459f83a8537a2f2fe007b681d729df7958b1d7a53fbee316fc8b567caf9bc08884b563c5c342e28193e483f20110f69426296519cdc14dd4fc3911f1a5e5e41c33693e2b9d146f702e555d0b04c0dcc8af87d2f6b56f3535a43aaca0ca5744445e158a9b64e7129c6ba61bef7f1514b01874fb7f76d29a21c2af53156893c7616220fb7fc3fdcfb35a6ff22240f22c065366d25dc28b18cec63154ab315ab6b7a78e032ac1dc2ec59d6ec18b4ed69b8688bc5ee80d076ec21aafb2d1a94aac31d95187b33ecded8bccac935ee8d9dda274fa2a6d175df87816c49822f60316116707311a3bd2cb09ae4e6437ab4cfd86cf15e1ae0c31c9e35c422e99fdaceeed808e066bcfc8bd4f934d814ddc6963d1de5d74ff8b78b7d20c7e1d31bd3ea93c637fc5989ad0fefb8afb23b11cde5e924c708f846ef9afdd411f9b5342f334f2c1205877668413496b4290219145228648e4851759afcb3c0106c0614b893c2f26a7d4b9e7360f856e774ecb3344ab1023015981c9f5c6144ed80af8eb8f65dca52aae8335a973cf311a8d992b48d7c7afc5c074c8a949bb7b9e2909a95303a0f5bbcaec28668d44e5cc48c793f66723d6c9216f86470bcb424a0aecae4df9852ff3e3d981bb339526f7c91d50d5d92f4028b338bec1ed2a94cab4fcade14d2f14b3719be0618164013fffddc2b0a972087074fc4b44da61fedbab8d014e4091051f197aa07b8a79e82b6a589078148abe108859fbe2d86ac59d35b2e5dd567ca3e4e9a5d5f1387551b585114998ecc3395feac6a2591d746ea721fbbb5e06dc8cc80a0daf7fa60837ac003bf8012fd8c62e7af44fab3d1256c4562e685910507b987dac92508483fccea6c7596906d32dd0d308ea34b9f645b94bcbbcd11b5c6bf3a01ee35220771fa560e3d95b14fc8325fa8244930c07c722df5b984b269b09bf8046fec980ab601335457a67aaa3c3dfb15ec731aa1146d48da1031e2ee80061c4612b3cf2436ae36aaf8fb6807cd288fe1a7007942ed0a7190a054febd62ae139cad8957e8f7259f736bc0327bf02867709272883789e984c05c2b51518dcc8ea1fc9d5288ff126e686d3dca0edb6ff9527e6e198764978379b59464bd7c21460cd098c8c89b052c0dd4519a5852e9e62c76fc10c9d0ce016717153b39ee6bf791d6b876a90baa67aa292737454e91ee4a6b0e5bf62a8a4b7c86dd1ba611a56725247d6bc33bcce995a524f09fd5e0cbfbe74fb59cd2a357fb2f80c5656f7b97607a2908f462b38053ce79d871d6a72bd478b23e06ddcd35c60280db0e40ee01c62faa5d690a759ed4e18934eca409179b92f58ac4f7fb9d608a180f6f7d9ac968a6668848a051a9bb821d4468a90f46f961f111666519026ad94510fbf69df26194ed217f3a3b378ef2b4942aa84c02e8d4c38364281de4065fa09eee147ea892030142dd1beae5c822413eb4a063e5f5fba1f9c5e1a88e2267ce21a2e7664dd3ba90cebbec75e5b2f5a08569c14c0d7a7dad9ce955b0efce7c252ae8a2ddda9e517a44a7a69be0579bbcc8b668de8dadee230e9395a4971e06bc0ea4d3a55237d5df4e2e4beb7d27726433ae770268a12273ac22e977cb4fc4471f7ec3e60911ba45773bc80933a8c85c4d2c9ea5f1253fc76edf9c2ee12fc7c873</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">⛔请输入密码后查看</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>成长</category>
+      </categories>
+      <tags>
+        <tag>private</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Next 文章实现禁止复制</title>
     <url>/2025/11/10/%E7%A6%81%E6%AD%A2%E5%A4%8D%E5%88%B6/</url>
     <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116154812165.png" width="50%" alt="按宽度比例缩放">
@@ -256,119 +278,6 @@ Hexo Next 的优化或配置方法。
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2025/11/11/hello-world/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b92bfee25d8a50b66f9c3781681b7fd7e426b0d631cb77c2c1da2ab12b6d9ee8">d57ba651e571aed89232e1c6212e32d6ff8e592e87c7cd24732f40ca8474bc77bf59a0a0832046625c2e51ff015d4b0b4943504e9b5e1876542f497d7aa2e9987491b60f57ba51e82a0ad8601708b2b1fc393adab32f80e7ad142ad05990285b7256d8f1f0f102c72179f0752c1bd1ac67478c9815478c15308a6e771cf435279727f43a0eb1baf72d451541786f1edb96590911b782f235148161b4fe01a60af9a0552982be65182e6628bbf9ad970547ecbdf8d1aa89b6cdb0e273592df3e8d76447c0ebb1c6aa7a25ad3421bceaca007e4eb73c31af133f1cf0dfd1f3a10de728dfb53cddfa06c01aee5075abd59cedebd980cfb625b86dbb94917f10da351e8f9587fe4760df930b8e6c40dabc762a009762d72ec59e7f1872edc9fcdfedb12083061a328e3ff9c3fca1c8245e1771dcc59ba45ea61444101532ad3cff881d6eb06412150cb6c6b392252db6e03cacb00a0dcc97b875268ecf96c1b5984a9949275ff1c99f3b7edc18d29777cf308ab1df20d52110db7c8491c52d5859a1e151e9929001aecfbe28209e85c75f17456363e312def77ca36f832f9bcb34398317cacf700c0bd39efa4000c6ed5c624303a5112a77885f407d6349b290bdda2fb2e845611afc40f5d2b45418af268b050d8f074de207dae7d0042385ec8f5f7549a5b3ce779ede3c6b967996911fa65760737c002c4c6d5e6f3f44c1ef1b1c8b13787d35d486588296fc0ecc872de2eb70c93ba6763d1ba9d0be55968910fefb9359c8b1a5e424a9990107dbf8458417eb60b0f21c50f67017220765c4743b0318783d3774e15391657dfbd660f324a9d143365c5848d56d7425a06d0f0ececaf506408baddf79658c749a1a75e6196037bb5bcdefadf3580e2e5e03d0dd498bbdbbb7ac616c39d97cb56988a74d04acf987df24f8837647fc565cabaab95a2bb5cbffc69ba4509ef4022f277a0d4782d271db1de37d6b4ba8efe70c9db9eb580f394c33014bc9e5079ae866f7a200459aa33df5b0685d3a35ca208be959db69ec2228c214e04a0a7a9ee91a83fc9aeac7b0b5a3e3b30b9a9b2ec068ba399a2588800ef7916ffbcf06740efddebc1635a22d11f5fbc1e66fac3274b3e0c6709eec6e1c143ce8ade85ec41b97a866d4aafaa43398e8fab5bf8205ae769b3e477f4d8efb8fef192b5e2f47eb6281d896b82c8da324d966ac4fe3e75897e6fcb16f817a2e271861568dcc9ff22642dc3960e3b9c6d61bc6767faf17860b99a35118a39e6020348f198b17f32ffda9349e3aa1be1b35ed1766bffd48de4eba02f0b7d223481e62dd2d2ac7ed2ca1e52082c556826133a297f6b576e793fc4d27f90f3129a5fb752da5665df3d53a607b927f760a592e50ff49541fe6a4d3e104f8c0e42ee1779d67d97866b2be7fb594c89b47f67a42c5702b2ca1026d828abcdc37b452d957761f22f26ce9a5f4d50b6fcdaabca4ea59dbf3b49d01d2164668758a2045f6d33209fd093fffbbe8a9f6d5862459f83a8537a2f2fe007b681d729df7958b1d7a53fbee316fc8b567caf9bc08884b563c5c342e28193e483f20110f69426296519cdc14dd4fc3911f1a5e5e41c33693e2b9d146f702e555d0b04c0dcc8af87d2f6b56f3535a43aaca0ca5744445e158a9b64e7129c6ba61bef7f1514b01874fb7f76d29a21c2af53156893c7616220fb7fc3fdcfb35a6ff22240f22c065366d25dc28b18cec63154ab315ab6b7a78e032ac1dc2ec59d6ec18b4ed69b8688bc5ee80d076ec21aafb2d1a94aac31d95187b33ecded8bccac935ee8d9dda274fa2a6d175df87816c49822f60316116707311a3bd2cb09ae4e6437ab4cfd86cf15e1ae0c31c9e35c422e99fdaceeed808e066bcfc8bd4f934d814ddc6963d1de5d74ff8b78b7d20c7e1d31bd3ea93c637fc5989ad0fefb8afb23b11cde5e924c708f846ef9afdd411f9b5342f334f2c1205877668413496b4290219145228648e4851759afcb3c0106c0614b893c2f26a7d4b9e7360f856e774ecb3344ab1023015981c9f5c6144ed80af8eb8f65dca52aae8335a973cf311a8d992b48d7c7afc5c074c8a949bb7b9e2909a95303a0f5bbcaec28668d44e5cc48c793f66723d6c9216f86470bcb424a0aecae4df9852ff3e3d981bb339526f7c91d50d5d92f4028b338bec1ed2a94cab4fcade14d2f14b3719be0618164013fffddc2b0a972087074fc4b44da61fedbab8d014e4091051f197aa07b8a79e82b6a589078148abe108859fbe2d86ac59d35b2e5dd567ca3e4e9a5d5f1387551b585114998ecc3395feac6a2591d746ea721fbbb5e06dc8cc80a0daf7fa60837ac003bf8012fd8c62e7af44fab3d1256c4562e685910507b987dac92508483fccea6c7596906d32dd0d308ea34b9f645b94bcbbcd11b5c6bf3a01ee35220771fa560e3d95b14fc8325fa8244930c07c722df5b984b269b09bf8046fec980ab601335457a67aaa3c3dfb15ec731aa1146d48da1031e2ee80061c4612b3cf2436ae36aaf8fb6807cd288fe1a7007942ed0a7190a054febd62ae139cad8957e8f7259f736bc0327bf02867709272883789e984c05c2b51518dcc8ea1fc9d5288ff126e686d3dca0edb6ff9527e6e198764978379b59464bd7c21460cd098c8c89b052c0dd4519a5852e9e62c76fc10c9d0ce016717153b39ee6bf791d6b876a90baa67aa292737454e91ee4a6b0e5bf62a8a4b7c86dd1ba611a56725247d6bc33bcce995a524f09fd5e0cbfbe74fb59cd2a357fb2f80c5656f7b97607a2908f462b38053ce79d871d6a72bd478b23e06ddcd35c60280db0e40ee01c62faa5d690a759ed4e18934eca409179b92f58ac4f7fb9d608a180f6f7d9ac968a6668848a051a9bb821d4468a90f46f961f111666519026ad94510fbf69df26194ed217f3a3b378ef2b4942aa84c02e8d4c38364281de4065fa09eee147ea892030142dd1beae5c822413eb4a063e5f5fba1f9c5e1a88e2267ce21a2e7664dd3ba90cebbec75e5b2f5a08569c14c0d7a7dad9ce955b0efce7c252ae8a2ddda9e517a44a7a69be0579bbcc8b668de8dadee230e9395a4971e06bc0ea4d3a55237d5df4e2e4beb7d27726433ae770268a12273ac22e977cb4fc4471f7ec3e60911ba45773bc80933a8c85c4d2c9ea5f1253fc76edf9c2ee12fc7c873</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">⛔请输入密码后查看</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>成长</category>
-      </categories>
-      <tags>
-        <tag>private</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用工具网站</title>
-    <url>/2025/11/15/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116143055713.jpg" width="70%" alt="按宽度比例缩放">
-
-<blockquote class="blockquote-center">
-一些工作中常用的网站链接，备忘（如果你有好用的工具或网站推荐，请留言分享）。
-</blockquote>
-
-<span id="more"></span>
-
-<h2 id="✒️办公类"><a href="#✒️办公类" class="headerlink" title="✒️办公类"></a>✒️办公类</h2><table>
-<thead>
-<tr>
-<th align="left">Item</th>
-<th align="center"></th>
-<th align="left">Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">画示意图</td>
-<td align="center">👉</td>
-<td align="left"><i class="fas fa-link"></i>  <a href="https://excalidraw.com/">excalidraw</a></td>
-</tr>
-<tr>
-<td align="left">画思维导图</td>
-<td align="center">👉</td>
-<td align="left"><i class="fas fa-link"></i><a href="https://wanglin2.github.io/mind-map/#/">mind-map</a></td>
-</tr>
-<tr>
-<td align="left">画UML图</td>
-<td align="center">👉</td>
-<td align="left"><i class="fas fa-link"></i><a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003">plantuml</a></td>
-</tr>
-<tr>
-<td align="left">翻译</td>
-<td align="center">👉</td>
-<td align="left"><i class="fas fa-link"></i><a href="https://www.deepl.com/en/translator">deepL</a></td>
-</tr>
-<tr>
-<td align="left">去水印</td>
-<td align="center">👉</td>
-<td align="left"><i class="fas fa-link"></i> <a href="https://magiceraser.org/zh/remove-watermark-from-image/">https://magiceraser.org/zh/remove-watermark-from-image/</a></td>
-</tr>
-<tr>
-<td align="left">壁纸</td>
-<td align="center">👉</td>
-<td align="left"><i class="fas fa-link"></i> <a href="https://haowallpaper.com/homeViewLook/17673953739525504">https://haowallpaper.com/homeViewLook/17673953739525504</a></td>
-</tr>
-</tbody></table>
-<h2 id="⚒️工具类"><a href="#⚒️工具类" class="headerlink" title="⚒️工具类"></a>⚒️工具类</h2><table>
-<thead>
-<tr>
-<th align="left">Item</th>
-<th align="center"></th>
-<th align="left">Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">正则表达式</td>
-<td align="center">👉</td>
-<td align="left"><i class="fas fa-link"></i> <a href="https://regexr.com/">https://regexr.com/</a></td>
-</tr>
-</tbody></table>
-<h2 id="📚学习类"><a href="#📚学习类" class="headerlink" title="📚学习类"></a>📚学习类</h2><table>
-<thead>
-<tr>
-<th align="left">Item</th>
-<th align="center"></th>
-<th align="left">Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Markdown 语法</td>
-<td align="center">👉</td>
-<td align="left"><i class="fas fa-link"></i> <a href="https://www.imczw.com/post/tech/hexo-next-tags-markdown.html">https://www.imczw.com/post/tech/hexo-next-tags-markdown.html</a></td>
-</tr>
-<tr>
-<td align="left">fontawesome 图标</td>
-<td align="center">👉</td>
-<td align="left"><i class="fas fa-link"></i><a href="https://fontawesome.com.cn/docs/v5/styles/list">fontawesome 使用</a>、<i class="fas fa-link"></i><a href="https://fontawesome.dashgame.com/">fontawesome 素材</a></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -502,6 +411,97 @@ Hexo Next 的优化或配置方法。
 ]]></content>
       <categories>
         <category>技术</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用工具网站</title>
+    <url>/2025/11/15/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116143055713.jpg" width="70%" alt="按宽度比例缩放">
+
+<blockquote class="blockquote-center">
+一些工作中常用的网站链接，备忘（如果你有好用的工具或网站推荐，请留言分享）。
+</blockquote>
+
+<span id="more"></span>
+
+<h2 id="✒️办公类"><a href="#✒️办公类" class="headerlink" title="✒️办公类"></a>✒️办公类</h2><table>
+<thead>
+<tr>
+<th align="left">Item</th>
+<th align="center"></th>
+<th align="left">Link</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">画示意图</td>
+<td align="center">👉</td>
+<td align="left"><i class="fas fa-link"></i>  <a href="https://excalidraw.com/">excalidraw</a></td>
+</tr>
+<tr>
+<td align="left">画思维导图</td>
+<td align="center">👉</td>
+<td align="left"><i class="fas fa-link"></i><a href="https://wanglin2.github.io/mind-map/#/">mind-map</a></td>
+</tr>
+<tr>
+<td align="left">画UML图</td>
+<td align="center">👉</td>
+<td align="left"><i class="fas fa-link"></i><a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003">plantuml</a></td>
+</tr>
+<tr>
+<td align="left">翻译</td>
+<td align="center">👉</td>
+<td align="left"><i class="fas fa-link"></i><a href="https://www.deepl.com/en/translator">deepL</a></td>
+</tr>
+<tr>
+<td align="left">去水印</td>
+<td align="center">👉</td>
+<td align="left"><i class="fas fa-link"></i> <a href="https://magiceraser.org/zh/remove-watermark-from-image/">https://magiceraser.org/zh/remove-watermark-from-image/</a></td>
+</tr>
+<tr>
+<td align="left">壁纸</td>
+<td align="center">👉</td>
+<td align="left"><i class="fas fa-link"></i> <a href="https://haowallpaper.com/homeViewLook/17673953739525504">https://haowallpaper.com/homeViewLook/17673953739525504</a></td>
+</tr>
+</tbody></table>
+<h2 id="⚒️工具类"><a href="#⚒️工具类" class="headerlink" title="⚒️工具类"></a>⚒️工具类</h2><table>
+<thead>
+<tr>
+<th align="left">Item</th>
+<th align="center"></th>
+<th align="left">Link</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">正则表达式</td>
+<td align="center">👉</td>
+<td align="left"><i class="fas fa-link"></i> <a href="https://regexr.com/">https://regexr.com/</a></td>
+</tr>
+</tbody></table>
+<h2 id="📚学习类"><a href="#📚学习类" class="headerlink" title="📚学习类"></a>📚学习类</h2><table>
+<thead>
+<tr>
+<th align="left">Item</th>
+<th align="center"></th>
+<th align="left">Link</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Markdown 语法</td>
+<td align="center">👉</td>
+<td align="left"><i class="fas fa-link"></i> <a href="https://www.imczw.com/post/tech/hexo-next-tags-markdown.html">https://www.imczw.com/post/tech/hexo-next-tags-markdown.html</a></td>
+</tr>
+<tr>
+<td align="left">fontawesome 图标</td>
+<td align="center">👉</td>
+<td align="left"><i class="fas fa-link"></i><a href="https://fontawesome.com.cn/docs/v5/styles/list">fontawesome 使用</a>、<i class="fas fa-link"></i><a href="https://fontawesome.dashgame.com/">fontawesome 素材</a></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>笔记</tag>
