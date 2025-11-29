@@ -21,27 +21,42 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"leo-2019.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.26.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"base16/edge-dark","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":true,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":true,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":true,"preload":false,"placeholder":"搜索混沌中的真相..."}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="工作中常用的命令备忘">
+    <meta name="description" content="基于 TI 多核DSP C6678 在数字信号处理中的cache 一致性维护实战。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常用命令大全">
-<meta property="og:url" content="https://leo-2019.github.io/2025/11/22/command/index.html">
+<meta property="og:title" content="Cache（三）多核处理器TMS320C6678的缓存方法">
+<meta property="og:url" content="https://leo-2019.github.io/2025/11/29/cache3/index.html">
 <meta property="og:site_name" content="代码星辞">
-<meta property="og:description" content="工作中常用的命令备忘">
+<meta property="og:description" content="基于 TI 多核DSP C6678 在数字信号处理中的cache 一致性维护实战。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-11-22T10:58:58.000Z">
-<meta property="article:modified_time" content="2025-11-22T12:38:11.027Z">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163708522.jpg">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152752357.png">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152828894.png">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152847235.png">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038585.png">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038557.jpg">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038527.jpg">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038493.jpg">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038459.png">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038430.jpg">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038399.png">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038371.jpg">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038642.jpg">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038612.jpg">
+<meta property="article:published_time" content="2025-11-29T06:51:20.000Z">
+<meta property="article:modified_time" content="2025-11-29T08:41:37.196Z">
 <meta property="article:author" content="路小臻">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163708522.jpg">
 
 
-<link rel="canonical" href="https://leo-2019.github.io/2025/11/22/command/">
+<link rel="canonical" href="https://leo-2019.github.io/2025/11/29/cache3/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://leo-2019.github.io/2025/11/22/command/","path":"2025/11/22/command/","title":"常用命令大全"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://leo-2019.github.io/2025/11/29/cache3/","path":"2025/11/29/cache3/","title":"Cache（三）多核处理器TMS320C6678的缓存方法"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>常用命令大全 | 代码星辞</title>
+<title>Cache（三）多核处理器TMS320C6678的缓存方法 | 代码星辞</title>
   
 
 
@@ -77,7 +92,7 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/3.0.1/quicklink.umd.js" integrity="sha256-44BednzIpUeQJcY8qtLyarFu0UCCTbgmWOvaoehiFQQ=" crossorigin="anonymous" defer></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/2025/11/22/command/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/2025/11/29/cache3/"}</script>
   <script src="/js/third-party/quicklink.js" defer></script>
 
   <noscript>
@@ -171,7 +186,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git"><span class="nav-text"> Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-%E6%9C%AC%E5%9C%B0%E6%94%B9%E5%8A%A8-%E4%B8%B4%E6%97%B6%E4%BF%9D%E5%AD%98"><span class="nav-text">⏩ 本地改动 临时保存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-Commit-%E6%95%B4%E4%BD%93%E6%92%A4%E9%94%80"><span class="nav-text">⏩ Commit 整体撤销</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-Commit-%E6%92%A4%E9%94%80%E5%8D%95%E7%8B%AC%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6"><span class="nav-text">⏩ Commit 撤销单独一个文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shell"><span class="nav-text"> Shell</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-Commit-%E6%95%B4%E4%BD%93%E6%92%A4%E9%94%80-1"><span class="nav-text">⏩ Commit 整体撤销</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="nav-text">⏩ 文件权限</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#C66x%E7%BC%93%E5%AD%98%E7%BB%93%E6%9E%84%EF%BC%9A"><span class="nav-text">C66x缓存结构：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C66x%E7%BC%93%E5%AD%98%E8%AE%BF%E9%97%AE%E6%B5%81%E7%A8%8B%EF%BC%9A"><span class="nav-text">C66x缓存访问流程：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C66x%E7%BC%93%E5%AD%98%E5%88%9D%E5%A7%8B%E5%8C%96%EF%BC%9A"><span class="nav-text">C66x缓存初始化：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C66x%E7%BC%93%E5%AD%98%E4%B8%80%E8%87%B4%E6%80%A7%E8%BD%AF%E4%BB%B6%E7%BB%B4%E6%8A%A4%EF%BC%9A"><span class="nav-text">C66x缓存一致性软件维护：</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -224,7 +239,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://leo-2019.github.io/2025/11/22/command/">
+    <link itemprop="mainEntityOfPage" href="https://leo-2019.github.io/2025/11/29/cache3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/LL.jpg">
@@ -237,12 +252,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="常用命令大全 | 代码星辞">
+      <meta itemprop="name" content="Cache（三）多核处理器TMS320C6678的缓存方法 | 代码星辞">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          常用命令大全
+          Cache（三）多核处理器TMS320C6678的缓存方法
         </h1>
 
         <div class="post-meta-container">
@@ -254,7 +269,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2025-11-22 18:58:58 / 修改时间：20:38:11" itemprop="dateCreated datePublished" datetime="2025-11-22T18:58:58+08:00">2025-11-22</time>
+      <time title="创建时间：2025-11-29 14:51:20 / 修改时间：16:41:37" itemprop="dateCreated datePublished" datetime="2025-11-29T14:51:20+08:00">2025-11-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -262,7 +277,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%B7%A5%E4%BD%9C/" itemprop="url" rel="index"><span itemprop="name">工作</span></a>
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
         </span>
     </span>
 
@@ -275,85 +290,31 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><blockquote class="blockquote-center">
-工作中常用的命令备忘
+    <div class="post-body" itemprop="articleBody"><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163708522.jpg" width="30%" alt="按宽度比例缩放">
+
+<blockquote class="blockquote-center">
+基于 TI 多核DSP C6678 在数字信号处理中的cache 一致性维护实战。 
+
 </blockquote>
 
 <span id="more"></span>
 
-<h2 id="Git"><a href="#Git" class="headerlink" title=" Git"></a><i class="fab fa-github"></i> Git</h2><h3 id="⏩-本地改动-临时保存"><a href="#⏩-本地改动-临时保存" class="headerlink" title="⏩ 本地改动 临时保存"></a>⏩ 本地改动 临时保存</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">保存：git stash</span><br><span class="line">弹出：git stash pop</span><br></pre></td></tr></table></figure>
-<h3 id="⏩-Commit-整体撤销"><a href="#⏩-Commit-整体撤销" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
-<thead>
-<tr>
-<th align="left">描述</th>
-<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">撤销commit 不撤销add,不删除工作空间改动</td>
-<td align="left"><code>git reset --soft HEAD^</code></td>
-</tr>
-<tr>
-<td align="left">撤销commit 撤销add,  不删除工作空间改动</td>
-<td align="left"><code>git reset --mixed HEAD^</code></td>
-</tr>
-<tr>
-<td align="left">撤销commit 撤销add,  删除工作空间改动</td>
-<td align="left"><code>git reset --hard HEAD^</code></td>
-</tr>
-</tbody></table>
-<h3 id="⏩-Commit-撤销单独一个文件"><a href="#⏩-Commit-撤销单独一个文件" class="headerlink" title="⏩ Commit 撤销单独一个文件"></a>⏩ Commit 撤销单独一个文件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD^ 文件名</span><br><span class="line">git checkout 文件名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="Shell"><a href="#Shell" class="headerlink" title=" Shell"></a><i class="fab fa-linux"></i> Shell</h2><h3 id="⏩-Commit-整体撤销-1"><a href="#⏩-Commit-整体撤销-1" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
-<thead>
-<tr>
-<th align="left">描述</th>
-<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">查找文件</td>
-<td align="left"><code>find . -name &quot;*.c&quot;</code></td>
-</tr>
-</tbody></table>
-<h3 id="⏩-文件权限"><a href="#⏩-文件权限" class="headerlink" title="⏩ 文件权限"></a>⏩ 文件权限</h3><div class="note danger"><p>常用： <code>chmod 777 文件名</code></p>
-</div>
+<h2 id="C66x缓存结构："><a href="#C66x缓存结构：" class="headerlink" title="C66x缓存结构："></a>C66x缓存结构：</h2><p>以下以L1Dcache的实现结构<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152752357.png" width="70%" alt="按宽度比例缩放"></p>
+<p>通过set确定所要数据所在的cacheline,通过对比tag是否一致&amp;检查有效位是否有效确定是否命中。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152828894.png" width="70%" alt="按宽度比例缩放"></p>
+<h2 id="C66x缓存访问流程："><a href="#C66x缓存访问流程：" class="headerlink" title="C66x缓存访问流程："></a>C66x缓存访问流程：</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152847235.png" width="70%" alt="按宽度比例缩放">
 
 
-<table>
-<thead>
-<tr>
-<th align="left">数字权限</th>
-<th align="left">字符权限（普通文件）</th>
-<th align="left">字符权限（目录）</th>
-<th align="left">场景</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">755</td>
-<td align="left">-rwxr-xr–</td>
-<td align="left">drwxr-xr-x</td>
-<td align="left">公开可执行文件 &#x2F; 目录（如网站程序）</td>
-</tr>
-<tr>
-<td align="left">644</td>
-<td align="left">-rw-r–r–</td>
-<td align="left">-（目录需 x 权限）</td>
-<td align="left">公开可读文件（如文档、配置文件）</td>
-</tr>
-<tr>
-<td align="left">700</td>
-<td align="left">-rwx——</td>
-<td align="left">drwx——</td>
-<td align="left">私有文件 &#x2F; 目录（仅所有者可操作）</td>
-</tr>
-<tr>
-<td align="left">777</td>
-<td align="left">-rwxrwxrwx</td>
-<td align="left">drwxrwxrwx</td>
-<td align="left">完全开放（不推荐，安全风险）</td>
-</tr>
-</tbody></table>
+<h2 id="C66x缓存初始化："><a href="#C66x缓存初始化：" class="headerlink" title="C66x缓存初始化："></a>C66x缓存初始化：</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038585.png" width="70%" alt="按宽度比例缩放">
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038557.jpg" width="70%" alt="按宽度比例缩放">
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038527.jpg" width="70%" alt="按宽度比例缩放">
+
+
+
+<p>【注】：MSM片上共享内存空间只能是cacheable的且可预取的，用户不可配。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038493.jpg" width="70%" alt="按宽度比例缩放"><br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038459.png" width="70%" alt="按宽度比例缩放"><br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038430.jpg" width="70%" alt="按宽度比例缩放"><br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038399.png" width="70%" alt="按宽度比例缩放"></p>
+<h2 id="C66x缓存一致性软件维护："><a href="#C66x缓存一致性软件维护：" class="headerlink" title="C66x缓存一致性软件维护："></a>C66x缓存一致性软件维护：</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038371.jpg" width="70%" alt="按宽度比例缩放">
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038642.jpg" width="70%" alt="按宽度比例缩放">
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038612.jpg" width="70%" alt="按宽度比例缩放">
+
 <hr>
 
     </div>
@@ -386,7 +347,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://leo-2019.github.io/2025/11/22/command/" title="常用命令大全">https://leo-2019.github.io/2025/11/22/command/</a>
+      <a href="https://leo-2019.github.io/2025/11/29/cache3/" title="Cache（三）多核处理器TMS320C6678的缓存方法">https://leo-2019.github.io/2025/11/29/cache3/</a>
   </li>
   <li class="post-copyright-license">
       <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -401,14 +362,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2025/11/20/Hexo/" rel="prev" title="Hexo Next 优化配置">
-                  <i class="fa fa-angle-left"></i> Hexo Next 优化配置
+                <a href="/2025/11/28/cache2/" rel="prev" title="Cache（二）如何进行数据缓存？">
+                  <i class="fa fa-angle-left"></i> Cache（二）如何进行数据缓存？
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2025/11/25/cache1/" rel="next" title="Cache（一）什么是缓存？">
-                  Cache（一）什么是缓存？ <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -510,7 +468,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/3.0.1/quicklink.umd.js" integrity="sha256-44BednzIpUeQJcY8qtLyarFu0UCCTbgmWOvaoehiFQQ=" crossorigin="anonymous" defer></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/2025/11/22/command/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/2025/11/29/cache3/"}</script>
   <script src="/js/third-party/quicklink.js" defer></script>
 <script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Leo-2019/Leo-2019.github.io","issue_term":"pathname","theme":"github-light"}</script>
 <script src="/js/third-party/comments/utterances.js" defer></script>

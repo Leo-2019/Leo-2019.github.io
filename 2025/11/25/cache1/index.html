@@ -21,27 +21,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"leo-2019.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.26.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"base16/edge-dark","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":true,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":true,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":true,"preload":false,"placeholder":"搜索混沌中的真相..."}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="工作中常用的命令备忘">
+    <meta name="description" content="什么是缓存? Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常用命令大全">
-<meta property="og:url" content="https://leo-2019.github.io/2025/11/22/command/index.html">
+<meta property="og:title" content="Cache（一）什么是缓存？">
+<meta property="og:url" content="https://leo-2019.github.io/2025/11/25/cache1/index.html">
 <meta property="og:site_name" content="代码星辞">
-<meta property="og:description" content="工作中常用的命令备忘">
+<meta property="og:description" content="什么是缓存? Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-11-22T10:58:58.000Z">
-<meta property="article:modified_time" content="2025-11-22T12:38:11.027Z">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163710829.png">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129154449544.jpg">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162551520.jpg">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162555004.jpg">
+<meta property="article:published_time" content="2025-11-25T06:51:20.000Z">
+<meta property="article:modified_time" content="2025-11-29T08:43:01.907Z">
 <meta property="article:author" content="路小臻">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163710829.png">
 
 
-<link rel="canonical" href="https://leo-2019.github.io/2025/11/22/command/">
+<link rel="canonical" href="https://leo-2019.github.io/2025/11/25/cache1/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://leo-2019.github.io/2025/11/22/command/","path":"2025/11/22/command/","title":"常用命令大全"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://leo-2019.github.io/2025/11/25/cache1/","path":"2025/11/25/cache1/","title":"Cache（一）什么是缓存？"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>常用命令大全 | 代码星辞</title>
+<title>Cache（一）什么是缓存？ | 代码星辞</title>
   
 
 
@@ -77,7 +82,7 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/3.0.1/quicklink.umd.js" integrity="sha256-44BednzIpUeQJcY8qtLyarFu0UCCTbgmWOvaoehiFQQ=" crossorigin="anonymous" defer></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/2025/11/22/command/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/2025/11/25/cache1/"}</script>
   <script src="/js/third-party/quicklink.js" defer></script>
 
   <noscript>
@@ -171,7 +176,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git"><span class="nav-text"> Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-%E6%9C%AC%E5%9C%B0%E6%94%B9%E5%8A%A8-%E4%B8%B4%E6%97%B6%E4%BF%9D%E5%AD%98"><span class="nav-text">⏩ 本地改动 临时保存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-Commit-%E6%95%B4%E4%BD%93%E6%92%A4%E9%94%80"><span class="nav-text">⏩ Commit 整体撤销</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-Commit-%E6%92%A4%E9%94%80%E5%8D%95%E7%8B%AC%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6"><span class="nav-text">⏩ Commit 撤销单独一个文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shell"><span class="nav-text"> Shell</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-Commit-%E6%95%B4%E4%BD%93%E6%92%A4%E9%94%80-1"><span class="nav-text">⏩ Commit 整体撤销</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="nav-text">⏩ 文件权限</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%AD%98%E5%82%A8%E5%99%A8%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84"><span class="nav-text">一、存储器的存储结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E4%B8%80%E8%87%B4%E6%80%A7%E5%8D%8F%E8%AE%AE%EF%BC%88Coherency-protocols%EF%BC%89"><span class="nav-text">二、一致性协议（Coherency protocols）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E8%AF%BB%E5%86%99%E4%B8%80%E8%87%B4%E6%80%A7"><span class="nav-text">三、读写一致性</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -224,7 +229,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://leo-2019.github.io/2025/11/22/command/">
+    <link itemprop="mainEntityOfPage" href="https://leo-2019.github.io/2025/11/25/cache1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/LL.jpg">
@@ -237,12 +242,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="常用命令大全 | 代码星辞">
+      <meta itemprop="name" content="Cache（一）什么是缓存？ | 代码星辞">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          常用命令大全
+          Cache（一）什么是缓存？
         </h1>
 
         <div class="post-meta-container">
@@ -252,9 +257,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2025-11-22 18:58:58 / 修改时间：20:38:11" itemprop="dateCreated datePublished" datetime="2025-11-22T18:58:58+08:00">2025-11-22</time>
+      <time title="创建时间：2025-11-25 14:51:20" itemprop="dateCreated datePublished" datetime="2025-11-25T14:51:20+08:00">2025-11-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-11-29 16:43:01" itemprop="dateModified" datetime="2025-11-29T16:43:01+08:00">2025-11-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -262,7 +273,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%B7%A5%E4%BD%9C/" itemprop="url" rel="index"><span itemprop="name">工作</span></a>
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
         </span>
     </span>
 
@@ -275,85 +286,27 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><blockquote class="blockquote-center">
-工作中常用的命令备忘
+    <div class="post-body" itemprop="articleBody"><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163710829.png" width="50%" alt="按宽度比例缩放">
+
+<blockquote class="blockquote-center">
+什么是缓存? Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写错误。
+
 </blockquote>
 
 <span id="more"></span>
 
-<h2 id="Git"><a href="#Git" class="headerlink" title=" Git"></a><i class="fab fa-github"></i> Git</h2><h3 id="⏩-本地改动-临时保存"><a href="#⏩-本地改动-临时保存" class="headerlink" title="⏩ 本地改动 临时保存"></a>⏩ 本地改动 临时保存</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">保存：git stash</span><br><span class="line">弹出：git stash pop</span><br></pre></td></tr></table></figure>
-<h3 id="⏩-Commit-整体撤销"><a href="#⏩-Commit-整体撤销" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
-<thead>
-<tr>
-<th align="left">描述</th>
-<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">撤销commit 不撤销add,不删除工作空间改动</td>
-<td align="left"><code>git reset --soft HEAD^</code></td>
-</tr>
-<tr>
-<td align="left">撤销commit 撤销add,  不删除工作空间改动</td>
-<td align="left"><code>git reset --mixed HEAD^</code></td>
-</tr>
-<tr>
-<td align="left">撤销commit 撤销add,  删除工作空间改动</td>
-<td align="left"><code>git reset --hard HEAD^</code></td>
-</tr>
-</tbody></table>
-<h3 id="⏩-Commit-撤销单独一个文件"><a href="#⏩-Commit-撤销单独一个文件" class="headerlink" title="⏩ Commit 撤销单独一个文件"></a>⏩ Commit 撤销单独一个文件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD^ 文件名</span><br><span class="line">git checkout 文件名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="一、存储器的存储结构"><a href="#一、存储器的存储结构" class="headerlink" title="一、存储器的存储结构"></a>一、存储器的存储结构</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129154449544.jpg" width="70%" alt="按宽度比例缩放">
 
-<h2 id="Shell"><a href="#Shell" class="headerlink" title=" Shell"></a><i class="fab fa-linux"></i> Shell</h2><h3 id="⏩-Commit-整体撤销-1"><a href="#⏩-Commit-整体撤销-1" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
-<thead>
-<tr>
-<th align="left">描述</th>
-<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">查找文件</td>
-<td align="left"><code>find . -name &quot;*.c&quot;</code></td>
-</tr>
-</tbody></table>
-<h3 id="⏩-文件权限"><a href="#⏩-文件权限" class="headerlink" title="⏩ 文件权限"></a>⏩ 文件权限</h3><div class="note danger"><p>常用： <code>chmod 777 文件名</code></p>
-</div>
+<p>存储结构综述<br>（1）cpu只能和主存，cache进行数据交互，而不能直接获得辅存的数据<br>（2）辅存的数据只能调入主存，不能直接进入缓存中。<br>（3）辅存到主存的映射是由OS操作系统管理的。但是主存和辅存之间的一个映射关系被放到TLB中，TLB在cache中。<br>（4）虚拟存储中的页表，段表，段页表被放到了主存中。cpu通过页表访问辅存时，发现缺页中断，就会先暂停程序的执行，先把数据调到内存。</p>
+<h2 id="二、一致性协议（Coherency-protocols）"><a href="#二、一致性协议（Coherency-protocols）" class="headerlink" title="二、一致性协议（Coherency protocols）"></a>二、一致性协议（Coherency protocols）</h2><p>Cache的不一致：内存数据拿到CPU Cache 之后，在后面的操作过程中，CPU Cache 里的值和内存中可能是不一样的。</p>
+<p><strong>【核心问题】只要系统只有一个CPU核在工作，一切都没问题。如果有多个核，每个核又都有自己的缓存，那么我们就遇到问题了：如果某个CPU缓存段中对应的内存内容被另外一个CPU偷偷改了，会发生什么？</strong></p>
+<p>好吧，答案很简单：什么也不会发生。这很糟糕。因为如果一个CPU缓存了某块内存，那么在其他CPU修改这块内存的时候，我们希望得到通知。我们拥有多组缓存的时候，真的需要它们保持同步。或者说，系统的内存在各个CPU之间无法做到与生俱来的同步，我们实际上是需要一个大家都能遵守的方法来达到同步的目的。<br>注意，这个问题的根源是我们拥有多组缓存，而不是多个CPU核。我们也可以这样解决问题，让多个CPU核共用一组缓存：也就是说只有一块一级缓存，所有处理器都必须共用它。在每一个指令周期，只有一个幸运的CPU能通过一级缓存做内存操作，运行它的指令。<br>这本身没问题。唯一的问题就是太慢了，因为这下处理器的时间都花在排队等待使用一级缓存了（并且处理器会做大量的这种操作，至少每个读写指令都要做一次）。我指出这一点是因为它表明了问题不是由多核引起的，而是由多缓存引起的。我们知道了只有一组缓存也能工作，只是太慢了，接下来最好就是能做到：使用多组缓存，但使它们的行为看起来就像只有一组缓存那样。缓存一致性协议就是为了做到这一点而设计的。就像名称所暗示的那样，这类协议就是要使多组缓存的内容保持一致。<br>缓存一致性协议有多种，但是你日常处理的大多数计算机设备使用的都属于“窥探（snooping）”协议，这也是我这里要讲的。（还有一种叫“基于目录的（directory-based）”协议，这种协议的延迟性较大，但是在拥有很多个处理器的系统中，它有更好的可扩展性。）<br>“窥探”背后的基本思想是，所有内存传输都发生在一条共享的总线上，而所有的处理器都能看到这条总线：缓存本身是独立的，但是内存是共享资源，所有的内存访问都要经过仲裁（arbitrate）：同一个指令周期中，只有一个缓存可以读写内存。窥探协议的思想是，缓存不仅仅在做内存传输的时候才和总线打交道，而是不停地在窥探总线上发生的数据交换，跟踪其他缓存在做什么。所以当一个缓存代表它所属的处理器去读写内存时，其他处理器都会得到通知，它们以此来使自己的缓存保持同步。只要某个处理器一写内存，其他处理器马上就知道这块内存在它们自己的缓存中对应的段已经失效。</p>
+<h2 id="三、读写一致性"><a href="#三、读写一致性" class="headerlink" title="三、读写一致性"></a>三、读写一致性</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162551520.jpg" width="50%" alt="按宽度比例缩放">
 
+<p>Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写错误。</p>
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162555004.jpg" width="50%" alt="按宽度比例缩放">
 
-<table>
-<thead>
-<tr>
-<th align="left">数字权限</th>
-<th align="left">字符权限（普通文件）</th>
-<th align="left">字符权限（目录）</th>
-<th align="left">场景</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">755</td>
-<td align="left">-rwxr-xr–</td>
-<td align="left">drwxr-xr-x</td>
-<td align="left">公开可执行文件 &#x2F; 目录（如网站程序）</td>
-</tr>
-<tr>
-<td align="left">644</td>
-<td align="left">-rw-r–r–</td>
-<td align="left">-（目录需 x 权限）</td>
-<td align="left">公开可读文件（如文档、配置文件）</td>
-</tr>
-<tr>
-<td align="left">700</td>
-<td align="left">-rwx——</td>
-<td align="left">drwx——</td>
-<td align="left">私有文件 &#x2F; 目录（仅所有者可操作）</td>
-</tr>
-<tr>
-<td align="left">777</td>
-<td align="left">-rwxrwxrwx</td>
-<td align="left">drwxrwxrwx</td>
-<td align="left">完全开放（不推荐，安全风险）</td>
-</tr>
-</tbody></table>
+<p>当Core对.MC中的数据进行写操作的时候，如果数据已经在cache中，新的数据会被更新到cache中。当其它核从.MC中读数据的时候，会直接从共享内存中读取相应的内容，如果cache中新的数据未被更新到.MC中，则其它核读取的不是更新后的内容，就会出现Core写一致性的问题。这时也需要用户进行数据维护，进行Wb将cache中的数据回写至.MC再读取。</p>
 <hr>
 
     </div>
@@ -386,7 +339,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://leo-2019.github.io/2025/11/22/command/" title="常用命令大全">https://leo-2019.github.io/2025/11/22/command/</a>
+      <a href="https://leo-2019.github.io/2025/11/25/cache1/" title="Cache（一）什么是缓存？">https://leo-2019.github.io/2025/11/25/cache1/</a>
   </li>
   <li class="post-copyright-license">
       <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -401,13 +354,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2025/11/20/Hexo/" rel="prev" title="Hexo Next 优化配置">
-                  <i class="fa fa-angle-left"></i> Hexo Next 优化配置
+                <a href="/2025/11/22/command/" rel="prev" title="常用命令大全">
+                  <i class="fa fa-angle-left"></i> 常用命令大全
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2025/11/25/cache1/" rel="next" title="Cache（一）什么是缓存？">
-                  Cache（一）什么是缓存？ <i class="fa fa-angle-right"></i>
+                <a href="/2025/11/28/cache2/" rel="next" title="Cache（二）如何进行数据缓存？">
+                  Cache（二）如何进行数据缓存？ <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -510,7 +463,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/3.0.1/quicklink.umd.js" integrity="sha256-44BednzIpUeQJcY8qtLyarFu0UCCTbgmWOvaoehiFQQ=" crossorigin="anonymous" defer></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/2025/11/22/command/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/2025/11/25/cache1/"}</script>
   <script src="/js/third-party/quicklink.js" defer></script>
 <script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Leo-2019/Leo-2019.github.io","issue_term":"pathname","theme":"github-light"}</script>
 <script src="/js/third-party/comments/utterances.js" defer></script>
