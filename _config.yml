@@ -125,3 +125,18 @@ encrypt: # hexo-blog-encrypt
     - {name: private, password: 19940706}
   wrong_pass_message: 抱歉，您输入的密码错误，请检查后重新输入。
   wrong_hash_message: 抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。
+  
+# 文章隐藏：https://github.com/prinsss/hexo-hide-posts
+hide_posts:
+  enable: true # 是否启用 hexo-hide-posts
+  filter: hidden # 隐藏文章的 front-matter 标识，也可以改成其他你喜欢的名字
+  noindex: true # 为隐藏的文章添加 noindex meta 标签，阻止搜索引擎收录
+  # 设置白名单，白名单中的 generator 可以访问隐藏文章
+  # 常见的 generators 有：index, tag, category, archive, sitemap, feed, etc.
+  # allowlist_generators: []
+  allowlist_generators: ['category']
+  
+  # 设置黑名单，黑名单中的 generator 不可以访问隐藏文章
+  # 如果同时设置了黑名单和白名单，白名单的优先级更高
+  # blocklist_generators: ['*']
+  # blocklist_generators: ['index', 'feed']

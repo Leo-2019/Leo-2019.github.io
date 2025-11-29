@@ -42,23 +42,13 @@ comments: false
 
 ## 🚩 活动地点
 {% note primary%} 
-**望京东 绿地** 
+**望京东 绿地** ⏩ **望京小街** ⏩**将台 坝河**⏩**798** 
 {% endnote %}
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251120230155788.jpg" width="80%" alt="按宽度比例缩放">
-
-{% note primary%} 
-**望京小街**
-{% endnote %} 
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251120230159180.jpg" width="80%" alt="按宽度比例缩放">
-
-{% note primary%} 
-**将台 坝河**
-{% endnote %} 
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251120230147099.jpg" width="80%" alt="按宽度比例缩放">
-
-{% note primary%} 
-**798**
-{% endnote %} 
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251120230152155.jpg" width="80%" alt="按宽度比例缩放">
+{% gp 4-3 %}
+![](https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251120230155788.jpg)
+![](https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251120230159180.jpg)
+![](https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251120230147099.jpg)
+![](https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251120230152155.jpg)
+{% endgp %}
 
 ---
