@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo Next 优化配置</title>
+    <url>/2025/11/20/Hexo/</url>
+    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116154812165.png" width="50%" alt="按宽度比例缩放">
+
+<blockquote class="blockquote-center">
+Hexo Next 的优化或配置方法。
+</blockquote>
+
+<span id="more"></span>
+
+
+<div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
+<p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
+<a href="https://theme-next.js.org/"></a>
+</div></div>
+
+<h2 id="⏩-取消特定页面的评论区"><a href="#⏩-取消特定页面的评论区" class="headerlink" title="⏩ 取消特定页面的评论区"></a>⏩ 取消特定页面的评论区</h2><p>当安装了评论功能后，基本上所有页面都会有评论区，如果我们需要关掉某些页面（如标签页，分类页面，个人介绍页面）的评论区，可以在页面顶部的添加一行配置项。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2025-11-09 23:11:17</span><br><span class="line">type: categories</span><br><span class="line"><span class="section">comments: false   #关闭评论</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="⏩-特制化初始页面模板"><a href="#⏩-特制化初始页面模板" class="headerlink" title="⏩ 特制化初始页面模板"></a>⏩ 特制化初始页面模板</h2><p>通过 <mark class="label danger"> hexo new</mark> 创建新的博文时，页面初始化状态较为简单，如果想做一些个性化设置，可以直接在 <mark class="label danger"> <em>\scaffolds\page.md</em></mark> 路径下 的 <mark class="label danger"> <strong>page.md</strong></mark> 里进行模板修改。</p>
+<hr>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows 一键召唤🎃：给应用文件 “起名”</title>
     <url>/2025/11/10/Window%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</url>
     <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251115205846524.jpg" width="70%" alt="按宽度比例缩放">
@@ -96,37 +127,6 @@
       </categories>
       <tags>
         <tag>工作习惯</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo Next 优化配置</title>
-    <url>/2025/11/20/Hexo/</url>
-    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116154812165.png" width="50%" alt="按宽度比例缩放">
-
-<blockquote class="blockquote-center">
-Hexo Next 的优化或配置方法。
-</blockquote>
-
-<span id="more"></span>
-
-
-<div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
-<p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
-<a href="https://theme-next.js.org/"></a>
-</div></div>
-
-<h2 id="⏩-取消特定页面的评论区"><a href="#⏩-取消特定页面的评论区" class="headerlink" title="⏩ 取消特定页面的评论区"></a>⏩ 取消特定页面的评论区</h2><p>当安装了评论功能后，基本上所有页面都会有评论区，如果我们需要关掉某些页面（如标签页，分类页面，个人介绍页面）的评论区，可以在页面顶部的添加一行配置项。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2025-11-09 23:11:17</span><br><span class="line">type: categories</span><br><span class="line"><span class="section">comments: false   #关闭评论</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="⏩-特制化初始页面模板"><a href="#⏩-特制化初始页面模板" class="headerlink" title="⏩ 特制化初始页面模板"></a>⏩ 特制化初始页面模板</h2><p>通过 <mark class="label danger"> hexo new</mark> 创建新的博文时，页面初始化状态较为简单，如果想做一些个性化设置，可以直接在 <mark class="label danger"> <em>\scaffolds\page.md</em></mark> 路径下 的 <mark class="label danger"> <strong>page.md</strong></mark> 里进行模板修改。</p>
-<hr>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -286,97 +286,6 @@ Hexo Next 的优化或配置方法。
       </tags>
   </entry>
   <entry>
-    <title>常用命令大全</title>
-    <url>/2025/11/22/command/</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-工作中常用的命令备忘
-</blockquote>
-
-<span id="more"></span>
-
-<h2 id="Git"><a href="#Git" class="headerlink" title=" Git"></a><i class="fab fa-github"></i> Git</h2><h3 id="⏩-本地改动-临时保存"><a href="#⏩-本地改动-临时保存" class="headerlink" title="⏩ 本地改动 临时保存"></a>⏩ 本地改动 临时保存</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">保存：git stash</span><br><span class="line">弹出：git stash pop</span><br></pre></td></tr></table></figure>
-<h3 id="⏩-Commit-整体撤销"><a href="#⏩-Commit-整体撤销" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
-<thead>
-<tr>
-<th align="left">描述</th>
-<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">撤销commit 不撤销add,不删除工作空间改动</td>
-<td align="left"><code>git reset --soft HEAD^</code></td>
-</tr>
-<tr>
-<td align="left">撤销commit 撤销add,  不删除工作空间改动</td>
-<td align="left"><code>git reset --mixed HEAD^</code></td>
-</tr>
-<tr>
-<td align="left">撤销commit 撤销add,  删除工作空间改动</td>
-<td align="left"><code>git reset --hard HEAD^</code></td>
-</tr>
-</tbody></table>
-<h3 id="⏩-Commit-撤销单独一个文件"><a href="#⏩-Commit-撤销单独一个文件" class="headerlink" title="⏩ Commit 撤销单独一个文件"></a>⏩ Commit 撤销单独一个文件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git reset HEAD^ 文件名</span><br><span class="line">git checkout 文件名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="Shell"><a href="#Shell" class="headerlink" title=" Shell"></a><i class="fab fa-linux"></i> Shell</h2><h3 id="⏩-Commit-整体撤销-1"><a href="#⏩-Commit-整体撤销-1" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
-<thead>
-<tr>
-<th align="left">描述</th>
-<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">查找文件</td>
-<td align="left"><code>find . -name &quot;*.c&quot;</code></td>
-</tr>
-</tbody></table>
-<h3 id="⏩-文件权限"><a href="#⏩-文件权限" class="headerlink" title="⏩ 文件权限"></a>⏩ 文件权限</h3><div class="note danger"><p>常用： <code>chmod 777 文件名</code></p>
-</div>
-
-
-<table>
-<thead>
-<tr>
-<th align="left">数字权限</th>
-<th align="left">字符权限（普通文件）</th>
-<th align="left">字符权限（目录）</th>
-<th align="left">场景</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">755</td>
-<td align="left">-rwxr-xr–</td>
-<td align="left">drwxr-xr-x</td>
-<td align="left">公开可执行文件 &#x2F; 目录（如网站程序）</td>
-</tr>
-<tr>
-<td align="left">644</td>
-<td align="left">-rw-r–r–</td>
-<td align="left">-（目录需 x 权限）</td>
-<td align="left">公开可读文件（如文档、配置文件）</td>
-</tr>
-<tr>
-<td align="left">700</td>
-<td align="left">-rwx——</td>
-<td align="left">drwx——</td>
-<td align="left">私有文件 &#x2F; 目录（仅所有者可操作）</td>
-</tr>
-<tr>
-<td align="left">777</td>
-<td align="left">-rwxrwxrwx</td>
-<td align="left">drwxrwxrwx</td>
-<td align="left">完全开放（不推荐，安全风险）</td>
-</tr>
-</tbody></table>
-<hr>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Next 文章实现禁止复制</title>
     <url>/2025/11/10/%E7%A6%81%E6%AD%A2%E5%A4%8D%E5%88%B6/</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -410,25 +319,6 @@ Hexo Next 的优化或配置方法。
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SPI</title>
-    <url>/2025/12/01/SPI/</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-SPI
-</blockquote>
-
-<span id="more"></span>
-
-<p>主机(Master)将要发送的数据写到发送数据缓存区(Menory)，缓存区经过移位寄存器(0<del>7)，串行移位寄存器通过MoSI信号线将字节一位一位的移出去传送给从机，，同时MISO接口接收到的数据经过移位寄存器一位一位的移到接收缓存区。<br> [图像]<br>从机(Slave)也将自己的串行移位寄存器(0</del>7)中的内容通过MISO信号线返回给主机。同时通过MOSI信号线接收主机发送的数据，这样，两个移位寄存器中的内容就被交换。<br> <br> [在这里插入图片描述]<br>每个时钟周期，主设备和从设备都会移位一位数据，形成同步交换。<br> <br>SPI只有主模式和从模式之分，没有读和写的说法，外设的写操作和读操作是同步完成的。如果只进行写操作，主机只需忽略接收到的字节；反之，若主机要读取从机的一个字节，就必须发送一个空字节来引发从机的传输。也就是说，你发一个数据必然会收到一个数据；你要收一个数据必须也要先发一个数据。<br> <br>那么如何判定当前收到的数据时有效数据呢？<br>主设备无法“自动”判断数据是否有效，必须依赖 协议约定（字节序、状态字节、延迟、校验）。这也是为什么 SPI 通信通常需要 严格遵循设备手册。<br> <br> <br>SPI 四种模式：<br>主从设备的在通信时 数据采样时刻 和触发时刻 应想匹配。但不同厂商的设备，使从设备的不一样，所以就需要用 不同的模式调整，使其两端匹配。<br> [在这里插入图片描述]<br> [图像]</p>
-<hr>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -568,6 +458,97 @@ SPI
       </tags>
   </entry>
   <entry>
+    <title>常用命令大全</title>
+    <url>/2025/11/22/command/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+工作中常用的命令备忘
+</blockquote>
+
+<span id="more"></span>
+
+<h2 id="Git"><a href="#Git" class="headerlink" title=" Git"></a><i class="fab fa-github"></i> Git</h2><h3 id="⏩-本地改动-临时保存"><a href="#⏩-本地改动-临时保存" class="headerlink" title="⏩ 本地改动 临时保存"></a>⏩ 本地改动 临时保存</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">保存：git stash</span><br><span class="line">弹出：git stash pop</span><br></pre></td></tr></table></figure>
+<h3 id="⏩-Commit-整体撤销"><a href="#⏩-Commit-整体撤销" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
+<thead>
+<tr>
+<th align="left">描述</th>
+<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">撤销commit 不撤销add,不删除工作空间改动</td>
+<td align="left"><code>git reset --soft HEAD^</code></td>
+</tr>
+<tr>
+<td align="left">撤销commit 撤销add,  不删除工作空间改动</td>
+<td align="left"><code>git reset --mixed HEAD^</code></td>
+</tr>
+<tr>
+<td align="left">撤销commit 撤销add,  删除工作空间改动</td>
+<td align="left"><code>git reset --hard HEAD^</code></td>
+</tr>
+</tbody></table>
+<h3 id="⏩-Commit-撤销单独一个文件"><a href="#⏩-Commit-撤销单独一个文件" class="headerlink" title="⏩ Commit 撤销单独一个文件"></a>⏩ Commit 撤销单独一个文件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git reset HEAD^ 文件名</span><br><span class="line">git checkout 文件名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Shell"><a href="#Shell" class="headerlink" title=" Shell"></a><i class="fab fa-linux"></i> Shell</h2><h3 id="⏩-Commit-整体撤销-1"><a href="#⏩-Commit-整体撤销-1" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
+<thead>
+<tr>
+<th align="left">描述</th>
+<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">查找文件</td>
+<td align="left"><code>find . -name &quot;*.c&quot;</code></td>
+</tr>
+</tbody></table>
+<h3 id="⏩-文件权限"><a href="#⏩-文件权限" class="headerlink" title="⏩ 文件权限"></a>⏩ 文件权限</h3><div class="note danger"><p>常用： <code>chmod 777 文件名</code></p>
+</div>
+
+
+<table>
+<thead>
+<tr>
+<th align="left">数字权限</th>
+<th align="left">字符权限（普通文件）</th>
+<th align="left">字符权限（目录）</th>
+<th align="left">场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">755</td>
+<td align="left">-rwxr-xr–</td>
+<td align="left">drwxr-xr-x</td>
+<td align="left">公开可执行文件 &#x2F; 目录（如网站程序）</td>
+</tr>
+<tr>
+<td align="left">644</td>
+<td align="left">-rw-r–r–</td>
+<td align="left">-（目录需 x 权限）</td>
+<td align="left">公开可读文件（如文档、配置文件）</td>
+</tr>
+<tr>
+<td align="left">700</td>
+<td align="left">-rwx——</td>
+<td align="left">drwx——</td>
+<td align="left">私有文件 &#x2F; 目录（仅所有者可操作）</td>
+</tr>
+<tr>
+<td align="left">777</td>
+<td align="left">-rwxrwxrwx</td>
+<td align="left">drwxrwxrwx</td>
+<td align="left">完全开放（不推荐，安全风险）</td>
+</tr>
+</tbody></table>
+<hr>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2025/11/11/hello-world/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
@@ -587,6 +568,25 @@ SPI
       </categories>
       <tags>
         <tag>private</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SPI</title>
+    <url>/2025/12/01/SPI/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+SPI
+</blockquote>
+
+<span id="more"></span>
+
+<p>主机(Master)将要发送的数据写到发送数据缓存区(Menory)，缓存区经过移位寄存器(0<del>7)，串行移位寄存器通过MoSI信号线将字节一位一位的移出去传送给从机，，同时MISO接口接收到的数据经过移位寄存器一位一位的移到接收缓存区。<br> [图像]<br>从机(Slave)也将自己的串行移位寄存器(0</del>7)中的内容通过MISO信号线返回给主机。同时通过MOSI信号线接收主机发送的数据，这样，两个移位寄存器中的内容就被交换。<br> <br> [在这里插入图片描述]<br>每个时钟周期，主设备和从设备都会移位一位数据，形成同步交换。<br> <br>SPI只有主模式和从模式之分，没有读和写的说法，外设的写操作和读操作是同步完成的。如果只进行写操作，主机只需忽略接收到的字节；反之，若主机要读取从机的一个字节，就必须发送一个空字节来引发从机的传输。也就是说，你发一个数据必然会收到一个数据；你要收一个数据必须也要先发一个数据。<br> <br>那么如何判定当前收到的数据时有效数据呢？<br>主设备无法“自动”判断数据是否有效，必须依赖 协议约定（字节序、状态字节、延迟、校验）。这也是为什么 SPI 通信通常需要 严格遵循设备手册。<br> <br> <br>SPI 四种模式：<br>主从设备的在通信时 数据采样时刻 和触发时刻 应想匹配。但不同厂商的设备，使从设备的不一样，所以就需要用 不同的模式调整，使其两端匹配。<br> [在这里插入图片描述]<br> [图像]</p>
+<hr>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
