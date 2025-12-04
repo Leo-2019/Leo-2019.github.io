@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Cache（一）什么是缓存？</title>
+    <url>/2025/11/25/cache1/</url>
+    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163710829.png" width="50%" alt="按宽度比例缩放">
+
+<blockquote class="blockquote-center">
+什么是缓存? Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写错误。
+
+</blockquote>
+
+<span id="more"></span>
+
+<h2 id="一、存储器的存储结构"><a href="#一、存储器的存储结构" class="headerlink" title="一、存储器的存储结构"></a>一、存储器的存储结构</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129154449544.jpg" width="70%" alt="按宽度比例缩放">
+
+<p>存储结构综述<br>（1）cpu只能和主存，cache进行数据交互，而不能直接获得辅存的数据<br>（2）辅存的数据只能调入主存，不能直接进入缓存中。<br>（3）辅存到主存的映射是由OS操作系统管理的。但是主存和辅存之间的一个映射关系被放到TLB中，TLB在cache中。<br>（4）虚拟存储中的页表，段表，段页表被放到了主存中。cpu通过页表访问辅存时，发现缺页中断，就会先暂停程序的执行，先把数据调到内存。</p>
+<h2 id="二、一致性协议（Coherency-protocols）"><a href="#二、一致性协议（Coherency-protocols）" class="headerlink" title="二、一致性协议（Coherency protocols）"></a>二、一致性协议（Coherency protocols）</h2><p>Cache的不一致：内存数据拿到CPU Cache 之后，在后面的操作过程中，CPU Cache 里的值和内存中可能是不一样的。</p>
+<p><strong>【核心问题】只要系统只有一个CPU核在工作，一切都没问题。如果有多个核，每个核又都有自己的缓存，那么我们就遇到问题了：如果某个CPU缓存段中对应的内存内容被另外一个CPU偷偷改了，会发生什么？</strong></p>
+<p>好吧，答案很简单：什么也不会发生。这很糟糕。因为如果一个CPU缓存了某块内存，那么在其他CPU修改这块内存的时候，我们希望得到通知。我们拥有多组缓存的时候，真的需要它们保持同步。或者说，系统的内存在各个CPU之间无法做到与生俱来的同步，我们实际上是需要一个大家都能遵守的方法来达到同步的目的。<br>注意，这个问题的根源是我们拥有多组缓存，而不是多个CPU核。我们也可以这样解决问题，让多个CPU核共用一组缓存：也就是说只有一块一级缓存，所有处理器都必须共用它。在每一个指令周期，只有一个幸运的CPU能通过一级缓存做内存操作，运行它的指令。<br>这本身没问题。唯一的问题就是太慢了，因为这下处理器的时间都花在排队等待使用一级缓存了（并且处理器会做大量的这种操作，至少每个读写指令都要做一次）。我指出这一点是因为它表明了问题不是由多核引起的，而是由多缓存引起的。我们知道了只有一组缓存也能工作，只是太慢了，接下来最好就是能做到：使用多组缓存，但使它们的行为看起来就像只有一组缓存那样。缓存一致性协议就是为了做到这一点而设计的。就像名称所暗示的那样，这类协议就是要使多组缓存的内容保持一致。<br>缓存一致性协议有多种，但是你日常处理的大多数计算机设备使用的都属于“窥探（snooping）”协议，这也是我这里要讲的。（还有一种叫“基于目录的（directory-based）”协议，这种协议的延迟性较大，但是在拥有很多个处理器的系统中，它有更好的可扩展性。）<br>“窥探”背后的基本思想是，所有内存传输都发生在一条共享的总线上，而所有的处理器都能看到这条总线：缓存本身是独立的，但是内存是共享资源，所有的内存访问都要经过仲裁（arbitrate）：同一个指令周期中，只有一个缓存可以读写内存。窥探协议的思想是，缓存不仅仅在做内存传输的时候才和总线打交道，而是不停地在窥探总线上发生的数据交换，跟踪其他缓存在做什么。所以当一个缓存代表它所属的处理器去读写内存时，其他处理器都会得到通知，它们以此来使自己的缓存保持同步。只要某个处理器一写内存，其他处理器马上就知道这块内存在它们自己的缓存中对应的段已经失效。</p>
+<h2 id="三、读写一致性"><a href="#三、读写一致性" class="headerlink" title="三、读写一致性"></a>三、读写一致性</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162551520.jpg" width="50%" alt="按宽度比例缩放">
+
+<p>Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写错误。</p>
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162555004.jpg" width="50%" alt="按宽度比例缩放">
+
+<p>当Core对.MC中的数据进行写操作的时候，如果数据已经在cache中，新的数据会被更新到cache中。当其它核从.MC中读数据的时候，会直接从共享内存中读取相应的内容，如果cache中新的数据未被更新到.MC中，则其它核读取的不是更新后的内容，就会出现Core写一致性的问题。这时也需要用户进行数据维护，进行Wb将cache中的数据回写至.MC再读取。</p>
+<hr>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo Next 优化配置</title>
     <url>/2025/11/20/Hexo/</url>
     <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116154812165.png" width="50%" alt="按宽度比例缩放">
@@ -216,39 +249,6 @@ Hexo Next 的优化或配置方法。
       </tags>
   </entry>
   <entry>
-    <title>Cache（一）什么是缓存？</title>
-    <url>/2025/11/25/cache1/</url>
-    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163710829.png" width="50%" alt="按宽度比例缩放">
-
-<blockquote class="blockquote-center">
-什么是缓存? Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写错误。
-
-</blockquote>
-
-<span id="more"></span>
-
-<h2 id="一、存储器的存储结构"><a href="#一、存储器的存储结构" class="headerlink" title="一、存储器的存储结构"></a>一、存储器的存储结构</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129154449544.jpg" width="70%" alt="按宽度比例缩放">
-
-<p>存储结构综述<br>（1）cpu只能和主存，cache进行数据交互，而不能直接获得辅存的数据<br>（2）辅存的数据只能调入主存，不能直接进入缓存中。<br>（3）辅存到主存的映射是由OS操作系统管理的。但是主存和辅存之间的一个映射关系被放到TLB中，TLB在cache中。<br>（4）虚拟存储中的页表，段表，段页表被放到了主存中。cpu通过页表访问辅存时，发现缺页中断，就会先暂停程序的执行，先把数据调到内存。</p>
-<h2 id="二、一致性协议（Coherency-protocols）"><a href="#二、一致性协议（Coherency-protocols）" class="headerlink" title="二、一致性协议（Coherency protocols）"></a>二、一致性协议（Coherency protocols）</h2><p>Cache的不一致：内存数据拿到CPU Cache 之后，在后面的操作过程中，CPU Cache 里的值和内存中可能是不一样的。</p>
-<p><strong>【核心问题】只要系统只有一个CPU核在工作，一切都没问题。如果有多个核，每个核又都有自己的缓存，那么我们就遇到问题了：如果某个CPU缓存段中对应的内存内容被另外一个CPU偷偷改了，会发生什么？</strong></p>
-<p>好吧，答案很简单：什么也不会发生。这很糟糕。因为如果一个CPU缓存了某块内存，那么在其他CPU修改这块内存的时候，我们希望得到通知。我们拥有多组缓存的时候，真的需要它们保持同步。或者说，系统的内存在各个CPU之间无法做到与生俱来的同步，我们实际上是需要一个大家都能遵守的方法来达到同步的目的。<br>注意，这个问题的根源是我们拥有多组缓存，而不是多个CPU核。我们也可以这样解决问题，让多个CPU核共用一组缓存：也就是说只有一块一级缓存，所有处理器都必须共用它。在每一个指令周期，只有一个幸运的CPU能通过一级缓存做内存操作，运行它的指令。<br>这本身没问题。唯一的问题就是太慢了，因为这下处理器的时间都花在排队等待使用一级缓存了（并且处理器会做大量的这种操作，至少每个读写指令都要做一次）。我指出这一点是因为它表明了问题不是由多核引起的，而是由多缓存引起的。我们知道了只有一组缓存也能工作，只是太慢了，接下来最好就是能做到：使用多组缓存，但使它们的行为看起来就像只有一组缓存那样。缓存一致性协议就是为了做到这一点而设计的。就像名称所暗示的那样，这类协议就是要使多组缓存的内容保持一致。<br>缓存一致性协议有多种，但是你日常处理的大多数计算机设备使用的都属于“窥探（snooping）”协议，这也是我这里要讲的。（还有一种叫“基于目录的（directory-based）”协议，这种协议的延迟性较大，但是在拥有很多个处理器的系统中，它有更好的可扩展性。）<br>“窥探”背后的基本思想是，所有内存传输都发生在一条共享的总线上，而所有的处理器都能看到这条总线：缓存本身是独立的，但是内存是共享资源，所有的内存访问都要经过仲裁（arbitrate）：同一个指令周期中，只有一个缓存可以读写内存。窥探协议的思想是，缓存不仅仅在做内存传输的时候才和总线打交道，而是不停地在窥探总线上发生的数据交换，跟踪其他缓存在做什么。所以当一个缓存代表它所属的处理器去读写内存时，其他处理器都会得到通知，它们以此来使自己的缓存保持同步。只要某个处理器一写内存，其他处理器马上就知道这块内存在它们自己的缓存中对应的段已经失效。</p>
-<h2 id="三、读写一致性"><a href="#三、读写一致性" class="headerlink" title="三、读写一致性"></a>三、读写一致性</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162551520.jpg" width="50%" alt="按宽度比例缩放">
-
-<p>Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写错误。</p>
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162555004.jpg" width="50%" alt="按宽度比例缩放">
-
-<p>当Core对.MC中的数据进行写操作的时候，如果数据已经在cache中，新的数据会被更新到cache中。当其它核从.MC中读数据的时候，会直接从共享内存中读取相应的内容，如果cache中新的数据未被更新到.MC中，则其它核读取的不是更新后的内容，就会出现Core写一致性的问题。这时也需要用户进行数据维护，进行Wb将cache中的数据回写至.MC再读取。</p>
-<hr>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cache（三）多核处理器TMS320C6678的缓存方法</title>
     <url>/2025/11/29/cache3/</url>
     <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163708522.jpg" width="30%" alt="按宽度比例缩放">
@@ -280,6 +280,97 @@ Hexo Next 的优化或配置方法。
 ]]></content>
       <categories>
         <category>技术</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用命令大全</title>
+    <url>/2025/11/22/command/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+工作中常用的命令备忘
+</blockquote>
+
+<span id="more"></span>
+
+<h2 id="Git"><a href="#Git" class="headerlink" title=" Git"></a><i class="fab fa-github"></i> Git</h2><h3 id="⏩-本地改动-临时保存"><a href="#⏩-本地改动-临时保存" class="headerlink" title="⏩ 本地改动 临时保存"></a>⏩ 本地改动 临时保存</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">保存：git stash</span><br><span class="line">弹出：git stash pop</span><br></pre></td></tr></table></figure>
+<h3 id="⏩-Commit-整体撤销"><a href="#⏩-Commit-整体撤销" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
+<thead>
+<tr>
+<th align="left">描述</th>
+<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">撤销commit 不撤销add,不删除工作空间改动</td>
+<td align="left"><code>git reset --soft HEAD^</code></td>
+</tr>
+<tr>
+<td align="left">撤销commit 撤销add,  不删除工作空间改动</td>
+<td align="left"><code>git reset --mixed HEAD^</code></td>
+</tr>
+<tr>
+<td align="left">撤销commit 撤销add,  删除工作空间改动</td>
+<td align="left"><code>git reset --hard HEAD^</code></td>
+</tr>
+</tbody></table>
+<h3 id="⏩-Commit-撤销单独一个文件"><a href="#⏩-Commit-撤销单独一个文件" class="headerlink" title="⏩ Commit 撤销单独一个文件"></a>⏩ Commit 撤销单独一个文件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git reset HEAD^ 文件名</span><br><span class="line">git checkout 文件名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Shell"><a href="#Shell" class="headerlink" title=" Shell"></a><i class="fab fa-linux"></i> Shell</h2><h3 id="⏩-Commit-整体撤销-1"><a href="#⏩-Commit-整体撤销-1" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
+<thead>
+<tr>
+<th align="left">描述</th>
+<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">查找文件</td>
+<td align="left"><code>find . -name &quot;*.c&quot;</code></td>
+</tr>
+</tbody></table>
+<h3 id="⏩-文件权限"><a href="#⏩-文件权限" class="headerlink" title="⏩ 文件权限"></a>⏩ 文件权限</h3><div class="note danger"><p>常用： <code>chmod 777 文件名</code></p>
+</div>
+
+
+<table>
+<thead>
+<tr>
+<th align="left">数字权限</th>
+<th align="left">字符权限（普通文件）</th>
+<th align="left">字符权限（目录）</th>
+<th align="left">场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">755</td>
+<td align="left">-rwxr-xr–</td>
+<td align="left">drwxr-xr-x</td>
+<td align="left">公开可执行文件 &#x2F; 目录（如网站程序）</td>
+</tr>
+<tr>
+<td align="left">644</td>
+<td align="left">-rw-r–r–</td>
+<td align="left">-（目录需 x 权限）</td>
+<td align="left">公开可读文件（如文档、配置文件）</td>
+</tr>
+<tr>
+<td align="left">700</td>
+<td align="left">-rwx——</td>
+<td align="left">drwx——</td>
+<td align="left">私有文件 &#x2F; 目录（仅所有者可操作）</td>
+</tr>
+<tr>
+<td align="left">777</td>
+<td align="left">-rwxrwxrwx</td>
+<td align="left">drwxrwxrwx</td>
+<td align="left">完全开放（不推荐，安全风险）</td>
+</tr>
+</tbody></table>
+<hr>
+]]></content>
+      <categories>
+        <category>工作</category>
       </categories>
       <tags>
         <tag>笔记</tag>
@@ -319,6 +410,25 @@ Hexo Next 的优化或配置方法。
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SPI</title>
+    <url>/2025/12/01/SPI/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+SPI
+</blockquote>
+
+<span id="more"></span>
+
+<p>主机(Master)将要发送的数据写到发送数据缓存区(Menory)，缓存区经过移位寄存器(0<del>7)，串行移位寄存器通过MoSI信号线将字节一位一位的移出去传送给从机，，同时MISO接口接收到的数据经过移位寄存器一位一位的移到接收缓存区。<br> [图像]<br>从机(Slave)也将自己的串行移位寄存器(0</del>7)中的内容通过MISO信号线返回给主机。同时通过MOSI信号线接收主机发送的数据，这样，两个移位寄存器中的内容就被交换。<br> <br> [在这里插入图片描述]<br>每个时钟周期，主设备和从设备都会移位一位数据，形成同步交换。<br> <br>SPI只有主模式和从模式之分，没有读和写的说法，外设的写操作和读操作是同步完成的。如果只进行写操作，主机只需忽略接收到的字节；反之，若主机要读取从机的一个字节，就必须发送一个空字节来引发从机的传输。也就是说，你发一个数据必然会收到一个数据；你要收一个数据必须也要先发一个数据。<br> <br>那么如何判定当前收到的数据时有效数据呢？<br>主设备无法“自动”判断数据是否有效，必须依赖 协议约定（字节序、状态字节、延迟、校验）。这也是为什么 SPI 通信通常需要 严格遵循设备手册。<br> <br> <br>SPI 四种模式：<br>主从设备的在通信时 数据采样时刻 和触发时刻 应想匹配。但不同厂商的设备，使从设备的不一样，所以就需要用 不同的模式调整，使其两端匹配。<br> [在这里插入图片描述]<br> [图像]</p>
+<hr>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -458,97 +568,6 @@ Hexo Next 的优化或配置方法。
       </tags>
   </entry>
   <entry>
-    <title>常用命令大全</title>
-    <url>/2025/11/22/command/</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-工作中常用的命令备忘
-</blockquote>
-
-<span id="more"></span>
-
-<h2 id="Git"><a href="#Git" class="headerlink" title=" Git"></a><i class="fab fa-github"></i> Git</h2><h3 id="⏩-本地改动-临时保存"><a href="#⏩-本地改动-临时保存" class="headerlink" title="⏩ 本地改动 临时保存"></a>⏩ 本地改动 临时保存</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">保存：git stash</span><br><span class="line">弹出：git stash pop</span><br></pre></td></tr></table></figure>
-<h3 id="⏩-Commit-整体撤销"><a href="#⏩-Commit-整体撤销" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
-<thead>
-<tr>
-<th align="left">描述</th>
-<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">撤销commit 不撤销add,不删除工作空间改动</td>
-<td align="left"><code>git reset --soft HEAD^</code></td>
-</tr>
-<tr>
-<td align="left">撤销commit 撤销add,  不删除工作空间改动</td>
-<td align="left"><code>git reset --mixed HEAD^</code></td>
-</tr>
-<tr>
-<td align="left">撤销commit 撤销add,  删除工作空间改动</td>
-<td align="left"><code>git reset --hard HEAD^</code></td>
-</tr>
-</tbody></table>
-<h3 id="⏩-Commit-撤销单独一个文件"><a href="#⏩-Commit-撤销单独一个文件" class="headerlink" title="⏩ Commit 撤销单独一个文件"></a>⏩ Commit 撤销单独一个文件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git reset HEAD^ 文件名</span><br><span class="line">git checkout 文件名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="Shell"><a href="#Shell" class="headerlink" title=" Shell"></a><i class="fab fa-linux"></i> Shell</h2><h3 id="⏩-Commit-整体撤销-1"><a href="#⏩-Commit-整体撤销-1" class="headerlink" title="⏩ Commit 整体撤销"></a>⏩ Commit 整体撤销</h3><table>
-<thead>
-<tr>
-<th align="left">描述</th>
-<th align="left">命令 <span style="width: 200px; display: inline-block;"></span></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">查找文件</td>
-<td align="left"><code>find . -name &quot;*.c&quot;</code></td>
-</tr>
-</tbody></table>
-<h3 id="⏩-文件权限"><a href="#⏩-文件权限" class="headerlink" title="⏩ 文件权限"></a>⏩ 文件权限</h3><div class="note danger"><p>常用： <code>chmod 777 文件名</code></p>
-</div>
-
-
-<table>
-<thead>
-<tr>
-<th align="left">数字权限</th>
-<th align="left">字符权限（普通文件）</th>
-<th align="left">字符权限（目录）</th>
-<th align="left">场景</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">755</td>
-<td align="left">-rwxr-xr–</td>
-<td align="left">drwxr-xr-x</td>
-<td align="left">公开可执行文件 &#x2F; 目录（如网站程序）</td>
-</tr>
-<tr>
-<td align="left">644</td>
-<td align="left">-rw-r–r–</td>
-<td align="left">-（目录需 x 权限）</td>
-<td align="left">公开可读文件（如文档、配置文件）</td>
-</tr>
-<tr>
-<td align="left">700</td>
-<td align="left">-rwx——</td>
-<td align="left">drwx——</td>
-<td align="left">私有文件 &#x2F; 目录（仅所有者可操作）</td>
-</tr>
-<tr>
-<td align="left">777</td>
-<td align="left">-rwxrwxrwx</td>
-<td align="left">drwxrwxrwx</td>
-<td align="left">完全开放（不推荐，安全风险）</td>
-</tr>
-</tbody></table>
-<hr>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2025/11/11/hello-world/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
@@ -568,25 +587,6 @@ Hexo Next 的优化或配置方法。
       </categories>
       <tags>
         <tag>private</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SPI</title>
-    <url>/2025/12/01/SPI/</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-SPI
-</blockquote>
-
-<span id="more"></span>
-
-<p>主机(Master)将要发送的数据写到发送数据缓存区(Menory)，缓存区经过移位寄存器(0<del>7)，串行移位寄存器通过MoSI信号线将字节一位一位的移出去传送给从机，，同时MISO接口接收到的数据经过移位寄存器一位一位的移到接收缓存区。<br> [图像]<br>从机(Slave)也将自己的串行移位寄存器(0</del>7)中的内容通过MISO信号线返回给主机。同时通过MOSI信号线接收主机发送的数据，这样，两个移位寄存器中的内容就被交换。<br> <br> [在这里插入图片描述]<br>每个时钟周期，主设备和从设备都会移位一位数据，形成同步交换。<br> <br>SPI只有主模式和从模式之分，没有读和写的说法，外设的写操作和读操作是同步完成的。如果只进行写操作，主机只需忽略接收到的字节；反之，若主机要读取从机的一个字节，就必须发送一个空字节来引发从机的传输。也就是说，你发一个数据必然会收到一个数据；你要收一个数据必须也要先发一个数据。<br> <br>那么如何判定当前收到的数据时有效数据呢？<br>主设备无法“自动”判断数据是否有效，必须依赖 协议约定（字节序、状态字节、延迟、校验）。这也是为什么 SPI 通信通常需要 严格遵循设备手册。<br> <br> <br>SPI 四种模式：<br>主从设备的在通信时 数据采样时刻 和触发时刻 应想匹配。但不同厂商的设备，使从设备的不一样，所以就需要用 不同的模式调整，使其两端匹配。<br> [在这里插入图片描述]<br> [图像]</p>
-<hr>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
