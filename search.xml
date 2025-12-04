@@ -1,37 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo Next 优化配置</title>
-    <url>/2025/11/20/Hexo/</url>
-    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116154812165.png" width="50%" alt="按宽度比例缩放">
-
-<blockquote class="blockquote-center">
-Hexo Next 的优化或配置方法。
-</blockquote>
-
-<span id="more"></span>
-
-
-<div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
-<p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
-<a href="https://theme-next.js.org/"></a>
-</div></div>
-
-<h2 id="⏩-取消特定页面的评论区"><a href="#⏩-取消特定页面的评论区" class="headerlink" title="⏩ 取消特定页面的评论区"></a>⏩ 取消特定页面的评论区</h2><p>当安装了评论功能后，基本上所有页面都会有评论区，如果我们需要关掉某些页面（如标签页，分类页面，个人介绍页面）的评论区，可以在页面顶部的添加一行配置项。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2025-11-09 23:11:17</span><br><span class="line">type: categories</span><br><span class="line"><span class="section">comments: false   #关闭评论</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="⏩-特制化初始页面模板"><a href="#⏩-特制化初始页面模板" class="headerlink" title="⏩ 特制化初始页面模板"></a>⏩ 特制化初始页面模板</h2><p>通过 <mark class="label danger"> hexo new</mark> 创建新的博文时，页面初始化状态较为简单，如果想做一些个性化设置，可以直接在 <mark class="label danger"> <em>\scaffolds\page.md</em></mark> 路径下 的 <mark class="label danger"> <strong>page.md</strong></mark> 里进行模板修改。</p>
-<hr>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows 一键召唤🎃：给应用文件 “起名”</title>
     <url>/2025/11/10/Window%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</url>
     <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251115205846524.jpg" width="70%" alt="按宽度比例缩放">
@@ -130,6 +99,37 @@ Hexo Next 的优化或配置方法。
       </tags>
   </entry>
   <entry>
+    <title>Hexo Next 优化配置</title>
+    <url>/2025/11/20/Hexo/</url>
+    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116154812165.png" width="50%" alt="按宽度比例缩放">
+
+<blockquote class="blockquote-center">
+Hexo Next 的优化或配置方法。
+</blockquote>
+
+<span id="more"></span>
+
+
+<div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
+<p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
+<a href="https://theme-next.js.org/"></a>
+</div></div>
+
+<h2 id="⏩-取消特定页面的评论区"><a href="#⏩-取消特定页面的评论区" class="headerlink" title="⏩ 取消特定页面的评论区"></a>⏩ 取消特定页面的评论区</h2><p>当安装了评论功能后，基本上所有页面都会有评论区，如果我们需要关掉某些页面（如标签页，分类页面，个人介绍页面）的评论区，可以在页面顶部的添加一行配置项。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2025-11-09 23:11:17</span><br><span class="line">type: categories</span><br><span class="line"><span class="section">comments: false   #关闭评论</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="⏩-特制化初始页面模板"><a href="#⏩-特制化初始页面模板" class="headerlink" title="⏩ 特制化初始页面模板"></a>⏩ 特制化初始页面模板</h2><p>通过 <mark class="label danger"> hexo new</mark> 创建新的博文时，页面初始化状态较为简单，如果想做一些个性化设置，可以直接在 <mark class="label danger"> <em>\scaffolds\page.md</em></mark> 路径下 的 <mark class="label danger"> <strong>page.md</strong></mark> 里进行模板修改。</p>
+<hr>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cache（二）如何进行数据缓存？</title>
     <url>/2025/11/28/cache2/</url>
     <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163708522.jpg" width="30%" alt="按宽度比例缩放">
@@ -163,9 +163,12 @@ Hexo Next 的优化或配置方法。
 </div>
 
 <p><strong>写分配（write allocate）:</strong></p>
-<p>[1]. 先写数据到主存或下一级cache，并从主存或下一级cache读取刚才修改过的数据，即：先写数据，再为所写数据分配cache line；<br>[2]. 先分配cache line给所写数据，即：从主存中读取一行数据到cache，然后直接对cache进行修改，并不把数据到写到主存或下一级cache，一直等到该行被替换出去，才写数据到主存或下一级cache。</p>
+<p>[1]. 先写数据到主存或下一级cache，并从主存或下一级cache读取刚才修改过的数据，即：先写数据，再为所写数据分配cache line；</p>
+<p>[2]. 先分配cache line给所写数据，即：从主存中读取一行数据到cache，然后直接对cache进行修改，并不把数据到写到主存或下一级cache，一直等到该行被替换出去，才写数据到主存或下一级cache。</p>
 <p><strong>写不分配（not write allocate）：</strong></p>
-<p>直接写数据到主存或下一级cache，并且不从主存或下一级cache中读取被改写的数据，即：不分配cache line给被修改的数据。<br>[1]. 前一种保持了cache&#x2F;主存的一致性，但操作复杂，而后一种方法操作简化，但命中率降低，内存的修改块只有在读未命中对cache 进行替换时，才有可能映射到cache 。<br>[2]. 通常，写通搭配写不分配；写回搭配写分配(重要模型)。</p>
+<p>直接写数据到主存或下一级cache，并且不从主存或下一级cache中读取被改写的数据，即：不分配cache line给被修改的数据。</p>
+<p>[1]. 前一种保持了cache&#x2F;主存的一致性，但操作复杂，而后一种方法操作简化，但命中率降低，内存的修改块只有在读未命中对cache 进行替换时，才有可能映射到cache 。</p>
+<p>[2]. 通常，写通搭配写不分配；写回搭配写分配(重要模型)。</p>
 <h3 id="2-内存映射策略："><a href="#2-内存映射策略：" class="headerlink" title="2. 内存映射策略："></a>2. 内存映射策略：</h3><p>映射机构要完成主存地址向缓存地址的转换，明确主存中的存储块应该放在cache中的位置。就需要制定一个（映射）规则约定好哪的主存块放到哪个cache块（cacheline）中。</p>
 <h4 id="2-1-直接映射"><a href="#2-1-直接映射" class="headerlink" title="2.1 直接映射"></a>2.1 直接映射</h4><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129150309023.jpg" width="50%" alt="按宽度比例缩放">
 
@@ -181,13 +184,13 @@ Hexo Next 的优化或配置方法。
 <p>(1). 组选择<br>如果约定好采用直接映射，CPU想要访问主存，肯定必然知道访问的内存在主存中的地址(m位)，当然芯片生产好后，cache的结构也已经定下来了，所以也知道cache的大小和缓存组的大小（假设知道了cache中有2的s次方个缓存组或cacheline），所以，给各个缓存组进行索引编号需要s个二进制位。如下图所示，如果主存地址中表示缓存组索引的s位为00001&#x3D;1，则将具有这样地址特征的主存字块都放到cache的缓存组1中去。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129160306219.png" width="50%" alt="按宽度比例缩放"></p>
 <p>(2). 行匹配<br>按上面组选择所说，具有中间s位为00001这样特征的主存地址有很多，每个主存分区中都会出现一个。仅凭此，CPU操作缓存中数据时并不能确定到底是在操作主存中哪一个字块。为了能将这种多对一的对应转化为一对一，需要知道缓存字块表示的主存字块其所在分区的信息，而这个信息有蕴含在主存地址的高位，上面说过，主存地址的高位作为标记会随数据一起写入缓存组中，所以，CPU只要通过标记就可以确定当前访问的缓存字块到底是哪个主存分区的哪个字块了。<br>如下图所示，在主存地址中通过组索引找到cache中对应选择的组，然后通过高t位中的地址与缓存组中的标记进行对比，若一致则表示两者对应，若不一致则表示缓存组中的数据为其他主存分区对应字块的内容。当然这个过程必须保证数据有效及有效位为1。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151725915.png" width="50%" alt="按宽度比例缩放"></p>
 <p>(3). 字抽取<br>另外也知道cacheline的大小（即知道一个高速缓存块（cacheline）里能存放多少个字节的数据），那么在这个cacheline里寻找其中一个特定的主存字节数据，通过编址索引的方式就需要b位快偏移地址（若cacheline大小&#x3D;2的b次方）。如上图所示，当主存地址的最低b位为100时就将此字节的数据放入cache中对应cacheline的对应第4个字节中去。</p>
-<h4 id="2-3-全相联映射"><a href="#2-3-全相联映射" class="headerlink" title="2.3 全相联映射"></a>2.3 全相联映射</h4><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151648233.jpg" width="50%" alt="按宽度比例缩放">
+<h4 id="2-2-全相联映射"><a href="#2-2-全相联映射" class="headerlink" title="2.2 全相联映射"></a>2.2 全相联映射</h4><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151648233.jpg" width="50%" alt="按宽度比例缩放">
 
 
 
 <h5 id="映射方法-1"><a href="#映射方法-1" class="headerlink" title="映射方法"></a>映射方法</h5><p>为了减少直接相连的cache抖动问题，全相联在将主存字块放入cache的缓存组时可以任意放置。但这时在直接相连中的组索引就要并入高位一起作为标记存入cache中用来判别缓存字块对应的主存字块。虽然此种方法可以减少抖动，但当CPU在cache中访问主存数据时要与cache中全部字块的标记进行比较（缓存字块位置不包含主存地址信息），而直接相连只需与一个字块进行一次比较（缓存字块位置包含主存地址信息）。因此，虽然这种方法使Cache的利用率高，块冲突概率低，但也存在速度低，成本高的问题。</p>
 <h5 id="映射过程-1"><a href="#映射过程-1" class="headerlink" title="映射过程"></a>映射过程</h5><p>通过主存地址除低b位外的剩余地址在cache中的各个字块中与地址标记进行对比，确定对应缓存字块的位置。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151725915.png" width="50%" alt="按宽度比例缩放"></p>
-<h4 id="组相联映射"><a href="#组相联映射" class="headerlink" title="组相联映射"></a>组相联映射</h4><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151759220.jpg" width="50%" alt="按宽度比例缩放">
+<h4 id="2-3-组相联映射"><a href="#2-3-组相联映射" class="headerlink" title="2.3 组相联映射"></a>2.3 组相联映射</h4><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151759220.jpg" width="50%" alt="按宽度比例缩放">
 
 <p>【映射方法】</p>
 <p>组间直接映射，组内全相联映射</p>
@@ -374,28 +377,6 @@ Hexo Next 的优化或配置方法。
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/11/11/hello-world/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b92bfee25d8a50b66f9c3781681b7fd7e426b0d631cb77c2c1da2ab12b6d9ee8">d57ba651e571aed89232e1c6212e32d6ff8e592e87c7cd24732f40ca8474bc77bf59a0a0832046625c2e51ff015d4b0b4943504e9b5e1876542f497d7aa2e9987491b60f57ba51e82a0ad8601708b2b1fc393adab32f80e7ad142ad05990285b7256d8f1f0f102c72179f0752c1bd1ac67478c9815478c15308a6e771cf435279727f43a0eb1baf72d451541786f1edb96590911b782f235148161b4fe01a60af9a0552982be65182e6628bbf9ad970547ecbdf8d1aa89b6cdb0e273592df3e8d76447c0ebb1c6aa7a25ad3421bceaca007e4eb73c31af133f1cf0dfd1f3a10de728dfb53cddfa06c01aee5075abd59cedebd980cfb625b86dbb94917f10da351e8f9587fe4760df930b8e6c40dabc762a009762d72ec59e7f1872edc9fcdfedb12083061a328e3ff9c3fca1c8245e1771dcc59ba45ea61444101532ad3cff881d6eb06412150cb6c6b392252db6e03cacb00a0dcc97b875268ecf96c1b5984a9949275ff1c99f3b7edc18d29777cf308ab1df20d52110db7c8491c52d5859a1e151e9929001aecfbe28209e85c75f17456363e312def77ca36f832f9bcb34398317cacf700c0bd39efa4000c6ed5c624303a5112a77885f407d6349b290bdda2fb2e845611afc40f5d2b45418af268b050d8f074de207dae7d0042385ec8f5f7549a5b3ce779ede3c6b967996911fa65760737c002c4c6d5e6f3f44c1ef1b1c8b13787d35d486588296fc0ecc872de2eb70c93ba6763d1ba9d0be55968910fefb9359c8b1a5e424a9990107dbf8458417eb60b0f21c50f67017220765c4743b0318783d3774e15391657dfbd660f324a9d143365c5848d56d7425a06d0f0ececaf506408baddf79658c749a1a75e6196037bb5bcdefadf3580e2e5e03d0dd498bbdbbb7ac616c39d97cb56988a74d04acf987df24f8837647fc565cabaab95a2bb5cbffc69ba4509ef4022f277a0d4782d271db1de37d6b4ba8efe70c9db9eb580f394c33014bc9e5079ae866f7a200459aa33df5b0685d3a35ca208be959db69ec2228c214e04a0a7a9ee91a83fc9aeac7b0b5a3e3b30b9a9b2ec068ba399a2588800ef7916ffbcf06740efddebc1635a22d11f5fbc1e66fac3274b3e0c6709eec6e1c143ce8ade85ec41b97a866d4aafaa43398e8fab5bf8205ae769b3e477f4d8efb8fef192b5e2f47eb6281d896b82c8da324d966ac4fe3e75897e6fcb16f817a2e271861568dcc9ff22642dc3960e3b9c6d61bc6767faf17860b99a35118a39e6020348f198b17f32ffda9349e3aa1be1b35ed1766bffd48de4eba02f0b7d223481e62dd2d2ac7ed2ca1e52082c556826133a297f6b576e793fc4d27f90f3129a5fb752da5665df3d53a607b927f760a592e50ff49541fe6a4d3e104f8c0e42ee1779d67d97866b2be7fb594c89b47f67a42c5702b2ca1026d828abcdc37b452d957761f22f26ce9a5f4d50b6fcdaabca4ea59dbf3b49d01d2164668758a2045f6d33209fd093fffbbe8a9f6d5862459f83a8537a2f2fe007b681d729df7958b1d7a53fbee316fc8b567caf9bc08884b563c5c342e28193e483f20110f69426296519cdc14dd4fc3911f1a5e5e41c33693e2b9d146f702e555d0b04c0dcc8af87d2f6b56f3535a43aaca0ca5744445e158a9b64e7129c6ba61bef7f1514b01874fb7f76d29a21c2af53156893c7616220fb7fc3fdcfb35a6ff22240f22c065366d25dc28b18cec63154ab315ab6b7a78e032ac1dc2ec59d6ec18b4ed69b8688bc5ee80d076ec21aafb2d1a94aac31d95187b33ecded8bccac935ee8d9dda274fa2a6d175df87816c49822f60316116707311a3bd2cb09ae4e6437ab4cfd86cf15e1ae0c31c9e35c422e99fdaceeed808e066bcfc8bd4f934d814ddc6963d1de5d74ff8b78b7d20c7e1d31bd3ea93c637fc5989ad0fefb8afb23b11cde5e924c708f846ef9afdd411f9b5342f334f2c1205877668413496b4290219145228648e4851759afcb3c0106c0614b893c2f26a7d4b9e7360f856e774ecb3344ab1023015981c9f5c6144ed80af8eb8f65dca52aae8335a973cf311a8d992b48d7c7afc5c074c8a949bb7b9e2909a95303a0f5bbcaec28668d44e5cc48c793f66723d6c9216f86470bcb424a0aecae4df9852ff3e3d981bb339526f7c91d50d5d92f4028b338bec1ed2a94cab4fcade14d2f14b3719be0618164013fffddc2b0a972087074fc4b44da61fedbab8d014e4091051f197aa07b8a79e82b6a589078148abe108859fbe2d86ac59d35b2e5dd567ca3e4e9a5d5f1387551b585114998ecc3395feac6a2591d746ea721fbbb5e06dc8cc80a0daf7fa60837ac003bf8012fd8c62e7af44fab3d1256c4562e685910507b987dac92508483fccea6c7596906d32dd0d308ea34b9f645b94bcbbcd11b5c6bf3a01ee35220771fa560e3d95b14fc8325fa8244930c07c722df5b984b269b09bf8046fec980ab601335457a67aaa3c3dfb15ec731aa1146d48da1031e2ee80061c4612b3cf2436ae36aaf8fb6807cd288fe1a7007942ed0a7190a054febd62ae139cad8957e8f7259f736bc0327bf02867709272883789e984c05c2b51518dcc8ea1fc9d5288ff126e686d3dca0edb6ff9527e6e198764978379b59464bd7c21460cd098c8c89b052c0dd4519a5852e9e62c76fc10c9d0ce016717153b39ee6bf791d6b876a90baa67aa292737454e91ee4a6b0e5bf62a8a4b7c86dd1ba611a56725247d6bc33bcce995a524f09fd5e0cbfbe74fb59cd2a357fb2f80c5656f7b97607a2908f462b38053ce79d871d6a72bd478b23e06ddcd35c60280db0e40ee01c62faa5d690a759ed4e18934eca409179b92f58ac4f7fb9d608a180f6f7d9ac968a6668848a051a9bb821d4468a90f46f961f111666519026ad94510fbf69df26194ed217f3a3b378ef2b4942aa84c02e8d4c38364281de4065fa09eee147ea892030142dd1beae5c822413eb4a063e5f5fba1f9c5e1a88e2267ce21a2e7664dd3ba90cebbec75e5b2f5a08569c14c0d7a7dad9ce955b0efce7c252ae8a2ddda9e517a44a7a69be0579bbcc8b668de8dadee230e9395a4971e06bc0ea4d3a55237d5df4e2e4beb7d27726433ae770268a12273ac22e977cb4fc4471f7ec3e60911ba45773bc80933a8c85c4d2c9ea5f1253fc76edf9c2ee12fc7c873</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">⛔请输入密码后查看</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>成长</category>
-      </categories>
-      <tags>
-        <tag>private</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Next 文章实现禁止复制</title>
     <url>/2025/11/10/%E7%A6%81%E6%AD%A2%E5%A4%8D%E5%88%B6/</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -429,6 +410,25 @@ Hexo Next 的优化或配置方法。
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SPI</title>
+    <url>/2025/12/01/SPI/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+SPI
+</blockquote>
+
+<span id="more"></span>
+
+<p>主机(Master)将要发送的数据写到发送数据缓存区(Menory)，缓存区经过移位寄存器(0<del>7)，串行移位寄存器通过MoSI信号线将字节一位一位的移出去传送给从机，，同时MISO接口接收到的数据经过移位寄存器一位一位的移到接收缓存区。<br> [图像]<br>从机(Slave)也将自己的串行移位寄存器(0</del>7)中的内容通过MISO信号线返回给主机。同时通过MOSI信号线接收主机发送的数据，这样，两个移位寄存器中的内容就被交换。<br> <br> [在这里插入图片描述]<br>每个时钟周期，主设备和从设备都会移位一位数据，形成同步交换。<br> <br>SPI只有主模式和从模式之分，没有读和写的说法，外设的写操作和读操作是同步完成的。如果只进行写操作，主机只需忽略接收到的字节；反之，若主机要读取从机的一个字节，就必须发送一个空字节来引发从机的传输。也就是说，你发一个数据必然会收到一个数据；你要收一个数据必须也要先发一个数据。<br> <br>那么如何判定当前收到的数据时有效数据呢？<br>主设备无法“自动”判断数据是否有效，必须依赖 协议约定（字节序、状态字节、延迟、校验）。这也是为什么 SPI 通信通常需要 严格遵循设备手册。<br> <br> <br>SPI 四种模式：<br>主从设备的在通信时 数据采样时刻 和触发时刻 应想匹配。但不同厂商的设备，使从设备的不一样，所以就需要用 不同的模式调整，使其两端匹配。<br> [在这里插入图片描述]<br> [图像]</p>
+<hr>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -543,9 +543,9 @@ Hexo Next 的优化或配置方法。
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&#123;% tabs [Class] %&#125; // Class: 必填项，Tab的全局名称，唯一值，不能带有符号</span><br><span class="line"></span><br><span class="line">&lt;!-- tab 1号Tab--&gt;</span><br><span class="line">这里是1号Tab内容</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab 2号Tab--&gt;</span><br><span class="line">这里是2号Tab内容</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab 3号Tab--&gt;</span><br><span class="line">这里是3号Tab内容</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&#123;% endtabs %&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h2 id="⏩按钮-Btn"><a href="#⏩按钮-Btn" class="headerlink" title="⏩按钮 Btn"></a>⏩按钮 Btn</h2><a class="btn" href="https://example.com "><i class="fa fa-external-link fa-lg"></i>访问示例网站</a>
+<h2 id="⏩按钮-Btn"><a href="#⏩按钮-Btn" class="headerlink" title="⏩按钮 Btn"></a>⏩按钮 Btn</h2><a class="btn" href="https://theme-next.js.org/docs/tag-plugins/button "><i class="fa fa-external-link fa-lg"></i>官方介绍</a>
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% btn [地址] , [内容] , [图标 规格] %&#125;</span><br><span class="line">[地址]：当使用外链绝对引用时，无按钮，样式类似Markdown链接跳转</span><br><span class="line">[图标 规格]: 使用无`fa-`开头的FontAwesome图标，可以用以下规格定义图标大小</span><br><span class="line">fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% btn [地址] , [内容] , [图标 规格] %&#125;</span><br><span class="line">[地址]：当使用外链绝对引用时，无按钮，样式类似Markdown链接跳转</span><br><span class="line">[图标 规格]: 使用无`fa-`开头的FontAwesome图标，可以用以下规格定义图标大小</span><br><span class="line">fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x</span><br><span class="line"></span><br><span class="line">eg:</span><br><span class="line">&#123;% btn https://theme-next.js.org/docs/tag-plugins/button , 官方介绍 , external-link fa-lg %&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 <h2 id="⏩图标列表"><a href="#⏩图标列表" class="headerlink" title="⏩图标列表"></a>⏩图标列表</h2><ul class="fa-ul">
@@ -565,6 +565,28 @@ Hexo Next 的优化或配置方法。
       </categories>
       <tags>
         <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/11/11/hello-world/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">
+  <script id="hbeData" type="hbeData" data-hmacdigest="b92bfee25d8a50b66f9c3781681b7fd7e426b0d631cb77c2c1da2ab12b6d9ee8">d57ba651e571aed89232e1c6212e32d6ff8e592e87c7cd24732f40ca8474bc77bf59a0a0832046625c2e51ff015d4b0b4943504e9b5e1876542f497d7aa2e9987491b60f57ba51e82a0ad8601708b2b1fc393adab32f80e7ad142ad05990285b7256d8f1f0f102c72179f0752c1bd1ac67478c9815478c15308a6e771cf435279727f43a0eb1baf72d451541786f1edb96590911b782f235148161b4fe01a60af9a0552982be65182e6628bbf9ad970547ecbdf8d1aa89b6cdb0e273592df3e8d76447c0ebb1c6aa7a25ad3421bceaca007e4eb73c31af133f1cf0dfd1f3a10de728dfb53cddfa06c01aee5075abd59cedebd980cfb625b86dbb94917f10da351e8f9587fe4760df930b8e6c40dabc762a009762d72ec59e7f1872edc9fcdfedb12083061a328e3ff9c3fca1c8245e1771dcc59ba45ea61444101532ad3cff881d6eb06412150cb6c6b392252db6e03cacb00a0dcc97b875268ecf96c1b5984a9949275ff1c99f3b7edc18d29777cf308ab1df20d52110db7c8491c52d5859a1e151e9929001aecfbe28209e85c75f17456363e312def77ca36f832f9bcb34398317cacf700c0bd39efa4000c6ed5c624303a5112a77885f407d6349b290bdda2fb2e845611afc40f5d2b45418af268b050d8f074de207dae7d0042385ec8f5f7549a5b3ce779ede3c6b967996911fa65760737c002c4c6d5e6f3f44c1ef1b1c8b13787d35d486588296fc0ecc872de2eb70c93ba6763d1ba9d0be55968910fefb9359c8b1a5e424a9990107dbf8458417eb60b0f21c50f67017220765c4743b0318783d3774e15391657dfbd660f324a9d143365c5848d56d7425a06d0f0ececaf506408baddf79658c749a1a75e6196037bb5bcdefadf3580e2e5e03d0dd498bbdbbb7ac616c39d97cb56988a74d04acf987df24f8837647fc565cabaab95a2bb5cbffc69ba4509ef4022f277a0d4782d271db1de37d6b4ba8efe70c9db9eb580f394c33014bc9e5079ae866f7a200459aa33df5b0685d3a35ca208be959db69ec2228c214e04a0a7a9ee91a83fc9aeac7b0b5a3e3b30b9a9b2ec068ba399a2588800ef7916ffbcf06740efddebc1635a22d11f5fbc1e66fac3274b3e0c6709eec6e1c143ce8ade85ec41b97a866d4aafaa43398e8fab5bf8205ae769b3e477f4d8efb8fef192b5e2f47eb6281d896b82c8da324d966ac4fe3e75897e6fcb16f817a2e271861568dcc9ff22642dc3960e3b9c6d61bc6767faf17860b99a35118a39e6020348f198b17f32ffda9349e3aa1be1b35ed1766bffd48de4eba02f0b7d223481e62dd2d2ac7ed2ca1e52082c556826133a297f6b576e793fc4d27f90f3129a5fb752da5665df3d53a607b927f760a592e50ff49541fe6a4d3e104f8c0e42ee1779d67d97866b2be7fb594c89b47f67a42c5702b2ca1026d828abcdc37b452d957761f22f26ce9a5f4d50b6fcdaabca4ea59dbf3b49d01d2164668758a2045f6d33209fd093fffbbe8a9f6d5862459f83a8537a2f2fe007b681d729df7958b1d7a53fbee316fc8b567caf9bc08884b563c5c342e28193e483f20110f69426296519cdc14dd4fc3911f1a5e5e41c33693e2b9d146f702e555d0b04c0dcc8af87d2f6b56f3535a43aaca0ca5744445e158a9b64e7129c6ba61bef7f1514b01874fb7f76d29a21c2af53156893c7616220fb7fc3fdcfb35a6ff22240f22c065366d25dc28b18cec63154ab315ab6b7a78e032ac1dc2ec59d6ec18b4ed69b8688bc5ee80d076ec21aafb2d1a94aac31d95187b33ecded8bccac935ee8d9dda274fa2a6d175df87816c49822f60316116707311a3bd2cb09ae4e6437ab4cfd86cf15e1ae0c31c9e35c422e99fdaceeed808e066bcfc8bd4f934d814ddc6963d1de5d74ff8b78b7d20c7e1d31bd3ea93c637fc5989ad0fefb8afb23b11cde5e924c708f846ef9afdd411f9b5342f334f2c1205877668413496b4290219145228648e4851759afcb3c0106c0614b893c2f26a7d4b9e7360f856e774ecb3344ab1023015981c9f5c6144ed80af8eb8f65dca52aae8335a973cf311a8d992b48d7c7afc5c074c8a949bb7b9e2909a95303a0f5bbcaec28668d44e5cc48c793f66723d6c9216f86470bcb424a0aecae4df9852ff3e3d981bb339526f7c91d50d5d92f4028b338bec1ed2a94cab4fcade14d2f14b3719be0618164013fffddc2b0a972087074fc4b44da61fedbab8d014e4091051f197aa07b8a79e82b6a589078148abe108859fbe2d86ac59d35b2e5dd567ca3e4e9a5d5f1387551b585114998ecc3395feac6a2591d746ea721fbbb5e06dc8cc80a0daf7fa60837ac003bf8012fd8c62e7af44fab3d1256c4562e685910507b987dac92508483fccea6c7596906d32dd0d308ea34b9f645b94bcbbcd11b5c6bf3a01ee35220771fa560e3d95b14fc8325fa8244930c07c722df5b984b269b09bf8046fec980ab601335457a67aaa3c3dfb15ec731aa1146d48da1031e2ee80061c4612b3cf2436ae36aaf8fb6807cd288fe1a7007942ed0a7190a054febd62ae139cad8957e8f7259f736bc0327bf02867709272883789e984c05c2b51518dcc8ea1fc9d5288ff126e686d3dca0edb6ff9527e6e198764978379b59464bd7c21460cd098c8c89b052c0dd4519a5852e9e62c76fc10c9d0ce016717153b39ee6bf791d6b876a90baa67aa292737454e91ee4a6b0e5bf62a8a4b7c86dd1ba611a56725247d6bc33bcce995a524f09fd5e0cbfbe74fb59cd2a357fb2f80c5656f7b97607a2908f462b38053ce79d871d6a72bd478b23e06ddcd35c60280db0e40ee01c62faa5d690a759ed4e18934eca409179b92f58ac4f7fb9d608a180f6f7d9ac968a6668848a051a9bb821d4468a90f46f961f111666519026ad94510fbf69df26194ed217f3a3b378ef2b4942aa84c02e8d4c38364281de4065fa09eee147ea892030142dd1beae5c822413eb4a063e5f5fba1f9c5e1a88e2267ce21a2e7664dd3ba90cebbec75e5b2f5a08569c14c0d7a7dad9ce955b0efce7c252ae8a2ddda9e517a44a7a69be0579bbcc8b668de8dadee230e9395a4971e06bc0ea4d3a55237d5df4e2e4beb7d27726433ae770268a12273ac22e977cb4fc4471f7ec3e60911ba45773bc80933a8c85c4d2c9ea5f1253fc76edf9c2ee12fc7c873</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">⛔请输入密码后查看</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>成长</category>
+      </categories>
+      <tags>
+        <tag>private</tag>
       </tags>
   </entry>
   <entry>

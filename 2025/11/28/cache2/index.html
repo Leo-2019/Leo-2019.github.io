@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151818805.png">
 <meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152148068.jpg">
 <meta property="article:published_time" content="2025-11-28T06:51:20.000Z">
-<meta property="article:modified_time" content="2025-11-29T08:41:22.660Z">
+<meta property="article:modified_time" content="2025-11-29T08:51:02.651Z">
 <meta property="article:author" content="路小臻">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
@@ -183,7 +183,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81Cache-%E5%8E%9F%E7%90%86"><span class="nav-text">一、Cache 原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0%E7%AD%96%E7%95%A5%EF%BC%9A"><span class="nav-text">1. 数据更新策略：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-CPU%E8%AF%BB"><span class="nav-text">1.1 CPU读</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-CPU%E5%86%99"><span class="nav-text">1.2 CPU写</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%84%E7%AD%96%E7%95%A5%EF%BC%9A"><span class="nav-text">2. 内存映射策略：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-%E7%9B%B4%E6%8E%A5%E6%98%A0%E5%B0%84"><span class="nav-text">2.1 直接映射</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%98%A0%E5%B0%84%E6%96%B9%E6%B3%95"><span class="nav-text">映射方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%98%A0%E5%B0%84%E8%BF%87%E7%A8%8B"><span class="nav-text">映射过程</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-%E5%85%A8%E7%9B%B8%E8%81%94%E6%98%A0%E5%B0%84"><span class="nav-text">2.3 全相联映射</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%98%A0%E5%B0%84%E6%96%B9%E6%B3%95-1"><span class="nav-text">映射方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%98%A0%E5%B0%84%E8%BF%87%E7%A8%8B-1"><span class="nav-text">映射过程</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%84%E7%9B%B8%E8%81%94%E6%98%A0%E5%B0%84"><span class="nav-text">组相联映射</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81cache%E5%8F%8B%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99"><span class="nav-text">二、cache友好的代码编写</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81Cache-%E5%8E%9F%E7%90%86"><span class="nav-text">一、Cache 原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0%E7%AD%96%E7%95%A5%EF%BC%9A"><span class="nav-text">1. 数据更新策略：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-CPU%E8%AF%BB"><span class="nav-text">1.1 CPU读</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-CPU%E5%86%99"><span class="nav-text">1.2 CPU写</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%84%E7%AD%96%E7%95%A5%EF%BC%9A"><span class="nav-text">2. 内存映射策略：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-%E7%9B%B4%E6%8E%A5%E6%98%A0%E5%B0%84"><span class="nav-text">2.1 直接映射</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%98%A0%E5%B0%84%E6%96%B9%E6%B3%95"><span class="nav-text">映射方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%98%A0%E5%B0%84%E8%BF%87%E7%A8%8B"><span class="nav-text">映射过程</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-%E5%85%A8%E7%9B%B8%E8%81%94%E6%98%A0%E5%B0%84"><span class="nav-text">2.2 全相联映射</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%98%A0%E5%B0%84%E6%96%B9%E6%B3%95-1"><span class="nav-text">映射方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%98%A0%E5%B0%84%E8%BF%87%E7%A8%8B-1"><span class="nav-text">映射过程</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-%E7%BB%84%E7%9B%B8%E8%81%94%E6%98%A0%E5%B0%84"><span class="nav-text">2.3 组相联映射</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81cache%E5%8F%8B%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99"><span class="nav-text">二、cache友好的代码编写</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -272,7 +272,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-11-29 16:41:22" itemprop="dateModified" datetime="2025-11-29T16:41:22+08:00">2025-11-29</time>
+      <time title="修改时间：2025-11-29 16:51:02" itemprop="dateModified" datetime="2025-11-29T16:51:02+08:00">2025-11-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -324,9 +324,12 @@
 </div>
 
 <p><strong>写分配（write allocate）:</strong></p>
-<p>[1]. 先写数据到主存或下一级cache，并从主存或下一级cache读取刚才修改过的数据，即：先写数据，再为所写数据分配cache line；<br>[2]. 先分配cache line给所写数据，即：从主存中读取一行数据到cache，然后直接对cache进行修改，并不把数据到写到主存或下一级cache，一直等到该行被替换出去，才写数据到主存或下一级cache。</p>
+<p>[1]. 先写数据到主存或下一级cache，并从主存或下一级cache读取刚才修改过的数据，即：先写数据，再为所写数据分配cache line；</p>
+<p>[2]. 先分配cache line给所写数据，即：从主存中读取一行数据到cache，然后直接对cache进行修改，并不把数据到写到主存或下一级cache，一直等到该行被替换出去，才写数据到主存或下一级cache。</p>
 <p><strong>写不分配（not write allocate）：</strong></p>
-<p>直接写数据到主存或下一级cache，并且不从主存或下一级cache中读取被改写的数据，即：不分配cache line给被修改的数据。<br>[1]. 前一种保持了cache&#x2F;主存的一致性，但操作复杂，而后一种方法操作简化，但命中率降低，内存的修改块只有在读未命中对cache 进行替换时，才有可能映射到cache 。<br>[2]. 通常，写通搭配写不分配；写回搭配写分配(重要模型)。</p>
+<p>直接写数据到主存或下一级cache，并且不从主存或下一级cache中读取被改写的数据，即：不分配cache line给被修改的数据。</p>
+<p>[1]. 前一种保持了cache&#x2F;主存的一致性，但操作复杂，而后一种方法操作简化，但命中率降低，内存的修改块只有在读未命中对cache 进行替换时，才有可能映射到cache 。</p>
+<p>[2]. 通常，写通搭配写不分配；写回搭配写分配(重要模型)。</p>
 <h3 id="2-内存映射策略："><a href="#2-内存映射策略：" class="headerlink" title="2. 内存映射策略："></a>2. 内存映射策略：</h3><p>映射机构要完成主存地址向缓存地址的转换，明确主存中的存储块应该放在cache中的位置。就需要制定一个（映射）规则约定好哪的主存块放到哪个cache块（cacheline）中。</p>
 <h4 id="2-1-直接映射"><a href="#2-1-直接映射" class="headerlink" title="2.1 直接映射"></a>2.1 直接映射</h4><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129150309023.jpg" width="50%" alt="按宽度比例缩放">
 
@@ -342,13 +345,13 @@
 <p>(1). 组选择<br>如果约定好采用直接映射，CPU想要访问主存，肯定必然知道访问的内存在主存中的地址(m位)，当然芯片生产好后，cache的结构也已经定下来了，所以也知道cache的大小和缓存组的大小（假设知道了cache中有2的s次方个缓存组或cacheline），所以，给各个缓存组进行索引编号需要s个二进制位。如下图所示，如果主存地址中表示缓存组索引的s位为00001&#x3D;1，则将具有这样地址特征的主存字块都放到cache的缓存组1中去。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129160306219.png" width="50%" alt="按宽度比例缩放"></p>
 <p>(2). 行匹配<br>按上面组选择所说，具有中间s位为00001这样特征的主存地址有很多，每个主存分区中都会出现一个。仅凭此，CPU操作缓存中数据时并不能确定到底是在操作主存中哪一个字块。为了能将这种多对一的对应转化为一对一，需要知道缓存字块表示的主存字块其所在分区的信息，而这个信息有蕴含在主存地址的高位，上面说过，主存地址的高位作为标记会随数据一起写入缓存组中，所以，CPU只要通过标记就可以确定当前访问的缓存字块到底是哪个主存分区的哪个字块了。<br>如下图所示，在主存地址中通过组索引找到cache中对应选择的组，然后通过高t位中的地址与缓存组中的标记进行对比，若一致则表示两者对应，若不一致则表示缓存组中的数据为其他主存分区对应字块的内容。当然这个过程必须保证数据有效及有效位为1。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151725915.png" width="50%" alt="按宽度比例缩放"></p>
 <p>(3). 字抽取<br>另外也知道cacheline的大小（即知道一个高速缓存块（cacheline）里能存放多少个字节的数据），那么在这个cacheline里寻找其中一个特定的主存字节数据，通过编址索引的方式就需要b位快偏移地址（若cacheline大小&#x3D;2的b次方）。如上图所示，当主存地址的最低b位为100时就将此字节的数据放入cache中对应cacheline的对应第4个字节中去。</p>
-<h4 id="2-3-全相联映射"><a href="#2-3-全相联映射" class="headerlink" title="2.3 全相联映射"></a>2.3 全相联映射</h4><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151648233.jpg" width="50%" alt="按宽度比例缩放">
+<h4 id="2-2-全相联映射"><a href="#2-2-全相联映射" class="headerlink" title="2.2 全相联映射"></a>2.2 全相联映射</h4><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151648233.jpg" width="50%" alt="按宽度比例缩放">
 
 
 
 <h5 id="映射方法-1"><a href="#映射方法-1" class="headerlink" title="映射方法"></a>映射方法</h5><p>为了减少直接相连的cache抖动问题，全相联在将主存字块放入cache的缓存组时可以任意放置。但这时在直接相连中的组索引就要并入高位一起作为标记存入cache中用来判别缓存字块对应的主存字块。虽然此种方法可以减少抖动，但当CPU在cache中访问主存数据时要与cache中全部字块的标记进行比较（缓存字块位置不包含主存地址信息），而直接相连只需与一个字块进行一次比较（缓存字块位置包含主存地址信息）。因此，虽然这种方法使Cache的利用率高，块冲突概率低，但也存在速度低，成本高的问题。</p>
 <h5 id="映射过程-1"><a href="#映射过程-1" class="headerlink" title="映射过程"></a>映射过程</h5><p>通过主存地址除低b位外的剩余地址在cache中的各个字块中与地址标记进行对比，确定对应缓存字块的位置。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151725915.png" width="50%" alt="按宽度比例缩放"></p>
-<h4 id="组相联映射"><a href="#组相联映射" class="headerlink" title="组相联映射"></a>组相联映射</h4><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151759220.jpg" width="50%" alt="按宽度比例缩放">
+<h4 id="2-3-组相联映射"><a href="#2-3-组相联映射" class="headerlink" title="2.3 组相联映射"></a>2.3 组相联映射</h4><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129151759220.jpg" width="50%" alt="按宽度比例缩放">
 
 <p>【映射方法】</p>
 <p>组间直接映射，组内全相联映射</p>
