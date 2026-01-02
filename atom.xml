@@ -169,8 +169,8 @@ Hexo Next 的优化或配置方法。
   
   <entry>
     <title>常用工具网站</title>
-    <link href="https://leo-2019.github.io/2025/11/15/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
-    <id>https://leo-2019.github.io/2025/11/15/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</id>
+    <link href="https://leo-2019.github.io/2025/11/15/useful-tool/"/>
+    <id>https://leo-2019.github.io/2025/11/15/useful-tool/</id>
     <published>2025-11-15T15:03:54.544Z</published>
     <updated>2025-11-22T11:17:12.724Z</updated>
     
@@ -194,8 +194,8 @@ Hexo Next 的优化或配置方法。
   
   <entry>
     <title>Hexo Markdown 特殊语法整理</title>
-    <link href="https://leo-2019.github.io/2025/11/15/%E8%AF%AD%E6%B3%95/"/>
-    <id>https://leo-2019.github.io/2025/11/15/%E8%AF%AD%E6%B3%95/</id>
+    <link href="https://leo-2019.github.io/2025/11/15/Markdown/"/>
+    <id>https://leo-2019.github.io/2025/11/15/Markdown/</id>
     <published>2025-11-15T10:24:51.000Z</published>
     <updated>2025-12-04T14:56:54.296Z</updated>
     
@@ -237,9 +237,32 @@ Hexo Next 的优化或配置方法。
   </entry>
   
   <entry>
+    <title>Next 文章实现禁止复制</title>
+    <link href="https://leo-2019.github.io/2025/11/10/Dont_copy/"/>
+    <id>https://leo-2019.github.io/2025/11/10/Dont_copy/</id>
+    <published>2025-11-09T16:00:16.000Z</published>
+    <updated>2025-11-29T06:33:53.229Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center">为了更好的保护个人博文创作，可以通过设置，在 Hexo Next 主题中禁止文章文本复制，可通过添加 CSS 和 JavaScript 代码实现，既能阻止选中和复制文本，又能灵活保留必要功能（如代码块复制）。</blockquote><span id="more"></span><h2 id="方法：全局禁止文本复制（保留代码块可复制）"><a href="#方法：全局禁止文本复制（保留代码块可复制）" class="headerlink" title="方法：全局禁止文本复制（保留代码块可复制）"></a>方法：全局禁止文本复制（保留代码块可复制）</h2><h3 id="1-添加自定义-CSS（禁止文本选中）"><a href="#1-添加自定义-CSS（禁止文本选中）" class="headerlink" title="1. 添加自定义 CSS（禁止文本选中）"></a>1. 添加自定义 CSS（禁止文本选中）</h3><p>进入主题的自定义 CSS 文件（路径：themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_custom&#x2F;custom.styl），添加以下代码：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">/* 禁止文章内容文本被选中（不影响代码块） <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">.post-body &#123;</span></span><br><span class="line"><span class="emphasis">  user-select: none; /*</span> 标准属性 <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -webkit-user-select: none; /*</span> Chrome/Safari <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -moz-user-select: none; /*</span> Firefox <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -ms-user-select: none; /*</span> IE/Edge <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">&#125;</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">/*</span> 允许代码块选中复制（如果需要） <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">.post-body pre,</span></span><br><span class="line"><span class="emphasis">.post-body code &#123;</span></span><br><span class="line"><span class="emphasis">  user-select: text !important; /*</span> 覆盖禁止选中，允许代码块复制 <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">&#125;</span></span><br></pre></td></tr></table></figure><p>作用：user-select: none 会禁止文章正文文本被鼠标选中（无法选中则无法复制），但通过 !important 保留了代码块的选中权限。</p><h3 id="2-添加-JavaScript（拦截复制事件）"><a href="#2-添加-JavaScript（拦截复制事件）" class="headerlink" title="2. 添加 JavaScript（拦截复制事件）"></a>2. 添加 JavaScript（拦截复制事件）</h3><p>为进一步阻止通过快捷键（如 Ctrl+C）或右键菜单复制，需添加 JS 拦截：<br>在 themes&#x2F;next&#x2F;source&#x2F;js&#x2F; 目录下新建 disable-copy.js，内容如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">// 等待页面加载完成</span><br><span class="line">document.addEventListener(&#x27;DOMContentLoaded&#x27;, function() &#123;</span><br><span class="line">  // 获取文章内容容器（根据主题版本调整选择器，Next 通常为 .post-body）</span><br><span class="line">  const postContent = document.querySelector(&#x27;.post-body&#x27;);</span><br><span class="line">  if (!postContent) return;</span><br><span class="line"></span><br><span class="line">  // 拦截右键菜单（避免右键复制）</span><br><span class="line">  postContent.addEventListener(&#x27;contextmenu&#x27;, function(e) &#123;</span><br><span class="line">    e.preventDefault();</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  // 拦截快捷键复制（Ctrl+C / Cmd+C）</span><br><span class="line">  postContent.addEventListener(&#x27;keydown&#x27;, function(e) &#123;</span><br><span class="line">    if ((e.ctrlKey || e.metaKey) &amp;&amp; e.key === &#x27;c&#x27;) &#123;</span><br><span class="line">      e.preventDefault();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>在主题布局中引入该 JS 文件：打开 themes&#x2F;next&#x2F;layout&#x2F;_layout.njk（或 _layout.swig，取决于 Next 版本），在 </body> 标签前添加：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/disable-copy.js&quot;</span>&gt;</span></span><span class="language-xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure><h3 id="3-生效与验证"><a href="#3-生效与验证" class="headerlink" title="3. 生效与验证"></a>3. 生效与验证</h3><p>执行命令重启服务：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">hexo clean &amp;&amp; hexo server</span><br></pre></td></tr></table></figure><p>打开任意文章测试：</p><ul><li>鼠标选中正文文本 → 无法选中（或选中无反应）。</li><li>按 Ctrl+C 复制选中内容 → 无效。</li><li>右键点击正文 → 无复制菜单。</li><li>代码块(</pre> 或 </code> 标签内)→ 可正常选中复制（若保留了代码块权限）。</li></ul><h2 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h2><p>仅禁止部分页面：若只想禁止文章页复制，可在 JS 中判断当前页面路径（如 if (window.location.pathname.includes(‘&#x2F;posts&#x2F;‘)) { … }）。<br>    完全禁止所有复制：删除 CSS 中代码块的 user-select: text 配置，即可连代码块一起禁止。<br>兼容性：该方法适配 Next 主题主流版本（v7&#x2F;v8&#x2F;v9），若选择器（如 .post-body）无效，可通过浏览器开发者工具（F12）查看文章容器的实际类名并替换。通过 CSS 禁止选中 + JS 拦截事件，能有效阻止大部分复制行为，同时兼顾灵活性。</p>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+为了更好的保护个人博文创作，可以通过设置，在 Hexo Next 主题中禁止文章文本复制，可通过添加 CSS 和 JavaScript 代码实现，既能阻止选中和复制文本，又能灵活保留必要功能（如代码块复制）。
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://leo-2019.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Hexo" scheme="https://leo-2019.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Windows 一键召唤🎃：给应用文件 “起名”</title>
-    <link href="https://leo-2019.github.io/2025/11/10/Window%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/"/>
-    <id>https://leo-2019.github.io/2025/11/10/Window%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</id>
+    <link href="https://leo-2019.github.io/2025/11/10/Window_quick_start/"/>
+    <id>https://leo-2019.github.io/2025/11/10/Window_quick_start/</id>
     <published>2025-11-09T16:00:16.000Z</published>
     <updated>2025-11-20T12:12:34.402Z</updated>
     
@@ -259,29 +282,6 @@ Hexo Next 的优化或配置方法。
     
     
     <category term="工作习惯" scheme="https://leo-2019.github.io/tags/%E5%B7%A5%E4%BD%9C%E4%B9%A0%E6%83%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Next 文章实现禁止复制</title>
-    <link href="https://leo-2019.github.io/2025/11/10/%E7%A6%81%E6%AD%A2%E5%A4%8D%E5%88%B6/"/>
-    <id>https://leo-2019.github.io/2025/11/10/%E7%A6%81%E6%AD%A2%E5%A4%8D%E5%88%B6/</id>
-    <published>2025-11-09T16:00:16.000Z</published>
-    <updated>2025-11-29T06:33:53.229Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="blockquote-center">为了更好的保护个人博文创作，可以通过设置，在 Hexo Next 主题中禁止文章文本复制，可通过添加 CSS 和 JavaScript 代码实现，既能阻止选中和复制文本，又能灵活保留必要功能（如代码块复制）。</blockquote><span id="more"></span><h2 id="方法：全局禁止文本复制（保留代码块可复制）"><a href="#方法：全局禁止文本复制（保留代码块可复制）" class="headerlink" title="方法：全局禁止文本复制（保留代码块可复制）"></a>方法：全局禁止文本复制（保留代码块可复制）</h2><h3 id="1-添加自定义-CSS（禁止文本选中）"><a href="#1-添加自定义-CSS（禁止文本选中）" class="headerlink" title="1. 添加自定义 CSS（禁止文本选中）"></a>1. 添加自定义 CSS（禁止文本选中）</h3><p>进入主题的自定义 CSS 文件（路径：themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_custom&#x2F;custom.styl），添加以下代码：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">/* 禁止文章内容文本被选中（不影响代码块） <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">.post-body &#123;</span></span><br><span class="line"><span class="emphasis">  user-select: none; /*</span> 标准属性 <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -webkit-user-select: none; /*</span> Chrome/Safari <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -moz-user-select: none; /*</span> Firefox <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -ms-user-select: none; /*</span> IE/Edge <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">&#125;</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">/*</span> 允许代码块选中复制（如果需要） <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">.post-body pre,</span></span><br><span class="line"><span class="emphasis">.post-body code &#123;</span></span><br><span class="line"><span class="emphasis">  user-select: text !important; /*</span> 覆盖禁止选中，允许代码块复制 <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">&#125;</span></span><br></pre></td></tr></table></figure><p>作用：user-select: none 会禁止文章正文文本被鼠标选中（无法选中则无法复制），但通过 !important 保留了代码块的选中权限。</p><h3 id="2-添加-JavaScript（拦截复制事件）"><a href="#2-添加-JavaScript（拦截复制事件）" class="headerlink" title="2. 添加 JavaScript（拦截复制事件）"></a>2. 添加 JavaScript（拦截复制事件）</h3><p>为进一步阻止通过快捷键（如 Ctrl+C）或右键菜单复制，需添加 JS 拦截：<br>在 themes&#x2F;next&#x2F;source&#x2F;js&#x2F; 目录下新建 disable-copy.js，内容如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">// 等待页面加载完成</span><br><span class="line">document.addEventListener(&#x27;DOMContentLoaded&#x27;, function() &#123;</span><br><span class="line">  // 获取文章内容容器（根据主题版本调整选择器，Next 通常为 .post-body）</span><br><span class="line">  const postContent = document.querySelector(&#x27;.post-body&#x27;);</span><br><span class="line">  if (!postContent) return;</span><br><span class="line"></span><br><span class="line">  // 拦截右键菜单（避免右键复制）</span><br><span class="line">  postContent.addEventListener(&#x27;contextmenu&#x27;, function(e) &#123;</span><br><span class="line">    e.preventDefault();</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  // 拦截快捷键复制（Ctrl+C / Cmd+C）</span><br><span class="line">  postContent.addEventListener(&#x27;keydown&#x27;, function(e) &#123;</span><br><span class="line">    if ((e.ctrlKey || e.metaKey) &amp;&amp; e.key === &#x27;c&#x27;) &#123;</span><br><span class="line">      e.preventDefault();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>在主题布局中引入该 JS 文件：打开 themes&#x2F;next&#x2F;layout&#x2F;_layout.njk（或 _layout.swig，取决于 Next 版本），在 </body> 标签前添加：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/disable-copy.js&quot;</span>&gt;</span></span><span class="language-xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure><h3 id="3-生效与验证"><a href="#3-生效与验证" class="headerlink" title="3. 生效与验证"></a>3. 生效与验证</h3><p>执行命令重启服务：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">hexo clean &amp;&amp; hexo server</span><br></pre></td></tr></table></figure><p>打开任意文章测试：</p><ul><li>鼠标选中正文文本 → 无法选中（或选中无反应）。</li><li>按 Ctrl+C 复制选中内容 → 无效。</li><li>右键点击正文 → 无复制菜单。</li><li>代码块(</pre> 或 </code> 标签内)→ 可正常选中复制（若保留了代码块权限）。</li></ul><h2 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h2><p>仅禁止部分页面：若只想禁止文章页复制，可在 JS 中判断当前页面路径（如 if (window.location.pathname.includes(‘&#x2F;posts&#x2F;‘)) { … }）。<br>    完全禁止所有复制：删除 CSS 中代码块的 user-select: text 配置，即可连代码块一起禁止。<br>兼容性：该方法适配 Next 主题主流版本（v7&#x2F;v8&#x2F;v9），若选择器（如 .post-body）无效，可通过浏览器开发者工具（F12）查看文章容器的实际类名并替换。通过 CSS 禁止选中 + JS 拦截事件，能有效阻止大部分复制行为，同时兼顾灵活性。</p>]]></content>
-    
-    
-    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
-为了更好的保护个人博文创作，可以通过设置，在 Hexo Next 主题中禁止文章文本复制，可通过添加 CSS 和 JavaScript 代码实现，既能阻止选中和复制文本，又能灵活保留必要功能（如代码块复制）。
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://leo-2019.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="Hexo" scheme="https://leo-2019.github.io/tags/Hexo/"/>
     
   </entry>
   
