@@ -1,3 +1,7 @@
+
+# 新建博客
+hexo new page about
+
 # 本地预览博客
 ./Leo/Leo_demo.sh 
 
