@@ -1,37 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo Next 优化配置</title>
-    <url>/2025/11/20/Hexo/</url>
-    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116154812165.png" width="50%" alt="按宽度比例缩放">
-
-<blockquote class="blockquote-center">
-Hexo Next 的优化或配置方法。
-</blockquote>
-
-<span id="more"></span>
-
-
-<div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
-<p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
-<a href="https://theme-next.js.org/"></a>
-</div></div>
-
-<h2 id="⏩-取消特定页面的评论区"><a href="#⏩-取消特定页面的评论区" class="headerlink" title="⏩ 取消特定页面的评论区"></a>⏩ 取消特定页面的评论区</h2><p>当安装了评论功能后，基本上所有页面都会有评论区，如果我们需要关掉某些页面（如标签页，分类页面，个人介绍页面）的评论区，可以在页面顶部的添加一行配置项。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2025-11-09 23:11:17</span><br><span class="line">type: categories</span><br><span class="line"><span class="section">comments: false   #关闭评论</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="⏩-特制化初始页面模板"><a href="#⏩-特制化初始页面模板" class="headerlink" title="⏩ 特制化初始页面模板"></a>⏩ 特制化初始页面模板</h2><p>通过 <mark class="label danger"> hexo new</mark> 创建新的博文时，页面初始化状态较为简单，如果想做一些个性化设置，可以直接在 <mark class="label danger"> <em>\scaffolds\page.md</em></mark> 路径下 的 <mark class="label danger"> <strong>page.md</strong></mark> 里进行模板修改。</p>
-<hr>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Next 文章实现禁止复制</title>
     <url>/2025/11/10/Dont_copy/</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -59,6 +28,37 @@ Hexo Next 的优化或配置方法。
 <li>代码块(</pre> 或 </code> 标签内)→ 可正常选中复制（若保留了代码块权限）。</li>
 </ul>
 <h2 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h2><p>仅禁止部分页面：若只想禁止文章页复制，可在 JS 中判断当前页面路径（如 if (window.location.pathname.includes(‘&#x2F;posts&#x2F;‘)) { … }）。<br>    完全禁止所有复制：删除 CSS 中代码块的 user-select: text 配置，即可连代码块一起禁止。<br>兼容性：该方法适配 Next 主题主流版本（v7&#x2F;v8&#x2F;v9），若选择器（如 .post-body）无效，可通过浏览器开发者工具（F12）查看文章容器的实际类名并替换。通过 CSS 禁止选中 + JS 拦截事件，能有效阻止大部分复制行为，同时兼顾灵活性。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo Next 优化配置</title>
+    <url>/2025/11/20/Hexo/</url>
+    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251116154812165.png" width="50%" alt="按宽度比例缩放">
+
+<blockquote class="blockquote-center">
+Hexo Next 的优化或配置方法。
+</blockquote>
+
+<span id="more"></span>
+
+
+<div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/images/apple-touch-icon-next.png"></object>
+<p>Theme NexT</p><p>Stay Simple. Stay NexT.</p>
+<a href="https://theme-next.js.org/"></a>
+</div></div>
+
+<h2 id="⏩-取消特定页面的评论区"><a href="#⏩-取消特定页面的评论区" class="headerlink" title="⏩ 取消特定页面的评论区"></a>⏩ 取消特定页面的评论区</h2><p>当安装了评论功能后，基本上所有页面都会有评论区，如果我们需要关掉某些页面（如标签页，分类页面，个人介绍页面）的评论区，可以在页面顶部的添加一行配置项。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2025-11-09 23:11:17</span><br><span class="line">type: categories</span><br><span class="line"><span class="section">comments: false   #关闭评论</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="⏩-特制化初始页面模板"><a href="#⏩-特制化初始页面模板" class="headerlink" title="⏩ 特制化初始页面模板"></a>⏩ 特制化初始页面模板</h2><p>通过 <mark class="label danger"> hexo new</mark> 创建新的博文时，页面初始化状态较为简单，如果想做一些个性化设置，可以直接在 <mark class="label danger"> <em>\scaffolds\page.md</em></mark> 路径下 的 <mark class="label danger"> <strong>page.md</strong></mark> 里进行模板修改。</p>
+<hr>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -204,29 +204,134 @@ Hexo Next 的优化或配置方法。
       </tags>
   </entry>
   <entry>
-    <title>Cache（一）什么是缓存？</title>
-    <url>/2025/11/25/cache1/</url>
-    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163710829.png" width="50%" alt="按宽度比例缩放">
+    <title>Windows 一键召唤🎃：给应用文件 “起名”</title>
+    <url>/2025/11/10/Window_quick_start/</url>
+    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251115205846524.jpg" width="70%" alt="按宽度比例缩放">
 
 <blockquote class="blockquote-center">
-什么是缓存? Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写错误。
+用 Windows 办公时，你大概率遇到过这种糟心场景：正顺着思路深耕某个问题，突然需要调取一份旧文档佐证想法。可这份文件久未打开，早已忘了藏在哪个层层嵌套的文件夹里，只能鼠标点来点去逐个排查，对着一堆似曾相识的文件名反复确认。等费了半天劲找到并打开，当初要查的核心信息、那灵光一闪的灵感，早就没了踪影。
+难道 “找东西” 的时间，只能白白浪费？当然不！能不能给常用的应用、文档、网页都起个好记的 “专属名字”，需要时直接 “呼唤” 名字就能一键打开？经过大量调研、测试和总结，我整理出一套实操方法论，不管是可执行程序、常用文档，还是高频网页，都能实现 “起名 + 召唤” 的高效操作，彻底告别无效查找。
+</blockquote>
+
+<span id="more"></span>
+
+<h2 id="一、最终效果"><a href="#一、最终效果" class="headerlink" title="一、最终效果"></a>一、最终效果</h2><p>通过在win+R中输入特定命令(名字)可以打开特定的应用程序、文件夹、文件、网址、系统面板。</p>
+<p>eg:</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image001.png" alt="image001.png"></th>
+<th align="center">👉</th>
+<th align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image002.png" alt="image002.png"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image003.png" alt="image003.png"></td>
+<td align="center">👉</td>
+<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image004.png" alt="image004.png"></td>
+</tr>
+<tr>
+<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image005.png" alt="image005.png"></td>
+<td align="center">👉</td>
+<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image006.png" alt="image006.png"></td>
+</tr>
+<tr>
+<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image007.png" alt="image007.png"></td>
+<td align="center">👉</td>
+<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image008.png" alt="image008.png"></td>
+</tr>
+<tr>
+<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image009.png" alt="image009.png"></td>
+<td align="center">👉</td>
+<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image010.png" alt="image010.png"></td>
+</tr>
+</tbody></table>
+<h2 id="二、原理："><a href="#二、原理：" class="headerlink" title="二、原理："></a>二、原理：</h2><p>将快捷方式放入系统环境变量路径下，通过Win+R输入命令打开APP、文件、文件夹或网页。</p>
+<h2 id="三、配置："><a href="#三、配置：" class="headerlink" title="三、配置："></a>三、配置：</h2><h3 id="1-文件、应用程序"><a href="#1-文件、应用程序" class="headerlink" title="1.文件、应用程序"></a>1.文件、应用程序</h3><p>1.在桌面上<strong>创建一个文件夹</strong>winr；</p>
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image011.png" width="50%" alt="按宽度比例缩放">
+
+<p>2.将需要快捷打开的文件、文件夹、应用程序<strong>创建桌面快捷方式，并移入此文件夹</strong>；<br>3.<strong>更改快捷方式名称</strong>，更改后的名字就是后续在win+r命令框中应该输入的命令。</p>
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image012.png" width="50%" alt="按宽度比例缩放">
+
+<p>4.将文件夹放在某个文件路径下。（路径随意，只要是在本地就行）</p>
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image013.png" width="50%" alt="按宽度比例缩放">
+
+<p>5.将文件夹路径添加到系统路径中；</p>
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image014.png" width="50%" alt="按宽度比例缩放">
+
+<h3 id="2-文件夹"><a href="#2-文件夹" class="headerlink" title="2.文件夹"></a>2.文件夹</h3><p>1.访问具体路径的文件夹<br>直接在win+r打开的启动框内输入绝对路径。</p>
+<p>2.访问特殊固定的路径也就是经常打开的文件夹<br>和文件或APP的快捷访问的配置操作类似。只需把特定文件夹的快捷方式重命名并放入系统路径下（即上文winr文件夹中）。</p>
+<h3 id="3-网页"><a href="#3-网页" class="headerlink" title="3.网页"></a>3.网页</h3><p>1.找到网页的启动程序，创建桌面快捷方式；</p>
+<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image015.png" alt="image015.png"></p>
+<p>2.修改快捷方式的配置。</p>
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image016.png" width="40%" alt="按宽度比例缩放">
+
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image017.png" width="40%" alt="按宽度比例缩放">
+
+<p>3.重命名快捷方式并放入上文提到的“winr”文件夹中。</p>
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image018.png" width="100%" alt="按宽度比例缩放">
+
+<h3 id="4-系统面板"><a href="#4-系统面板" class="headerlink" title="4.系统面板"></a>4.系统面板</h3><p>1.在网上查找对应系统面板的启动程序的名字和位置。（一般都在C:\Windows\System32路径下）如下图所示：</p>
+<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image019.png" alt="image019.png"></p>
+<p>2.找到对应启动程序右击–&gt;send to–&gt;Desktop(create shortcut)创建桌面快捷方式并重命名。</p>
+<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image020.png" alt="image020.png"></p>
+<p>3.将此快捷方式移入上文提到的winr文件夹中。</p>
+<h2 id="四、管理（可选）："><a href="#四、管理（可选）：" class="headerlink" title="四、管理（可选）："></a>四、管理（可选）：</h2><p>为了方便我们后续的日常使用，忘记指令时，需要对指令进行查询，所以管理自己定义的这些快捷指令是非常有好处的。当然针对每个人有每个人管理的方法，但目的是为了在我们忘记命令时可以快速查找。我的管理方法是通过维护一个包含指令和对应具体动作的TXT文档来更新记录或查询。</p>
+<p>1.新建一个name.txt文档,放在上述winr文件夹中。</p>
+<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image021.png" alt="image021.png"></p>
+<p>2.在文档中添加命令信息。我在文档中说明了如何新加命令，命令的规则，和具体命令的详细信息。<br>需要说明的是自定义的命令要与windows的系统命令不冲突，我采取的方法是不同类型的命令以不同符号开头。</p>
+<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image022.png" alt="image022.png"></p>
+<p>我将命令分为四种：文档、文件、app、网页、系统面板 。分别进行记录，其中文件必须注明文件所在的位置，防止后面忘记位置后，只能打开不能进行其他操作的尴尬。以下是我的记录内容，仅供参考。</p>
+<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image023.png" alt="image023.png"></p>
+<p>3.为了方便管理和调取name.txt文件进行查询和更新，可以在winr文件夹内创建name.txt的快捷方式，并重命名为name。这样以后就可以直接在win+R中输入name命令进行查询和更新。</p>
+<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image024.png" alt="image024.png"></p>
+<p>4.另外，上述操作中已经将winr文件夹的路径添加到系统路径中了。以后需要看到底有哪些快捷方式和指令时直接win+R输入winr就能打开。</p>
+<p>5.为了在电脑中容易辨识出哪些文件夹和文件是可以通过快捷方式启动的，在文件或文件夹的命名时以&amp;或#开头。</p>
+<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image025.png" alt="image025.png"></p>
+<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image026.png" alt="image026.png"></p>
+<p>6.为了桌面看起来干净也可以在某个地方创建一个名为#Desktop的文件夹，平时的临时文档尽量放在这里面。并将其按上文提到的文件夹设置为快捷命令启动方式进行设置。解放桌面。</p>
+<p><strong>维护管理指令的关键是保证winr文件夹下快捷方式的名称和name.txt中的记录保持一致</strong></p>
+<h2 id="五、结尾"><a href="#五、结尾" class="headerlink" title="五、结尾"></a>五、结尾</h2><div style="text-align: left; margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin: 0;"> 通过我总结的这套方法论，即：快捷方式+系统路径+自定义命令管理表。可以快捷启动任何你能想到的东西。自由度非常高，常见的类型基本都可以，毕竟计算机上的任何东西都是程序嘛，也就是.exe，通过快捷方式这种间接寻址的方式将各种文件统一改名字和管理，其实整个过程就我的理解而言Win+R打开的启动框就是一个启动命令，类似将程序计数器指向某个.exe，而咱们的命令就是告诉计算机你去环境变量的系统路径中找以我这个命令命名的的快捷方式文件，而快捷方式文件就相当于指针的间接寻址，告诉计算机对应的.exe的路径在哪，然后让计算机去这个路径下找对应的程序并运行它。</p>
+</div>
+
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>工作习惯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cache（三）多核处理器TMS320C6678的缓存方法</title>
+    <url>/2025/11/29/cache3/</url>
+    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163708522.jpg" width="30%" alt="按宽度比例缩放">
+
+<blockquote class="blockquote-center">
+基于 TI 多核DSP C6678 在数字信号处理中的cache 一致性维护实战。 
 
 </blockquote>
 
 <span id="more"></span>
 
-<h2 id="一、存储器的存储结构"><a href="#一、存储器的存储结构" class="headerlink" title="一、存储器的存储结构"></a>一、存储器的存储结构</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129154449544.jpg" width="70%" alt="按宽度比例缩放">
+<h2 id="C66x缓存结构："><a href="#C66x缓存结构：" class="headerlink" title="C66x缓存结构："></a>C66x缓存结构：</h2><p>以下以L1Dcache的实现结构<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152752357.png" width="70%" alt="按宽度比例缩放"></p>
+<p>通过set确定所要数据所在的cacheline,通过对比tag是否一致&amp;检查有效位是否有效确定是否命中。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152828894.png" width="70%" alt="按宽度比例缩放"></p>
+<h2 id="C66x缓存访问流程："><a href="#C66x缓存访问流程：" class="headerlink" title="C66x缓存访问流程："></a>C66x缓存访问流程：</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152847235.png" width="70%" alt="按宽度比例缩放">
 
-<p>存储结构综述<br>（1）cpu只能和主存，cache进行数据交互，而不能直接获得辅存的数据<br>（2）辅存的数据只能调入主存，不能直接进入缓存中。<br>（3）辅存到主存的映射是由OS操作系统管理的。但是主存和辅存之间的一个映射关系被放到TLB中，TLB在cache中。<br>（4）虚拟存储中的页表，段表，段页表被放到了主存中。cpu通过页表访问辅存时，发现缺页中断，就会先暂停程序的执行，先把数据调到内存。</p>
-<h2 id="二、一致性协议（Coherency-protocols）"><a href="#二、一致性协议（Coherency-protocols）" class="headerlink" title="二、一致性协议（Coherency protocols）"></a>二、一致性协议（Coherency protocols）</h2><p>Cache的不一致：内存数据拿到CPU Cache 之后，在后面的操作过程中，CPU Cache 里的值和内存中可能是不一样的。</p>
-<p><strong>【核心问题】只要系统只有一个CPU核在工作，一切都没问题。如果有多个核，每个核又都有自己的缓存，那么我们就遇到问题了：如果某个CPU缓存段中对应的内存内容被另外一个CPU偷偷改了，会发生什么？</strong></p>
-<p>好吧，答案很简单：什么也不会发生。这很糟糕。因为如果一个CPU缓存了某块内存，那么在其他CPU修改这块内存的时候，我们希望得到通知。我们拥有多组缓存的时候，真的需要它们保持同步。或者说，系统的内存在各个CPU之间无法做到与生俱来的同步，我们实际上是需要一个大家都能遵守的方法来达到同步的目的。<br>注意，这个问题的根源是我们拥有多组缓存，而不是多个CPU核。我们也可以这样解决问题，让多个CPU核共用一组缓存：也就是说只有一块一级缓存，所有处理器都必须共用它。在每一个指令周期，只有一个幸运的CPU能通过一级缓存做内存操作，运行它的指令。<br>这本身没问题。唯一的问题就是太慢了，因为这下处理器的时间都花在排队等待使用一级缓存了（并且处理器会做大量的这种操作，至少每个读写指令都要做一次）。我指出这一点是因为它表明了问题不是由多核引起的，而是由多缓存引起的。我们知道了只有一组缓存也能工作，只是太慢了，接下来最好就是能做到：使用多组缓存，但使它们的行为看起来就像只有一组缓存那样。缓存一致性协议就是为了做到这一点而设计的。就像名称所暗示的那样，这类协议就是要使多组缓存的内容保持一致。<br>缓存一致性协议有多种，但是你日常处理的大多数计算机设备使用的都属于“窥探（snooping）”协议，这也是我这里要讲的。（还有一种叫“基于目录的（directory-based）”协议，这种协议的延迟性较大，但是在拥有很多个处理器的系统中，它有更好的可扩展性。）<br>“窥探”背后的基本思想是，所有内存传输都发生在一条共享的总线上，而所有的处理器都能看到这条总线：缓存本身是独立的，但是内存是共享资源，所有的内存访问都要经过仲裁（arbitrate）：同一个指令周期中，只有一个缓存可以读写内存。窥探协议的思想是，缓存不仅仅在做内存传输的时候才和总线打交道，而是不停地在窥探总线上发生的数据交换，跟踪其他缓存在做什么。所以当一个缓存代表它所属的处理器去读写内存时，其他处理器都会得到通知，它们以此来使自己的缓存保持同步。只要某个处理器一写内存，其他处理器马上就知道这块内存在它们自己的缓存中对应的段已经失效。</p>
-<h2 id="三、读写一致性"><a href="#三、读写一致性" class="headerlink" title="三、读写一致性"></a>三、读写一致性</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162551520.jpg" width="50%" alt="按宽度比例缩放">
 
-<p>Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写错误。</p>
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162555004.jpg" width="50%" alt="按宽度比例缩放">
+<h2 id="C66x缓存初始化："><a href="#C66x缓存初始化：" class="headerlink" title="C66x缓存初始化："></a>C66x缓存初始化：</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038585.png" width="70%" alt="按宽度比例缩放">
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038557.jpg" width="70%" alt="按宽度比例缩放">
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038527.jpg" width="70%" alt="按宽度比例缩放">
 
-<p>当Core对.MC中的数据进行写操作的时候，如果数据已经在cache中，新的数据会被更新到cache中。当其它核从.MC中读数据的时候，会直接从共享内存中读取相应的内容，如果cache中新的数据未被更新到.MC中，则其它核读取的不是更新后的内容，就会出现Core写一致性的问题。这时也需要用户进行数据维护，进行Wb将cache中的数据回写至.MC再读取。</p>
+
+
+<p>【注】：MSM片上共享内存空间只能是cacheable的且可预取的，用户不可配。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038493.jpg" width="70%" alt="按宽度比例缩放"><br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038459.png" width="70%" alt="按宽度比例缩放"><br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038430.jpg" width="70%" alt="按宽度比例缩放"><br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038399.png" width="70%" alt="按宽度比例缩放"></p>
+<h2 id="C66x缓存一致性软件维护："><a href="#C66x缓存一致性软件维护：" class="headerlink" title="C66x缓存一致性软件维护："></a>C66x缓存一致性软件维护：</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038371.jpg" width="70%" alt="按宽度比例缩放">
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038642.jpg" width="70%" alt="按宽度比例缩放">
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038612.jpg" width="70%" alt="按宽度比例缩放">
+
 <hr>
 ]]></content>
       <categories>
@@ -323,183 +428,6 @@ Hexo Next 的优化或配置方法。
       </tags>
   </entry>
   <entry>
-    <title>Windows 一键召唤🎃：给应用文件 “起名”</title>
-    <url>/2025/11/10/Window_quick_start/</url>
-    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251115205846524.jpg" width="70%" alt="按宽度比例缩放">
-
-<blockquote class="blockquote-center">
-用 Windows 办公时，你大概率遇到过这种糟心场景：正顺着思路深耕某个问题，突然需要调取一份旧文档佐证想法。可这份文件久未打开，早已忘了藏在哪个层层嵌套的文件夹里，只能鼠标点来点去逐个排查，对着一堆似曾相识的文件名反复确认。等费了半天劲找到并打开，当初要查的核心信息、那灵光一闪的灵感，早就没了踪影。
-难道 “找东西” 的时间，只能白白浪费？当然不！能不能给常用的应用、文档、网页都起个好记的 “专属名字”，需要时直接 “呼唤” 名字就能一键打开？经过大量调研、测试和总结，我整理出一套实操方法论，不管是可执行程序、常用文档，还是高频网页，都能实现 “起名 + 召唤” 的高效操作，彻底告别无效查找。
-</blockquote>
-
-<span id="more"></span>
-
-<h2 id="一、最终效果"><a href="#一、最终效果" class="headerlink" title="一、最终效果"></a>一、最终效果</h2><p>通过在win+R中输入特定命令(名字)可以打开特定的应用程序、文件夹、文件、网址、系统面板。</p>
-<p>eg:</p>
-<table>
-<thead>
-<tr>
-<th align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image001.png" alt="image001.png"></th>
-<th align="center">👉</th>
-<th align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image002.png" alt="image002.png"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image003.png" alt="image003.png"></td>
-<td align="center">👉</td>
-<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image004.png" alt="image004.png"></td>
-</tr>
-<tr>
-<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image005.png" alt="image005.png"></td>
-<td align="center">👉</td>
-<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image006.png" alt="image006.png"></td>
-</tr>
-<tr>
-<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image007.png" alt="image007.png"></td>
-<td align="center">👉</td>
-<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image008.png" alt="image008.png"></td>
-</tr>
-<tr>
-<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image009.png" alt="image009.png"></td>
-<td align="center">👉</td>
-<td align="center"><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image010.png" alt="image010.png"></td>
-</tr>
-</tbody></table>
-<h2 id="二、原理："><a href="#二、原理：" class="headerlink" title="二、原理："></a>二、原理：</h2><p>将快捷方式放入系统环境变量路径下，通过Win+R输入命令打开APP、文件、文件夹或网页。</p>
-<h2 id="三、配置："><a href="#三、配置：" class="headerlink" title="三、配置："></a>三、配置：</h2><h3 id="1-文件、应用程序"><a href="#1-文件、应用程序" class="headerlink" title="1.文件、应用程序"></a>1.文件、应用程序</h3><p>1.在桌面上<strong>创建一个文件夹</strong>winr；</p>
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image011.png" width="50%" alt="按宽度比例缩放">
-
-<p>2.将需要快捷打开的文件、文件夹、应用程序<strong>创建桌面快捷方式，并移入此文件夹</strong>；<br>3.<strong>更改快捷方式名称</strong>，更改后的名字就是后续在win+r命令框中应该输入的命令。</p>
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image012.png" width="50%" alt="按宽度比例缩放">
-
-<p>4.将文件夹放在某个文件路径下。（路径随意，只要是在本地就行）</p>
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image013.png" width="50%" alt="按宽度比例缩放">
-
-<p>5.将文件夹路径添加到系统路径中；</p>
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image014.png" width="50%" alt="按宽度比例缩放">
-
-<h3 id="2-文件夹"><a href="#2-文件夹" class="headerlink" title="2.文件夹"></a>2.文件夹</h3><p>1.访问具体路径的文件夹<br>直接在win+r打开的启动框内输入绝对路径。</p>
-<p>2.访问特殊固定的路径也就是经常打开的文件夹<br>和文件或APP的快捷访问的配置操作类似。只需把特定文件夹的快捷方式重命名并放入系统路径下（即上文winr文件夹中）。</p>
-<h3 id="3-网页"><a href="#3-网页" class="headerlink" title="3.网页"></a>3.网页</h3><p>1.找到网页的启动程序，创建桌面快捷方式；</p>
-<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image015.png" alt="image015.png"></p>
-<p>2.修改快捷方式的配置。</p>
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image016.png" width="40%" alt="按宽度比例缩放">
-
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image017.png" width="40%" alt="按宽度比例缩放">
-
-<p>3.重命名快捷方式并放入上文提到的“winr”文件夹中。</p>
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image018.png" width="100%" alt="按宽度比例缩放">
-
-<h3 id="4-系统面板"><a href="#4-系统面板" class="headerlink" title="4.系统面板"></a>4.系统面板</h3><p>1.在网上查找对应系统面板的启动程序的名字和位置。（一般都在C:\Windows\System32路径下）如下图所示：</p>
-<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image019.png" alt="image019.png"></p>
-<p>2.找到对应启动程序右击–&gt;send to–&gt;Desktop(create shortcut)创建桌面快捷方式并重命名。</p>
-<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image020.png" alt="image020.png"></p>
-<p>3.将此快捷方式移入上文提到的winr文件夹中。</p>
-<h2 id="四、管理（可选）："><a href="#四、管理（可选）：" class="headerlink" title="四、管理（可选）："></a>四、管理（可选）：</h2><p>为了方便我们后续的日常使用，忘记指令时，需要对指令进行查询，所以管理自己定义的这些快捷指令是非常有好处的。当然针对每个人有每个人管理的方法，但目的是为了在我们忘记命令时可以快速查找。我的管理方法是通过维护一个包含指令和对应具体动作的TXT文档来更新记录或查询。</p>
-<p>1.新建一个name.txt文档,放在上述winr文件夹中。</p>
-<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image021.png" alt="image021.png"></p>
-<p>2.在文档中添加命令信息。我在文档中说明了如何新加命令，命令的规则，和具体命令的详细信息。<br>需要说明的是自定义的命令要与windows的系统命令不冲突，我采取的方法是不同类型的命令以不同符号开头。</p>
-<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image022.png" alt="image022.png"></p>
-<p>我将命令分为四种：文档、文件、app、网页、系统面板 。分别进行记录，其中文件必须注明文件所在的位置，防止后面忘记位置后，只能打开不能进行其他操作的尴尬。以下是我的记录内容，仅供参考。</p>
-<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image023.png" alt="image023.png"></p>
-<p>3.为了方便管理和调取name.txt文件进行查询和更新，可以在winr文件夹内创建name.txt的快捷方式，并重命名为name。这样以后就可以直接在win+R中输入name命令进行查询和更新。</p>
-<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image024.png" alt="image024.png"></p>
-<p>4.另外，上述操作中已经将winr文件夹的路径添加到系统路径中了。以后需要看到底有哪些快捷方式和指令时直接win+R输入winr就能打开。</p>
-<p>5.为了在电脑中容易辨识出哪些文件夹和文件是可以通过快捷方式启动的，在文件或文件夹的命名时以&amp;或#开头。</p>
-<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image025.png" alt="image025.png"></p>
-<p><img src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/image026.png" alt="image026.png"></p>
-<p>6.为了桌面看起来干净也可以在某个地方创建一个名为#Desktop的文件夹，平时的临时文档尽量放在这里面。并将其按上文提到的文件夹设置为快捷命令启动方式进行设置。解放桌面。</p>
-<p><strong>维护管理指令的关键是保证winr文件夹下快捷方式的名称和name.txt中的记录保持一致</strong></p>
-<h2 id="五、结尾"><a href="#五、结尾" class="headerlink" title="五、结尾"></a>五、结尾</h2><div style="text-align: center; margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin: 0;">经过上面的配置，但凡你想快速打开的各种文件、文件夹、应用程序、网页、系统面板，你都可以通过敲键盘很快打开，十分装逼。这样便可以将桌面的图标全部清除，看起来桌面也很干净，并且也使自己的电脑只能自己使用，其他人用你的电脑不知道自定义命令会一脸懵逼，增加了电脑的安全性。🎉</p>
-</div>
-
-<div style="text-align: center; margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin: 0;">通过我总结的这套方法论，即：快捷方式+系统路径+自定义命令管理表。可以快捷启动任何你能想到的东西。自由度非常高，常见的类型基本都可以，毕竟计算机上的任何东西都是程序嘛，也就是.exe，通过快捷方式这种间接寻址的方式将各种文件统一改名字和管理，其实整个过程就我的理解而言Win+R打开的启动框就是一个启动命令，类似将程序计数器指向某个.exe，而咱们的命令就是告诉计算机你去环境变量的系统路径中找以我这个命令命名的的快捷方式文件，而快捷方式文件就相当于指针的间接寻址，告诉计算机对应的.exe的路径在哪，然后让计算机去这个路径下找对应的程序并运行它。</p>
-</div>
-
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>工作习惯</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cache（三）多核处理器TMS320C6678的缓存方法</title>
-    <url>/2025/11/29/cache3/</url>
-    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163708522.jpg" width="30%" alt="按宽度比例缩放">
-
-<blockquote class="blockquote-center">
-基于 TI 多核DSP C6678 在数字信号处理中的cache 一致性维护实战。 
-
-</blockquote>
-
-<span id="more"></span>
-
-<h2 id="C66x缓存结构："><a href="#C66x缓存结构：" class="headerlink" title="C66x缓存结构："></a>C66x缓存结构：</h2><p>以下以L1Dcache的实现结构<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152752357.png" width="70%" alt="按宽度比例缩放"></p>
-<p>通过set确定所要数据所在的cacheline,通过对比tag是否一致&amp;检查有效位是否有效确定是否命中。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152828894.png" width="70%" alt="按宽度比例缩放"></p>
-<h2 id="C66x缓存访问流程："><a href="#C66x缓存访问流程：" class="headerlink" title="C66x缓存访问流程："></a>C66x缓存访问流程：</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129152847235.png" width="70%" alt="按宽度比例缩放">
-
-
-<h2 id="C66x缓存初始化："><a href="#C66x缓存初始化：" class="headerlink" title="C66x缓存初始化："></a>C66x缓存初始化：</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038585.png" width="70%" alt="按宽度比例缩放">
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038557.jpg" width="70%" alt="按宽度比例缩放">
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038527.jpg" width="70%" alt="按宽度比例缩放">
-
-
-
-<p>【注】：MSM片上共享内存空间只能是cacheable的且可预取的，用户不可配。<br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038493.jpg" width="70%" alt="按宽度比例缩放"><br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038459.png" width="70%" alt="按宽度比例缩放"><br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038430.jpg" width="70%" alt="按宽度比例缩放"><br><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038399.png" width="70%" alt="按宽度比例缩放"></p>
-<h2 id="C66x缓存一致性软件维护："><a href="#C66x缓存一致性软件维护：" class="headerlink" title="C66x缓存一致性软件维护："></a>C66x缓存一致性软件维护：</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038371.jpg" width="70%" alt="按宽度比例缩放">
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038642.jpg" width="70%" alt="按宽度比例缩放">
-<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129153038612.jpg" width="70%" alt="按宽度比例缩放">
-
-<hr>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Next 文章实现禁止复制</title>
-    <url>/2025/11/10/%E7%A6%81%E6%AD%A2%E5%A4%8D%E5%88%B6/</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-为了更好的保护个人博文创作，可以通过设置，在 Hexo Next 主题中禁止文章文本复制，可通过添加 CSS 和 JavaScript 代码实现，既能阻止选中和复制文本，又能灵活保留必要功能（如代码块复制）。
-</blockquote>
-<span id="more"></span>
-
-<h2 id="方法：全局禁止文本复制（保留代码块可复制）"><a href="#方法：全局禁止文本复制（保留代码块可复制）" class="headerlink" title="方法：全局禁止文本复制（保留代码块可复制）"></a>方法：全局禁止文本复制（保留代码块可复制）</h2><h3 id="1-添加自定义-CSS（禁止文本选中）"><a href="#1-添加自定义-CSS（禁止文本选中）" class="headerlink" title="1. 添加自定义 CSS（禁止文本选中）"></a>1. 添加自定义 CSS（禁止文本选中）</h3><p>进入主题的自定义 CSS 文件（路径：themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_custom&#x2F;custom.styl），添加以下代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">/* 禁止文章内容文本被选中（不影响代码块） <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">.post-body &#123;</span></span><br><span class="line"><span class="emphasis">  user-select: none; /*</span> 标准属性 <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -webkit-user-select: none; /*</span> Chrome/Safari <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -moz-user-select: none; /*</span> Firefox <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -ms-user-select: none; /*</span> IE/Edge <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">&#125;</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">/*</span> 允许代码块选中复制（如果需要） <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">.post-body pre,</span></span><br><span class="line"><span class="emphasis">.post-body code &#123;</span></span><br><span class="line"><span class="emphasis">  user-select: text !important; /*</span> 覆盖禁止选中，允许代码块复制 <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>作用：user-select: none 会禁止文章正文文本被鼠标选中（无法选中则无法复制），但通过 !important 保留了代码块的选中权限。</p>
-<h3 id="2-添加-JavaScript（拦截复制事件）"><a href="#2-添加-JavaScript（拦截复制事件）" class="headerlink" title="2. 添加 JavaScript（拦截复制事件）"></a>2. 添加 JavaScript（拦截复制事件）</h3><p>为进一步阻止通过快捷键（如 Ctrl+C）或右键菜单复制，需添加 JS 拦截：<br>在 themes&#x2F;next&#x2F;source&#x2F;js&#x2F; 目录下新建 disable-copy.js，内容如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 等待页面加载完成</span><br><span class="line">document.addEventListener(&#x27;DOMContentLoaded&#x27;, function() &#123;</span><br><span class="line">  // 获取文章内容容器（根据主题版本调整选择器，Next 通常为 .post-body）</span><br><span class="line">  const postContent = document.querySelector(&#x27;.post-body&#x27;);</span><br><span class="line">  if (!postContent) return;</span><br><span class="line"></span><br><span class="line">  // 拦截右键菜单（避免右键复制）</span><br><span class="line">  postContent.addEventListener(&#x27;contextmenu&#x27;, function(e) &#123;</span><br><span class="line">    e.preventDefault();</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  // 拦截快捷键复制（Ctrl+C / Cmd+C）</span><br><span class="line">  postContent.addEventListener(&#x27;keydown&#x27;, function(e) &#123;</span><br><span class="line">    if ((e.ctrlKey || e.metaKey) &amp;&amp; e.key === &#x27;c&#x27;) &#123;</span><br><span class="line">      e.preventDefault();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>在主题布局中引入该 JS 文件：打开 themes&#x2F;next&#x2F;layout&#x2F;_layout.njk（或 _layout.swig，取决于 Next 版本），在 </body> 标签前添加：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/disable-copy.js&quot;</span>&gt;</span></span><span class="language-xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-生效与验证"><a href="#3-生效与验证" class="headerlink" title="3. 生效与验证"></a>3. 生效与验证</h3><p>执行命令重启服务：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">bash</span><br><span class="line">hexo clean &amp;&amp; hexo server</span><br></pre></td></tr></table></figure>
-<p>打开任意文章测试：</p>
-<ul>
-<li>鼠标选中正文文本 → 无法选中（或选中无反应）。</li>
-<li>按 Ctrl+C 复制选中内容 → 无效。</li>
-<li>右键点击正文 → 无复制菜单。</li>
-<li>代码块(</pre> 或 </code> 标签内)→ 可正常选中复制（若保留了代码块权限）。</li>
-</ul>
-<h2 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h2><p>仅禁止部分页面：若只想禁止文章页复制，可在 JS 中判断当前页面路径（如 if (window.location.pathname.includes(‘&#x2F;posts&#x2F;‘)) { … }）。<br>    完全禁止所有复制：删除 CSS 中代码块的 user-select: text 配置，即可连代码块一起禁止。<br>兼容性：该方法适配 Next 主题主流版本（v7&#x2F;v8&#x2F;v9），若选择器（如 .post-body）无效，可通过浏览器开发者工具（F12）查看文章容器的实际类名并替换。通过 CSS 禁止选中 + JS 拦截事件，能有效阻止大部分复制行为，同时兼顾灵活性。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>常用命令大全</title>
     <url>/2025/11/22/command/</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -585,6 +513,39 @@ Hexo Next 的优化或配置方法。
 ]]></content>
       <categories>
         <category>工作</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cache（一）什么是缓存？</title>
+    <url>/2025/11/25/cache1/</url>
+    <content><![CDATA[<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129163710829.png" width="50%" alt="按宽度比例缩放">
+
+<blockquote class="blockquote-center">
+什么是缓存? Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写错误。
+
+</blockquote>
+
+<span id="more"></span>
+
+<h2 id="一、存储器的存储结构"><a href="#一、存储器的存储结构" class="headerlink" title="一、存储器的存储结构"></a>一、存储器的存储结构</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129154449544.jpg" width="70%" alt="按宽度比例缩放">
+
+<p>存储结构综述<br>（1）cpu只能和主存，cache进行数据交互，而不能直接获得辅存的数据<br>（2）辅存的数据只能调入主存，不能直接进入缓存中。<br>（3）辅存到主存的映射是由OS操作系统管理的。但是主存和辅存之间的一个映射关系被放到TLB中，TLB在cache中。<br>（4）虚拟存储中的页表，段表，段页表被放到了主存中。cpu通过页表访问辅存时，发现缺页中断，就会先暂停程序的执行，先把数据调到内存。</p>
+<h2 id="二、一致性协议（Coherency-protocols）"><a href="#二、一致性协议（Coherency-protocols）" class="headerlink" title="二、一致性协议（Coherency protocols）"></a>二、一致性协议（Coherency protocols）</h2><p>Cache的不一致：内存数据拿到CPU Cache 之后，在后面的操作过程中，CPU Cache 里的值和内存中可能是不一样的。</p>
+<p><strong>【核心问题】只要系统只有一个CPU核在工作，一切都没问题。如果有多个核，每个核又都有自己的缓存，那么我们就遇到问题了：如果某个CPU缓存段中对应的内存内容被另外一个CPU偷偷改了，会发生什么？</strong></p>
+<p>好吧，答案很简单：什么也不会发生。这很糟糕。因为如果一个CPU缓存了某块内存，那么在其他CPU修改这块内存的时候，我们希望得到通知。我们拥有多组缓存的时候，真的需要它们保持同步。或者说，系统的内存在各个CPU之间无法做到与生俱来的同步，我们实际上是需要一个大家都能遵守的方法来达到同步的目的。<br>注意，这个问题的根源是我们拥有多组缓存，而不是多个CPU核。我们也可以这样解决问题，让多个CPU核共用一组缓存：也就是说只有一块一级缓存，所有处理器都必须共用它。在每一个指令周期，只有一个幸运的CPU能通过一级缓存做内存操作，运行它的指令。<br>这本身没问题。唯一的问题就是太慢了，因为这下处理器的时间都花在排队等待使用一级缓存了（并且处理器会做大量的这种操作，至少每个读写指令都要做一次）。我指出这一点是因为它表明了问题不是由多核引起的，而是由多缓存引起的。我们知道了只有一组缓存也能工作，只是太慢了，接下来最好就是能做到：使用多组缓存，但使它们的行为看起来就像只有一组缓存那样。缓存一致性协议就是为了做到这一点而设计的。就像名称所暗示的那样，这类协议就是要使多组缓存的内容保持一致。<br>缓存一致性协议有多种，但是你日常处理的大多数计算机设备使用的都属于“窥探（snooping）”协议，这也是我这里要讲的。（还有一种叫“基于目录的（directory-based）”协议，这种协议的延迟性较大，但是在拥有很多个处理器的系统中，它有更好的可扩展性。）<br>“窥探”背后的基本思想是，所有内存传输都发生在一条共享的总线上，而所有的处理器都能看到这条总线：缓存本身是独立的，但是内存是共享资源，所有的内存访问都要经过仲裁（arbitrate）：同一个指令周期中，只有一个缓存可以读写内存。窥探协议的思想是，缓存不仅仅在做内存传输的时候才和总线打交道，而是不停地在窥探总线上发生的数据交换，跟踪其他缓存在做什么。所以当一个缓存代表它所属的处理器去读写内存时，其他处理器都会得到通知，它们以此来使自己的缓存保持同步。只要某个处理器一写内存，其他处理器马上就知道这块内存在它们自己的缓存中对应的段已经失效。</p>
+<h2 id="三、读写一致性"><a href="#三、读写一致性" class="headerlink" title="三、读写一致性"></a>三、读写一致性</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162551520.jpg" width="50%" alt="按宽度比例缩放">
+
+<p>Cache是高速缓冲存储器，是位于CPU与主内存间的一种容量较小但速度很高的存储器。由于CPU的速度远高于主存，CPU直接从外存中读取数据要等待一定时间周期，Cache中保存着CPU刚用过或循环使用的一部分数据，当CPU再次使用该部分数据时可从Cache中直接调用,这样就减少了CPU的等待时间,提高了系统的效率。但是，cache中数据与.MC中数据的同步是一个关键，否则为会读写错误。</p>
+<img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20251129162555004.jpg" width="50%" alt="按宽度比例缩放">
+
+<p>当Core对.MC中的数据进行写操作的时候，如果数据已经在cache中，新的数据会被更新到cache中。当其它核从.MC中读数据的时候，会直接从共享内存中读取相应的内容，如果cache中新的数据未被更新到.MC中，则其它核读取的不是更新后的内容，就会出现Core写一致性的问题。这时也需要用户进行数据维护，进行Wb将cache中的数据回写至.MC再读取。</p>
+<hr>
+]]></content>
+      <categories>
+        <category>技术</category>
       </categories>
       <tags>
         <tag>笔记</tag>
@@ -746,6 +707,42 @@ Hexo Next 的优化或配置方法。
       </categories>
       <tags>
         <tag>private</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Next 文章实现禁止复制</title>
+    <url>/2025/11/10/%E7%A6%81%E6%AD%A2%E5%A4%8D%E5%88%B6/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+为了更好的保护个人博文创作，可以通过设置，在 Hexo Next 主题中禁止文章文本复制，可通过添加 CSS 和 JavaScript 代码实现，既能阻止选中和复制文本，又能灵活保留必要功能（如代码块复制）。
+</blockquote>
+<span id="more"></span>
+
+<h2 id="方法：全局禁止文本复制（保留代码块可复制）"><a href="#方法：全局禁止文本复制（保留代码块可复制）" class="headerlink" title="方法：全局禁止文本复制（保留代码块可复制）"></a>方法：全局禁止文本复制（保留代码块可复制）</h2><h3 id="1-添加自定义-CSS（禁止文本选中）"><a href="#1-添加自定义-CSS（禁止文本选中）" class="headerlink" title="1. 添加自定义 CSS（禁止文本选中）"></a>1. 添加自定义 CSS（禁止文本选中）</h3><p>进入主题的自定义 CSS 文件（路径：themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_custom&#x2F;custom.styl），添加以下代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">/* 禁止文章内容文本被选中（不影响代码块） <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">.post-body &#123;</span></span><br><span class="line"><span class="emphasis">  user-select: none; /*</span> 标准属性 <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -webkit-user-select: none; /*</span> Chrome/Safari <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -moz-user-select: none; /*</span> Firefox <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">  -ms-user-select: none; /*</span> IE/Edge <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">&#125;</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">/*</span> 允许代码块选中复制（如果需要） <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">.post-body pre,</span></span><br><span class="line"><span class="emphasis">.post-body code &#123;</span></span><br><span class="line"><span class="emphasis">  user-select: text !important; /*</span> 覆盖禁止选中，允许代码块复制 <span class="emphasis">*/</span></span><br><span class="line"><span class="emphasis">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>作用：user-select: none 会禁止文章正文文本被鼠标选中（无法选中则无法复制），但通过 !important 保留了代码块的选中权限。</p>
+<h3 id="2-添加-JavaScript（拦截复制事件）"><a href="#2-添加-JavaScript（拦截复制事件）" class="headerlink" title="2. 添加 JavaScript（拦截复制事件）"></a>2. 添加 JavaScript（拦截复制事件）</h3><p>为进一步阻止通过快捷键（如 Ctrl+C）或右键菜单复制，需添加 JS 拦截：<br>在 themes&#x2F;next&#x2F;source&#x2F;js&#x2F; 目录下新建 disable-copy.js，内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 等待页面加载完成</span><br><span class="line">document.addEventListener(&#x27;DOMContentLoaded&#x27;, function() &#123;</span><br><span class="line">  // 获取文章内容容器（根据主题版本调整选择器，Next 通常为 .post-body）</span><br><span class="line">  const postContent = document.querySelector(&#x27;.post-body&#x27;);</span><br><span class="line">  if (!postContent) return;</span><br><span class="line"></span><br><span class="line">  // 拦截右键菜单（避免右键复制）</span><br><span class="line">  postContent.addEventListener(&#x27;contextmenu&#x27;, function(e) &#123;</span><br><span class="line">    e.preventDefault();</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  // 拦截快捷键复制（Ctrl+C / Cmd+C）</span><br><span class="line">  postContent.addEventListener(&#x27;keydown&#x27;, function(e) &#123;</span><br><span class="line">    if ((e.ctrlKey || e.metaKey) &amp;&amp; e.key === &#x27;c&#x27;) &#123;</span><br><span class="line">      e.preventDefault();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在主题布局中引入该 JS 文件：打开 themes&#x2F;next&#x2F;layout&#x2F;_layout.njk（或 _layout.swig，取决于 Next 版本），在 </body> 标签前添加：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/disable-copy.js&quot;</span>&gt;</span></span><span class="language-xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-生效与验证"><a href="#3-生效与验证" class="headerlink" title="3. 生效与验证"></a>3. 生效与验证</h3><p>执行命令重启服务：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">bash</span><br><span class="line">hexo clean &amp;&amp; hexo server</span><br></pre></td></tr></table></figure>
+<p>打开任意文章测试：</p>
+<ul>
+<li>鼠标选中正文文本 → 无法选中（或选中无反应）。</li>
+<li>按 Ctrl+C 复制选中内容 → 无效。</li>
+<li>右键点击正文 → 无复制菜单。</li>
+<li>代码块(</pre> 或 </code> 标签内)→ 可正常选中复制（若保留了代码块权限）。</li>
+</ul>
+<h2 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h2><p>仅禁止部分页面：若只想禁止文章页复制，可在 JS 中判断当前页面路径（如 if (window.location.pathname.includes(‘&#x2F;posts&#x2F;‘)) { … }）。<br>    完全禁止所有复制：删除 CSS 中代码块的 user-select: text 配置，即可连代码块一起禁止。<br>兼容性：该方法适配 Next 主题主流版本（v7&#x2F;v8&#x2F;v9），若选择器（如 .post-body）无效，可通过浏览器开发者工具（F12）查看文章容器的实际类名并替换。通过 CSS 禁止选中 + JS 拦截事件，能有效阻止大部分复制行为，同时兼顾灵活性。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
