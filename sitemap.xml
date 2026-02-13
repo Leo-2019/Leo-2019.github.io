@@ -47,27 +47,9 @@
   </url>
   
   <url>
-    <loc>https://leo-2019.github.io/2026/01/03/qwen-skills/</loc>
-    
-    <lastmod>2026-01-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://leo-2019.github.io/2025/11/15/Markdown/</loc>
     
     <lastmod>2025-12-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://leo-2019.github.io/2025/12/01/SPI/</loc>
-    
-    <lastmod>2025-12-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -212,14 +194,14 @@
   </url>
   
   <url>
-    <loc>https://leo-2019.github.io/tags/private/</loc>
+    <loc>https://leo-2019.github.io/tags/AI/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://leo-2019.github.io/tags/AI/</loc>
+    <loc>https://leo-2019.github.io/tags/private/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -228,14 +210,14 @@
 
   
   <url>
-    <loc>https://leo-2019.github.io/categories/%E8%8C%A7%E9%87%8C%E7%9A%84%E8%AF%97/</loc>
+    <loc>https://leo-2019.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://leo-2019.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://leo-2019.github.io/categories/%E8%8C%A7%E9%87%8C%E7%9A%84%E8%AF%97/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

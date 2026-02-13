@@ -42,52 +42,6 @@
   </entry>
   
   <entry>
-    <title>qwen_skills</title>
-    <link href="https://leo-2019.github.io/2026/01/03/qwen-skills/"/>
-    <id>https://leo-2019.github.io/2026/01/03/qwen-skills/</id>
-    <published>2026-01-03T13:15:41.000Z</published>
-    <updated>2026-01-10T15:02:27.856Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="blockquote-center">研究一下 AI agent 怎么实现， caude code 国内用不了，捣鼓捣鼓一下 千文 的skills。</blockquote><span id="more"></span><p>启动：qwen –experimental-skills</p><p>skills 官方模板：<br><a href="https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md">https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md</a></p><p>skill creator 国内下载<br><a href="https://claude-plugins.dev/skills/@anthropics/skills/skill-creator">https://claude-plugins.dev/skills/@anthropics/skills/skill-creator</a></p><hr>]]></content>
-    
-    
-    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
-研究一下 AI agent 怎么实现， caude code 国内用不了，捣鼓捣鼓一下 千文 的skills。
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://leo-2019.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="AI" scheme="https://leo-2019.github.io/tags/AI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SPI</title>
-    <link href="https://leo-2019.github.io/2025/12/01/SPI/"/>
-    <id>https://leo-2019.github.io/2025/12/01/SPI/</id>
-    <published>2025-12-01T12:20:35.000Z</published>
-    <updated>2025-12-01T12:21:14.243Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="blockquote-center">SPI</blockquote><span id="more"></span><p>主机(Master)将要发送的数据写到发送数据缓存区(Menory)，缓存区经过移位寄存器(0<del>7)，串行移位寄存器通过MoSI信号线将字节一位一位的移出去传送给从机，，同时MISO接口接收到的数据经过移位寄存器一位一位的移到接收缓存区。<br> [图像]<br>从机(Slave)也将自己的串行移位寄存器(0</del>7)中的内容通过MISO信号线返回给主机。同时通过MOSI信号线接收主机发送的数据，这样，两个移位寄存器中的内容就被交换。<br> <br> [在这里插入图片描述]<br>每个时钟周期，主设备和从设备都会移位一位数据，形成同步交换。<br> <br>SPI只有主模式和从模式之分，没有读和写的说法，外设的写操作和读操作是同步完成的。如果只进行写操作，主机只需忽略接收到的字节；反之，若主机要读取从机的一个字节，就必须发送一个空字节来引发从机的传输。也就是说，你发一个数据必然会收到一个数据；你要收一个数据必须也要先发一个数据。<br> <br>那么如何判定当前收到的数据时有效数据呢？<br>主设备无法“自动”判断数据是否有效，必须依赖 协议约定（字节序、状态字节、延迟、校验）。这也是为什么 SPI 通信通常需要 严格遵循设备手册。<br> <br> <br>SPI 四种模式：<br>主从设备的在通信时 数据采样时刻 和触发时刻 应想匹配。但不同厂商的设备，使从设备的不一样，所以就需要用 不同的模式调整，使其两端匹配。<br> [在这里插入图片描述]<br> [图像]</p><hr>]]></content>
-    
-    
-    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
-SPI
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://leo-2019.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="笔记" scheme="https://leo-2019.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Cache（三）多核处理器TMS320C6678的缓存方法</title>
     <link href="https://leo-2019.github.io/2025/11/29/cache3/"/>
     <id>https://leo-2019.github.io/2025/11/29/cache3/</id>
