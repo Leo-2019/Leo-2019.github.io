@@ -21,24 +21,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"leo-2019.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.26.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"base16/edge-dark","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":true,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":true,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":true,"preload":false,"placeholder":"搜索混沌中的真相..."}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="读不懂人心，但可以读懂代码">
-<meta property="og:type" content="website">
-<meta property="og:title" content="代码星辞">
-<meta property="og:url" content="https://leo-2019.github.io/categories/%E6%8A%80%E6%9C%AF/page/2/index.html">
+    <meta name="description" content="Linux 下，我们通过 shell 命令完成大部分工作，那么是否也可以构建自己的命令 快捷的完成某些我们日常经常要做的一些事情呢？与之前的这篇文章的实现方法类似 Windows 个人快捷启动系统构建，方法是在 Linux 系统下编写 shell 脚本，生成软链接并命令指令，将其放在系统路径下，实现命令可执行配置。具体脚本的编写在 AI 横行的当下并不是难事，重要的是如何构建个人命令系统。下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux 个人命令库构建">
+<meta property="og:url" content="https://leo-2019.github.io/2026/02/28/self-commandSets/index.html">
 <meta property="og:site_name" content="代码星辞">
-<meta property="og:description" content="读不懂人心，但可以读懂代码">
+<meta property="og:description" content="Linux 下，我们通过 shell 命令完成大部分工作，那么是否也可以构建自己的命令 快捷的完成某些我们日常经常要做的一些事情呢？与之前的这篇文章的实现方法类似 Windows 个人快捷启动系统构建，方法是在 Linux 系统下编写 shell 脚本，生成软链接并命令指令，将其放在系统路径下，实现命令可执行配置。具体脚本的编写在 AI 横行的当下并不是难事，重要的是如何构建个人命令系统。下">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20260228225602679.jpg">
+<meta property="og:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20260228212010397.png">
+<meta property="article:published_time" content="2026-02-28T12:30:26.000Z">
+<meta property="article:modified_time" content="2026-02-28T14:56:14.709Z">
 <meta property="article:author" content="路小臻">
+<meta property="article:tag" content="工作习惯">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20260228225602679.jpg">
 
 
-<link rel="canonical" href="https://leo-2019.github.io/categories/%E6%8A%80%E6%9C%AF/page/2/">
+<link rel="canonical" href="https://leo-2019.github.io/2026/02/28/self-commandSets/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"categories/技术/page/2/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://leo-2019.github.io/2026/02/28/self-commandSets/","path":"2026/02/28/self-commandSets/","title":"Linux 个人命令库构建"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>分类: 技术 | 代码星辞</title>
+<title>Linux 个人命令库构建 | 代码星辞</title>
   
 
 
@@ -74,7 +80,7 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/3.0.1/quicklink.umd.js" integrity="sha256-44BednzIpUeQJcY8qtLyarFu0UCCTbgmWOvaoehiFQQ=" crossorigin="anonymous" defer></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/categories/%E6%8A%80%E6%9C%AF/page/2/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/2026/02/28/self-commandSets/"}</script>
   <script src="/js/third-party/quicklink.js" defer></script>
 
   <noscript>
@@ -155,7 +161,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -168,6 +174,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C"><span class="nav-text">一、最终效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95"><span class="nav-text">二、实现方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E8%B7%AF%E5%BE%84"><span class="nav-text">⏩ 创建项目路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-%E5%88%9B%E5%BB%BA%E7%B3%BB%E7%BB%9F%E8%B7%AF%E5%BE%84"><span class="nav-text">⏩ 创建系统路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%8F%A9-%E5%88%9B%E5%BB%BA%E5%91%BD%E4%BB%A4%E6%80%BB%E8%A7%88%E6%96%87%E4%BB%B6%E5%8F%8A%E5%85%B6%E8%84%9A%E6%9C%AC"><span class="nav-text">⏩ 创建命令总览文件及其脚本</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -209,54 +216,169 @@
 
     </div>
 
-    <div class="main-inner category posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">技术
-          <small>分类</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://leo-2019.github.io/2026/02/28/self-commandSets/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/LL.jpg">
+      <meta itemprop="name" content="路小臻">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="代码星辞">
+      <meta itemprop="description" content="读不懂人心，但可以读懂代码">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Linux 个人命令库构建 | 代码星辞">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Linux 个人命令库构建
         </h1>
-      </div>
 
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2025</span>
+
+      <time title="创建时间：2026-02-28 20:30:26 / 修改时间：22:56:14" itemprop="dateCreated datePublished" datetime="2026-02-28T20:30:26+08:00">2026-02-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20260228225602679.jpg" width="70%" alt="按宽度比例缩放">
+
+<blockquote class="blockquote-center">
+Linux 下，我们通过 shell 命令完成大部分工作，那么是否也可以构建自己的命令 快捷的完成某些我们日常经常要做的一些事情呢？与之前的这篇文章的实现方法类似 <a href="/2025/11/10/Window_quick_start/">Windows 个人快捷启动系统构建</a>，方法是在 Linux 系统下编写 shell 脚本，生成软链接并命令指令，将其放在系统路径下，实现命令可执行配置。具体脚本的编写在 AI 横行的当下并不是难事，重要的是如何构建个人命令系统。下面给我的具体方法。
+</blockquote>
+
+<span id="more"></span>
+
+<h2 id="一、最终效果"><a href="#一、最终效果" class="headerlink" title="一、最终效果"></a>一、最终效果</h2><img class="img-center" align="center" src="https://leo-2019-blog-1259040785.cos.ap-beijing.myqcloud.com/Image/20260228212010397.png" width="60%" alt="按宽度比例缩放">
+
+
+<ul>
+<li><p>“?” 指令是个人命令集总览。</p>
+</li>
+<li><p>“LeoSsv” 指令是其中一个自定义指令，当执行指令时会给出命令提示信息。</p>
+</li>
+<li><p>“LeoLoadLog” 指令是其中另一个命令，因为比较简单只做一件固定的事，所以没有帮助信息，直接交互式执行。</p>
+</li>
+</ul>
+<h2 id="二、实现方法"><a href="#二、实现方法" class="headerlink" title="二、实现方法"></a>二、实现方法</h2><ol>
+<li>创建项目路径 🔜 存放所有个人命令集文件，相当于工程目录</li>
+<li>创建系统路径 🔜 用于设置命令名称并使其全局可执行</li>
+<li>创建命令总览文件及其脚本</li>
+<li>添加脚本软连接到系统路径并重命名</li>
+<li>添加说明信息</li>
+</ol>
+<h3 id="⏩-创建项目路径"><a href="#⏩-创建项目路径" class="headerlink" title="⏩ 创建项目路径"></a>⏩ 创建项目路径</h3><p>任意创建一个路径，把其当作个人命令集的项目目录。在里面存放所需的各种文件，主要包括 脚本文件，说明文件，文本文件等。</p>
+<p>图片 ls </p>
+<h3 id="⏩-创建系统路径"><a href="#⏩-创建系统路径" class="headerlink" title="⏩ 创建系统路径"></a>⏩ 创建系统路径</h3><ol>
+<li>选定一个路径<br>一般来说项目级的环境路径 一般指定为： …&#x2F;projects&#x2F;myproject&#x2F;bin<br>我这里为了方便暂时用的是常用的系统路径 &#x2F;home&#x2F;user&#x2F;bin</li>
+</ol>
+<p>图片  ls &#x2F;home&#x2F;user&#x2F;bin</p>
+<ol start="2">
+<li>添加路径为环境变量</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 1. 创建个人命令目录</span><br><span class="line">mkdir -p ~/bin</span><br><span class="line"></span><br><span class="line"># 2. 添加到 PATH（写入 ~/.bashrc 或 ~/.zshrc）</span><br><span class="line">echo &#x27;export PATH=&quot;$HOME/bin:$PATH&quot;&#x27; &gt;&gt; ~/.bashrc</span><br><span class="line"></span><br><span class="line"># 3. 使配置生效</span><br><span class="line">source ~/.bashrc</span><br><span class="line"></span><br><span class="line"># 4. 验证</span><br><span class="line">echo $PATH</span><br><span class="line">which 你的命令</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="⏩-创建命令总览文件及其脚本"><a href="#⏩-创建命令总览文件及其脚本" class="headerlink" title="⏩ 创建命令总览文件及其脚本"></a>⏩ 创建命令总览文件及其脚本</h3><p>为了便于管理和使用，创建 readme 文件描述基本信息 并显示在终端 便于使用者查看。</p>
+<hr>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2025-11-10T00:00:16+08:00"
-              content="2025-11-10">
-          11-10
-        </time>
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>♥️您的支持会鼓励我坚持优质原创分享！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/pay.jpg" alt="路小臻 微信">
+        <span>微信</span>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/11/10/%E7%A6%81%E6%AD%A2%E5%A4%8D%E5%88%B6/" itemprop="url">
-            <span itemprop="name">Next 文章实现禁止复制</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-    </div>
   </div>
-  
-  
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/categories/%E6%8A%80%E6%9C%AF/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/categories/%E6%8A%80%E6%9C%AF/">1</a><span class="page-number current">2</span>
-  </nav>
+</div>
 
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>路小臻
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://leo-2019.github.io/2026/02/28/self-commandSets/" title="Linux 个人命令库构建">https://leo-2019.github.io/2026/02/28/self-commandSets/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+          <div class="post-tags">
+              <a href="/tags/%E5%B7%A5%E4%BD%9C%E4%B9%A0%E6%83%AF/" rel="tag"><i class="fa fa-tag"></i> 工作习惯</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/11/29/cache3/" rel="prev" title="Cache（三）多核处理器TMS320C6678的缓存方法">
+                  <i class="fa fa-angle-left"></i> Cache（三）多核处理器TMS320C6678的缓存方法
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
 </div>
   </main>
 
@@ -346,7 +468,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/3.0.1/quicklink.umd.js" integrity="sha256-44BednzIpUeQJcY8qtLyarFu0UCCTbgmWOvaoehiFQQ=" crossorigin="anonymous" defer></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/categories/%E6%8A%80%E6%9C%AF/page/2/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://leo-2019.github.io/2026/02/28/self-commandSets/"}</script>
   <script src="/js/third-party/quicklink.js" defer></script>
 <script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Leo-2019/Leo-2019.github.io","issue_term":"pathname","theme":"github-light"}</script>
 <script src="/js/third-party/comments/utterances.js" defer></script>
